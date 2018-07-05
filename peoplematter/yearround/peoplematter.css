@@ -1,0 +1,180 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+	color: #4b5054
+	
+}
+
+#wrapper{ max-width:1100px; width:100%; padding: 15px;  margin: 0 auto;}
+.tabbable {
+	margin: 40px 0px 20px 0px;
+}
+
+
+.breadcrumb { background:none;}
+p {
+	margin: 25px 0; 
+}
+
+a{ color:#c10435;}
+a:hover{ color:#4b5054;}
+.fa{ font-size:18px!important;}
+
+.jobtitle h3{ text-align:center;}
+#pagetitle{ text-align:center;}
+
+p.breadcrumb, p.nav {text-align:center; font-size:10pt;}
+p.breadcrumb a{ padding: 0px 6px;}
+
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	tr:nth-of-type(even) { 
+		/*background: #eee; */
+	}
+	th { 
+		background-color:#c2c2c2;
+		color: white; 
+		font-size: 12pt;
+		letter-spacing: .18em;
+		text-transform: uppercase;
+		font-weight: normal;
+		line-height: 1.1;
+	}
+	td, th { 
+		padding: 15px; 
+		border-bottom: 1px solid #ccc; 
+		text-align: left; 
+	}
+	td {
+		font-size: 11pt;
+	}
+	.tab-content{line-height:22px;}
+	.nav{ text-align:center;}
+	
+.tab5{ line-height:24px;}
+	
+	.jobtitle p{ text-align:center;}
+	
+	.nav a{ padding: 0px 5px; }
+	
+	
+	
+.detail-row{display: table-row;}
+	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+ 		/* For All Jobs Page*/
+		#tab1 #table-body-all td:nth-of-type(1):before { content: "Job Title"; }
+		#tab1 #table-body-all td:nth-of-type(2):before { content: "Business"; }
+		#tab1 #table-body-all td:nth-of-type(3):before { content: "Address"; }
+		#tab1 #table-body-all td:nth-of-type(4):before { content: "Share"; }
+	
+	/* For All Jobs Page Page - 2nd level */
+		.jobs-by-all-jobs #table-body-all td:nth-of-type(1):before { content: "Job Title"; }
+		.jobs-by-all-jobs #table-body-all td:nth-of-type(2):before { content: "Business"; }
+		.jobs-by-all-jobs #table-body-all td:nth-of-type(3):before { content: "Address"; }
+		
+	/* For Job by Location Page */
+		#tab3 .jobs-by-business td:nth-of-type(1):before { content: "Location"; }
+		#tab3 .jobs-by-business td:nth-of-type(2):before { content: "Business"; }
+		#tab3 .jobs-by-business td:nth-of-type(3):before { content: "Address"; }
+		#tab3 .jobs-by-business td:nth-of-type(4):before { content: "Open Positions"; }
+	
+	/* For Job by Location & Jobs By Business Page - 2nd level (after you click a location) */
+		#tab4 .jobs-by-business td:nth-of-type(1):before { content: "Job Title"; }
+		#tab4 .jobs-by-business td:nth-of-type(2):before { content: "Business"; }
+		#tab4 .jobs-by-business td:nth-of-type(3):before { content: "Location"; }
+		#tab4 .jobs-by-business td:nth-of-type(4):before { content: "Share"; }
+		
+	/* For Job by Me Page */
+		#tab6 .jobs-by-me td:nth-of-type(1):before { content: "Job Title"; }
+		#tab6 .jobs-by-me td:nth-of-type(2):before { content: "Business"; }
+		#tab6 .jobs-by-me td:nth-of-type(3):before { content: "Address"; }
+		#tab6 .jobs-by-me td:nth-of-type(4):before { content: "Miles Away"; }
+		#tab6 .jobs-by-me td:nth-of-type(5):before { content: "Share"; }
+		
+	/* For Job by Business Page */
+		#tab2 .jobs-by-business td:nth-of-type(1):before { content: "Business"; }
+		#tab2 .jobs-by-business td:nth-of-type(2):before { content: "Open Positions"; }
+		#tab2 .jobs-by-business td:nth-of-type(3):before { content: "Address"; }
+		
+	/* For All 3rd Level Pages */
+		#tab5 .jobs-by-business td:nth-of-type(1):before { content: "Job Title"; }
+		#tab5 .jobs-by-business td:nth-of-type(2):before { content: "Business"; }
+		#tab5 .jobs-by-business td:nth-of-type(3):before { content: "Address"; }
+		#tab5 .jobs-by-business td:nth-of-type(4):before { content: "Share"; }
+		#tab5 .jobs-by-business td:nth-of-type(5):before { content: "Apply Now"; }
+	
+	
+		
+		
+	
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+		}
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			
+		}
+	}
+	
+

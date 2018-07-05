@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seasonal Jobs</title>
+	<!-- For Table -->
+  <link rel="stylesheet" href="./bootstrap-sortable.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./peoplematter.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCil33pwgSabW3D8ZmA2-z-5m-EXFj2iLg&libraries=places,geometry"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="./peoplematter-old.js"></script>
+<script src="./bootstrap-sortable.js"></script>
+<script src="./lodash.underscore.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- End Table -->
+<link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_condensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_condenseditalic_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_mediumcondensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+
+
+
+
+</head>
+<body>
+<!--- REMOVE WRAPPER WHEN INTEGRATING INTO WEBSITE -->
+  <div class="container">
+    <div class="tabbable">
+ 		<p class="nav">
+ 			<a class="tab2link" href="#tab2" data-toggle="tab" >Jobs By Department</a> 
+ 			<span class="tab7link" style="display: none;">| </span> <a class="tab7link" href="#tab7" data-toggle="tab" class="active" style="display: none;">Jobs By Category</a>
+ 			| <a class="tab1link" href="#tab1" data-toggle="tab" class="active" >All Jobs</a>
+ 		</p>
+
+ 		<h2 id="pagetitle"></h2>
+
+	    <div class="tab-content">
+		    <div class="tab-pane" id="tab1">
+				<table class="sortable">
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Department</th>
+							<th>Address</th>
+							<th>Share</th>
+					  	</tr>
+					</thead>
+					<tbody id="table-body-all">
+						<tr>
+							<td colspan="4" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait. Loading Available Job Positions...</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab-pane" id="tab2">
+				<table class="jobs-by-business sortable">
+					<thead>
+						<tr>
+							<th>Department</th>
+				           	<th>Open Positions</th>
+							<th>Address</th>
+					  	</tr>
+					</thead>
+					<tbody id="table-body-business">
+						<tr>
+							<td colspan="3" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait.  Loading Available Job's By Business...</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab-pane active" id="tab3">
+				<table class="jobs-by-business sortable">
+					<thead >
+						<tr>
+							<th>Location</th>
+			           		<th>Department</th>
+			           		<th>Address</th>
+							<th>Open Positions</th>
+					  	</tr>
+					</thead>
+					<tbody id="table-body-locations">
+						<tr>
+							<td colspan="4" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait.  Loading Available Job's By Location...</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab-pane" id="tab4">
+				<table class="jobs-by-business sortable">
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Department</th>
+							<th>Location</th>
+							<th>Share</th>
+						</tr>
+					</thead>
+					<tbody id="table-body-business-filter">
+						<tr>
+							<td colspan="4" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait.  Loading Available Job Positions...</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab-pane" id="tab5">
+				<table class="jobs-by-business sortable">
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Department</th>
+							<th>Location</th>
+							<th>Share</th>
+				           	<th>Apply</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="detail-load">
+							<td colspan="5" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait.  Loading Available Job Details...</p></td>
+						</tr>
+						<tr id="detail-row">
+							<td class="title"></td>
+							<td id="business"></td>
+							<td id="location"></td>
+							<td id="share"></td>
+				            <td><a class="applyurl" href="#" >Apply</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div id="detail-data">
+					<div class="jobtitle">
+						<h3 class="title"></h3>
+						<p class="subnav"> <a id="backtolist" onClick="showPreviousTab();">Back to List</a> | <a class="applyurl applybutton" href="#" >Apply Now</a></p>
+					</div>
+
+					<div class="jobdescription"></div>
+
+					<div class="requirements"></div>
+
+					<div class="addinfo"></div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="tab6">
+				<table class="jobs-by-me sortable">
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Department</th>
+							<th>Address</th>
+							<th>Miles Away</th>
+							<th>Share</th>
+					  	</tr>
+					</thead>
+					<tbody id="table-body-jobsbyme">
+						<tr>
+							<td colspan="5" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait. Loading Available Job Positions...</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab-pane" id="tab7">
+                <table class="sortable">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Job Title</th>
+                            <th>Department</th>
+                            <th>Location</th>
+                            <th>Share</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body-categories">
+                        <tr>
+                            <td colspan="4" style="text-align: center;"><p style=" margin: 100px 0px;">Please Wait.  Loading Available Job's By Categories.....</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		</div>
+	</div>
+
+    <p class="breadcrumb">
+	
+		<a class="tab2link" href="#tab2" data-toggle="tab" >Jobs By Department</a>
+		| <a class="tab1link" href="#tab1" data-toggle="tab" class="active" style="">All Jobs</a>
+	</p>
+
+     </div>
+
+</body>
+</html>
