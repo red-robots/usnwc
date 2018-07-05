@@ -1734,7 +1734,17 @@ section.post.container.passes-tours .buttons .button{
 	text-decoration: none;
 	cursor: pointer;
 	font-weight: 700;
+	position: relative;
 } 
+/*section.post.container.passes-tours .buttons .button a {
+	display: block;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
 section.post.container.passes .buttons .button, section.post.container.tours .buttons .button{
 	background-color: #c10435;
 	color: white;

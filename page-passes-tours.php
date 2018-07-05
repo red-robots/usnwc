@@ -72,7 +72,9 @@ get_header('page'); ?>
 		'Ziplines'=>'activity_ziplines',
 		'Ropes'=>'activity_ropes',
 		'Jumps'=>'activity_jumps',
-		'Trails'=>'activity_trails'
+		'Trails'=>'activity_trails',
+		'Kayaking'=>'activity_kayaking',
+		'SUP'=>'activity_sup'
 	);?>
 	<section class="post container passes">
 	<a id="the-pass-section" name="<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($title)));?>"></a>
