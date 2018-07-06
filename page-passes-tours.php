@@ -52,15 +52,13 @@ get_header('page'); ?>
 				<h2>More Information</h2>
 			</header>
 			<div class="buttons">
-				<div class="button expand-button type-passes" onClick="gtag('event','click',{
+				<div class="button expand-button type-passes" onClick="gtag('event', 'click', {
 					  'event_category' : 'PassesTours',
-					  'event_action' : 'Toggle',
-					  'event_label' : 'Passes Button',
+					  'event_label' : 'Passes Button'
 					});">Passes</div><!--.expand-button-->
-				<div class="button expand-button type-tours" onClick="gtag('event','click',{
+				<div class="button expand-button type-tours" onClick="gtag('event', 'click', {
 					  'event_category' : 'PassesTours',
-					  'event_action' : 'Toggle',
-					  'event_label' : 'Tours Button',
+					  'event_label' : 'Tours Button'
 					});">Tours</div><!--.expand-button-->
 			</div><!--.buttons-->
 		</div><!--.wrapper-->
