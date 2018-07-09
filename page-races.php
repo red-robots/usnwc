@@ -35,24 +35,24 @@ get_header('page'); ?>
 				<tbody>
 					<tr>
 						<?php if($event_details){ ?>
-							<td><a href="#info"><img src="http://usnwc.org/wp-content/uploads/2015/05/EventDetails.png"></a></td>
+							<td><a href="#info"><img src="https://usnwc.org/wp-content/uploads/2015/05/EventDetails.png"></a></td>
 						<?php } else { ?>
-							<td class="no-link"><img src="http://usnwc.org/wp-content/uploads/2015/05/EventDetails.png"></td>
+							<td class="no-link"><img src="https://usnwc.org/wp-content/uploads/2015/05/EventDetails.png"></td>
 						<?php } ?>
 						<?php if($registration_link){ ?>
-							<td><a href="#register"><img src="http://usnwc.org/wp-content/uploads/2015/05/Register.png"></a></td>
+							<td><a href="#register"><img src="https://usnwc.org/wp-content/uploads/2015/05/Register.png"></a></td>
 						<?php } else { ?>
-							<td class="no-link"><img src="http://usnwc.org/wp-content/uploads/2015/05/Register.png"></td>
+							<td class="no-link"><img src="https://usnwc.org/wp-content/uploads/2015/05/Register.png"></td>
 						<?php } ?>
 						<?php if($course_map || $alternate_course) { ?>
-							<td><a href="#map"><img src="http://usnwc.org/wp-content/uploads/2015/05/Course.png"></a></td>
+							<td><a href="#map"><img src="https://usnwc.org/wp-content/uploads/2015/05/Course.png"></a></td>
 						<?php } else { ?>
-							<td class="no-link"><img src="http://usnwc.org/wp-content/uploads/2015/05/Course.png"></td>
+							<td class="no-link"><img src="https://usnwc.org/wp-content/uploads/2015/05/Course.png"></td>
 						<?php } ?>
 						<?php if($results){ ?>
-							<td><a href="#results"><img src="http://usnwc.org/wp-content/uploads/2015/05/Results.png"></a></td>
+							<td><a href="#results"><img src="https://usnwc.org/wp-content/uploads/2015/05/Results.png"></a></td>
 						<?php } else { ?>
-							<td class="no-link"><img src="http://usnwc.org/wp-content/uploads/2015/05/Results.png"></td>
+							<td class="no-link"><img src="https://usnwc.org/wp-content/uploads/2015/05/Results.png"></td>
 						<?php } ?>
 					</tr>
 					<tr>
