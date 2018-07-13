@@ -117,15 +117,15 @@ function display_loop_tile($args){
             							<?php //have to use absolute path to getimagesize if you don't
             							//specify how many folders to go up in relative path
             							if(getimagesize($img_url)[0]===getimagesize($img_url)[1]){?> 	   
- 		               						<img src="/wp-content/uploads/2015/05/Event_Complete_Square.png">
+ 		               						<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/05/Event_Complete_Square.png">
         	        					<?php } 
         	        					else {?>
-        	        						<img src="/wp-content/uploads/2014/10/Event_Complete_Slide.png">
+        	        						<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/Event_Complete_Slide.png">
         	        					<?php } ?>
         	        				</div>
         	        			<?php }
         	        			else {?>                 
- 	              					<img class="<?php echo $my_size;?>" src="<?php echo $img_url_rel;?>">
+ 	              					<img class="<?php echo $my_size;?>" src="<?php echo $img_url;?>">
              					<?php }
              				}
              				/*

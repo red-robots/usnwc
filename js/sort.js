@@ -57,6 +57,17 @@ jQuery(window).load(function(){
 			return thisHeight+thisMarginTop+thisMarginBottom+thisPaddingTop+thisPaddingBottom+
 				thisBorderTop+thisBorderBottom;
 		};
+
+
+		
+		// $('.filter-button-group').on( 'click', 'button', function() {
+		//   var filterValue = $(this).attr('data-filter');
+		//   $grid.isotope({ filter: filterValue });
+		// });
+
+
+
+
 	})(jQuery);
 	//since this function is used initially and after every screen resize don't use it anonymously
 	function sort(){

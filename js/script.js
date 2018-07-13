@@ -7,6 +7,80 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
+    
+
+
+$('.grid').isotope({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    // use element for option
+    columnWidth: '.grid-sizer'
+  }
+});
+
+
+
+
+
+
+
+var $grid = $('.tile.container').isotope({
+          itemSelector: '.element-item',
+          // layoutMode: 'fitRows'
+        });
+        // filter functions
+        var filterFns = {
+          // show if number is greater than 50
+          numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt( number, 10 ) > 50;
+          },
+          // show if name ends with -ium
+          ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+          }
+        };
+        // bind filter button click
+
+        $('.filters-button-group').on( 'click', 'button', function() {
+          var filterValue = $( this ).attr('data-filter');
+          // use filterFn if matches value
+          filterValue = filterFns[ filterValue ] || filterValue;
+          $grid.isotope({ filter: filterValue });
+        });
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+          var $buttonGroup = $( buttonGroup );
+          $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+          });
+        });
+
+
+
+        $('.wrap').isotope();
+
+$('a.filter').click(function() {
+    var to_filter = $(this).attr('rel');
+    if(to_filter == 'all') {
+        $('.wrap').isotope({filter: '.box'});
+    } else {
+        $('.wrap').isotope({filter: '.'+to_filter});
+    }
+
+});
+
+
+
+
+
+
+
+
     $('section.post.container.passes ul.top-level-menu li.top-level-item').click(function(){
         var $this = $(this);
         if($this.hasClass('active')){
@@ -327,27 +401,48 @@ jQuery.fn.quickEach = (function () {
 })(jQuery);
 
 // Setup grid structure for blog layout 
-/*function setIsotope(){
-	if( jQuery(window).width() > mobile_width && !isotope_set){
+// function setIsotope(){
+// 	if( jQuery(window).width() > mobile_width && !isotope_set){
         
-        isotope_set = true;
+//         isotope_set = true;
         
-		// Isotope Init		
-		jQuery('.sort, #sort').isotope({
-			itemSelector : '.box:not(.invis)',
-			transformsEnabled: false,
-			masonry: {
-				//columnWidth : 175 // original
-				columnWidth : 110   // for iPad
-			},
-			onLayout: function(){
-                centerLayout();
-			}
-		});
+// 		// Isotope Init		
+// 		jQuery('.grid, #sort').isotope({
+// 			itemSelector : '.element-item',
+// 			transformsEnabled: false,
+// 			masonry: {
+// 				//columnWidth : 175 // original
+// 				columnWidth : 110   // for iPad
+// 			},
+// 			onLayout: function(){
+//                 centerLayout();
+// 			}
+// 		});
 		
-    }
-}*/
+//     }
+// }
 
+
+// function setIsotope(){
+//     if( jQuery(window).width() > mobile_width && !isotope_set){
+        
+//         isotope_set = true;
+        
+//         // Isotope Init     
+//         jQuery('.sort, #sort').isotope({
+//             itemSelector : '.box:not(.invis)',
+//             transformsEnabled: false,
+//             masonry: {
+//                 //columnWidth : 175 // original
+//                 columnWidth : 110   // for iPad
+//             },
+//             onLayout: function(){
+//                 centerLayout();
+//             }
+//         });
+        
+//     }
+// }
 
 
 /*function stickyFooter(){
