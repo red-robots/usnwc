@@ -19,9 +19,7 @@ get_header('page'); ?>
   		</header>
     	<?php the_content(); ?>
 
-      <?php 
-      // for filtering big festival days
-      get_template_part('includes/festival-filtering'); ?>
+      
 
     	<?php if ( get_field('duties') ) { ?>
     	 	<section class="duties">
@@ -47,7 +45,14 @@ get_header('page'); ?>
     	  	<div class="register-button"><a href="https://fs24.formsite.com/usnwc/form105/index.html">Apply Now</a></div>
     	<?php } ?>
     	<?php comments_template(); ?>
-	</article>    
+	</article>  
+
+<article class="filtering">
+  <?php 
+      // for filtering big festival days
+      get_template_part('includes/festival-filtering'); ?>
+
+</article>
 	<?php if(in_array(get_field('sidebar'),array("bottom","both"),true)){
 		$sidebar="bottom";
 		get_template_part('sidebar');
