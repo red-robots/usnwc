@@ -185,7 +185,7 @@ if( have_rows('activity') ) : ?>
 
 
 
-
+<!-- 
 
 <div class="container">				
 	<div id="filters" style="background-color: #fff; position: relative;">
@@ -335,3 +335,4 @@ if( have_rows('activity') ) : ?>
 		</div>
 	</div>
 </div>
+ -->
