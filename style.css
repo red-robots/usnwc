@@ -93,122 +93,38 @@ background-color: #c2c2c2;
 .element-item {
   position: relative;
   float: left;
-  width: 94%;
+  /*width: 94%;*/
+  width: 45%;
   /*height: 100px;*/
   margin: 0 0 30px 0;
   padding: 10px;
   /*background: #888;*/
   color: #262524;
   /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
-  background-color: #c2c2c2;
+  background-color: #efefef;
+  border-bottom: 5px solid #e0dede;
+  font-size: 18px;
+
+}
+.tile.container .tile > .act-desc,
+.tile.container .tile > .desc {
+	margin: 0 0 5px 0;
+	padding: 0;
+	line-height: 1.2;
 }
 .tile.container .tile > .act-desc {
 	margin: 0 0 30px 0;
-	padding: 0;
 }
-#options-wrap.affix {
-	  top: 51px;
-	  width: 100%;
-	}
-	#options-wrap {
-	  z-index: 999999;
-	}
-	#options {
-	  background-color: #fff;
-	  width: 100%;
-	  padding-top: 20px;
-	}
-	#filter-container {
-		margin: 0 auto;
-	}
-	#filters .item {
-	  margin: 10px;
-	  float: left;
-	}
-	#filters .item img {
-	  display: block;
-	  max-width: 100%;
-	}
-	#filters p {
-	  margin: 0;
-	}
-	#filters #filter-display, 
-	#filter-counter {
-	  font-size: 18px;
-	  padding: 0.5em;
-	  color: #666;
-	}
-	div.filter-display-container {
-		display: block;
-		min-height: 45px;
-		max-height: 45px;
-		overflow: hidden;
-	}
-	.tab-pane {
-	  padding-top: 20px;
-	}
-	/* Start: Recommended Isotope styles */
-	/**** Isotope Filtering ****/
-	.isotope-item {
-	  z-index: 2;
-	}
-	.isotope-hidden.isotope-item {
-	  pointer-events: none;
-	  z-index: 1;
-	}
-	/**** Isotope CSS3 transitions ****/
-	.isotope,
-	.isotope .isotope-item {
-	  -webkit-transition-duration: 0.1s;
-	     -moz-transition-duration: 0.1s;
-	       -o-transition-duration: 0.1s;
-	          transition-duration: 0.1s;
-	}
-	.isotope {
-	  -webkit-transition-property: height, width;
-	     -moz-transition-property: height, width;
-	       -o-transition-property: height, width;
-	          transition-property: height, width;
-	}
-	.isotope .isotope-item {
-	  -webkit-transition-property: -webkit-transform, opacity;
-	     -moz-transition-property:    -moz-transform, opacity;
-	       -o-transition-property:         top, left, opacity;
-	          transition-property:         transform, opacity;
-	}
-	/**** disabling Isotope CSS3 transitions ****/
-	.isotope.no-transition,
-	.isotope.no-transition .isotope-item,
-	.isotope .isotope-item.no-transition {
-	  -webkit-transition-duration: 0s;
-	     -moz-transition-duration: 0s;
-	       -o-transition-duration: 0s;
-	          transition-duration: 0s;
-	}
-	/* End: Recommended Isotope styles */
-	a.artist:hover, label.artist:hover, 
-	a.medium:hover, label.medium:hover, 
-	a.size:hover, label.size:hover, 
-	a.colour:hover, label.colour:hover,
-	a.subject:hover, label.subject:hover,
-	a.price:hover, label.price:hover,
-	a.sale:hover, label.sale:hover {cursor: hand !important; cursor: pointer !important;}
-	a.artist, a.medium, a.size, a.colour, a.subject, a.price, a.sale, a.clone {
-		padding: 5px; 
-  	}
-  	label.artist, label.medium, label.colour, 
-  	label.size, label.subject, label.price,
-  	label.sale {margin-top: 10px; margin-bottom: 10px;}
-  	a.disabled, 
-  	a.disabled:hover, 
-  	a.disabled:active {
-  		color: #A9A9A9;
-  	}
-  	.data-counter {padding-right 200px;}
-  	#reset-filters:hover {
-  		cursor: hand !important;
-  		cursor: pointer !important;
-  	}
+.upper {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.element-item h3 {
+	border-bottom: 1px solid #cccaca;
+	padding:0 0 5px 0;
+}
+
 
 
 .base .page a[name] {
@@ -2293,6 +2209,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*///////////////////////////iPad/////////////////////////////////*/
 @media screen and (max-width: 768px)  {
+
 	section.activity-schedule .activity-schedule-list li.top-level-item li {
 		font-size: 14px;
 	}
@@ -2537,6 +2454,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*/////////////////////////////Horizontal Small Screens/////////////////////////////*/
 @media screen and (max-width: 670px){
+	.element-item {
+		width: 90%;
+	}
     article.row-activity figure {
         display: block;
         width: 200px;

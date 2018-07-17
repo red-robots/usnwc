@@ -1,11 +1,17 @@
 <?php 
+
+$map = get_field('link_to_activity_map'); 
+
+?>
+<section class="the-filter">
+<?php 
 // Run the filter
 
 if( have_rows('activity') ) : ?>
 	
 	<h2>Filter By Activity Type:</h2>
-		<div class="button-group filters-button-group">
-			<button class="button is-checked" data-filter="*">show all</button>
+		<div class="button-group group1 filters-button-group">
+			<button class="button showall is-checked" data-filter="*">show all</button>
 
 			<?php 
 			// Set the Array for the whole thing.
@@ -65,11 +71,11 @@ if( have_rows('activity') ) : ?>
 <div class="clear"></div>
 <?php if( have_rows('activity') ) : ?>
 	<h2>Filter By Time:</h2>
-		<div class="button-group filters-button-group">
-
+		<div class="button-group group2 filters-button-group">
+		<button class="button showall is-checked" data-filter="*">show all</button>
 			<?php while( have_rows('activity') ) : the_row(); 
 
-				$time = get_sub_field('time');
+				$time = get_sub_field('time_gen');
 				$str = strtolower($time);
 				$str = sanitize_title_with_dashes($str);
 
@@ -128,6 +134,7 @@ if( have_rows('activity') ) : ?>
 		<?php while( have_rows('activity') ) : the_row(); 
 
 			$name = get_sub_field('activity_name');
+			$timegen = get_sub_field('time_gen');
 			$time = get_sub_field('time');
 			$duration = get_sub_field('duration');
 			$location = get_sub_field('location');
@@ -136,7 +143,7 @@ if( have_rows('activity') ) : ?>
 			$type = get_sub_field('activity_type');
 			$description = get_sub_field('description');
 			
-			$santitime = sanitize_title_with_dashes($time);
+			$santitime = sanitize_title_with_dashes($timegen);
 
 			// echo '<pre>';
 			// print_r($type );
@@ -156,9 +163,10 @@ if( have_rows('activity') ) : ?>
 				<?php if($santiL) {echo $santiL.' ';} ?>
 			" data-category="<?php //echo $str; ?>">
 				<h3><?php echo $name; ?></h3>
-				<h4>Time: <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?></h4>
-				<h4>Location: <a href=""><?php echo $location; ?></a></h4>
-				<h4>Type: 
+				<div class="desc"><span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?></div>
+				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> <a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+				</div>
+				<div class="desc"><span class="upper">Type:</span>
 				<?php 
 				$prefix = $fruitList = '';
 				foreach($type as $act) {
@@ -167,10 +175,10 @@ if( have_rows('activity') ) : ?>
 					
 					} 
 					echo $fruitList;?>
-				</h4>
+				</div>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
-					<h4>Description: </h4>
+					<span class="upper">Description:</span>
 					<?php echo $description; ?>
 				</div>
 				<?php } ?>
@@ -184,7 +192,7 @@ if( have_rows('activity') ) : ?>
 <?php endif; ?>
 
 
-
+</section>
 <!-- 
 
 <div class="container">				
