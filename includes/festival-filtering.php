@@ -95,7 +95,7 @@ if( have_rows('activity') ) : ?>
 		</div>
 	
 <?php endif; ?>
-
+</section>
 
 <div class="clear"></div>
 <?php //if( have_rows('activity') ) : ?>
@@ -164,7 +164,8 @@ if( have_rows('activity') ) : ?>
 			" data-category="<?php //echo $str; ?>">
 				<h3><?php echo $name; ?></h3>
 				<div class="desc"><span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?></div>
-				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> <a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> 
+				<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
 				</div>
 				<div class="desc"><span class="upper">Type:</span>
 				<?php 
@@ -192,7 +193,7 @@ if( have_rows('activity') ) : ?>
 <?php endif; ?>
 
 
-</section>
+
 <!-- 
 
 <div class="container">				
