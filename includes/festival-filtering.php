@@ -170,19 +170,25 @@ if( have_rows('activity') ) : ?>
 				<?php if($santiL) {echo $santiL.' ';} ?>
 			" data-category="<?php //echo $str; ?>">
 				<h3><?php echo $name; ?></h3>
-				<div class="desc"><span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?></div>
-				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> 
-				<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+				
+				<div class="desc">
+					<span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?>
 				</div>
-				<div class="desc"><span class="upper">Type:</span>
-				<?php 
-				$prefix = $fruitList = '';
-				foreach($type as $act) {
-					$fruitList .= $prefix . $act;
-    				$prefix = ', ';
-					
-					} 
-					echo $fruitList;?>
+
+				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> 
+					<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+				</div>
+
+				<div class="desc">
+					<span class="upper">Type:</span>
+					<?php 
+					$prefix = $fruitList = '';
+					foreach($type as $act) {
+						$fruitList .= $prefix . $act;
+	    				$prefix = ', ';
+						
+						} 
+						echo $fruitList;?>
 				</div>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
@@ -191,7 +197,7 @@ if( have_rows('activity') ) : ?>
 				</div>
 				<?php } ?>
 				<?php if( $instrName != '' ) { ?>
-					<div class="desc"><span class="upper">Intructor:</span> <?php echo $instrName; ?>
+					<div class="desc"><span class="upper">Intructor:</span> <?php echo $instrName; ?></div>
 				<?php } ?>
 			</div>
 				
