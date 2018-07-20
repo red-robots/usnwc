@@ -22,8 +22,10 @@ get_header('page'); ?>
 
 
 
-<article class="filtering">
+<article class=" post filtering">
+<header><h1><?php the_title(); ?> Schedule</h1></header>
   <div class="filter-wraper">
+
     <?php get_template_part('includes/festival-filtering'); ?>
   </div>
 </article>
