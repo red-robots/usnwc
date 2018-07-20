@@ -18,6 +18,7 @@ if( have_rows('activity') ) : ?>
 			// Set the Array for the whole thing.
 			$save = array();
 			$first = array();
+			$second = array();
 
 			// loop through Activty type first.
 			while( have_rows('activity') ) : the_row(); 
@@ -33,30 +34,13 @@ if( have_rows('activity') ) : ?>
 					}
 				}
 				
-				$final = implode(', ', $first);
-				// echo $final;
-
-				// echo '<pre>';
-				// print_r($final);
-				// echo '</pre>';
-
-				//if( !in_array($str, $save) ) {
-
 			?>
 				
 				
 			
 			<?php 
-				//}
+				endwhile; 
 
-			// Save term in array so we don't use it again.
-			//$save[] = $str;
-
-			endwhile; 
-			// echo '<pre>';
-			// 	print_r($first);
-			// 	echo '</pre>';
-			//$save[] = $final;
 			foreach( $first as $theAct ) { 
 
 				$str = strtolower($theAct);
@@ -80,19 +64,32 @@ if( have_rows('activity') ) : ?>
 				$str = strtolower($time);
 				$str = sanitize_title_with_dashes($str);
 
+				foreach($time as $t) {
+					$timeName = $t;
+					// echo $str;
+					if( !in_array($timeName, $second) ) {
+						$second[] = $timeName;
+					}
+				}
+
 				// echo '<pre>';
 				// print_r($time);
 				// echo '</pre>';
-				if( !in_array($str, $save) ) {
+				//if( !in_array($str, $save) ) {
+				endwhile;
+
+				foreach( $second as $theTime ) { 
+
+				$str = strtolower($theTime);
 			?>
-					<button class="filbutton " data-filter=".<?php echo $str;?>"><?php echo $time; ?></button>
+					<button class="filbutton " data-filter=".<?php echo $str;?>"><?php echo $theTime; ?></button>
 			
 			<?php 
 				}
 			// Save term in array so we don't use it again.
-			$save[] = $str;
+			//$save[] = $str;
 
-			endwhile;?>
+			?>
 		</div>
 	
 <?php endif; ?>
@@ -160,6 +157,11 @@ if( have_rows('activity') ) : ?>
 				<?php //if($str) {
 					foreach( $type as $t ) {
 						$str = strtolower($t);
+						echo $str.' ';
+					}
+
+					foreach( $timegen as $tg ) {
+						$str = strtolower($tg);
 						echo $str.' ';
 					}
 					
