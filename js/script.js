@@ -35,16 +35,48 @@ var filterFns = {
   }
 };
 
+// function noResultsCheck() {
+//     var noResults = jQuery('.no-results');
+//     var numItems = jQuery('.element-item:not(.isotope-hidden)').length;
+//     if (numItems === 0) {
+//         noResults.show();
+//     } else {
+//         noResults.hide();
+//     }
+// }
+
+// $('.filterzz').isotope({
+//     function() {
+//         if ( $('.filterzz').height() == 0 ) { 
+//             $('.no-results').show() 
+//         } else {
+//             $('.no-results').hide()
+//         }
+//     }
+// });
+
 // store filter for each group
 var filters = {};
+
+
 
 // init Isotope
 var $grid = $('.tile.container.filterzz').isotope({
   itemSelector: '.element-item',
+  transitionDuration: '0.4s',
+    // only scale for reveal/hide transition
+    hiddenStyle: {
+      transform: 'scale(0.001)'
+    },
+    visibleStyle: {
+      transform: 'scale(1)'
+    },
   filter: function() {
 
     var isMatched = true;
     var $this = $(this);
+
+    
 
     for ( var prop in filters ) {
       var filter = filters[ prop ];
@@ -61,7 +93,34 @@ var $grid = $('.tile.container.filterzz').isotope({
     }
     return isMatched;
   }
+
+  
+  // $grid.on( 'arrangeComplete',
+  //     function( event, filteredItems ) {
+  //       // console.log( 'Isotope arrange completed on ' +
+  //       //   filteredItems.length + ' items' );
+  //       if ( !$grid.data('isotope').filteredItems.length ) {
+  //         $('.no-results').show();
+  //       }
+  //     }
+  //   );
+
 });
+// $grid.on( 'arrangeComplete', function( event, filteredItems ) {
+//   // if ( !$grid.data('isotope').filteredItems.length ) {
+//   //     $('.no-results').show();
+//   //   } else {
+//   //       $('.no-results').hide();
+//   //   }
+// });
+    
+
+
+
+// // display message box if no filtered items
+// if($(".isotope-hidden").length == $(".element-item").length) {
+// $("#mynoresults").show();
+// }
 
 
 

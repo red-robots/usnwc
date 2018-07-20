@@ -88,6 +88,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 
 /* ---- isotope ---- */
 
+
 .grid {
   border: 1px solid #333;
 }
@@ -103,14 +104,14 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	margin: 1% auto 2% auto;
 }
 /* ---- .element-item ---- */
-
+.no-results {display: none;}
 .element-item {
   position: relative;
   float: left;
   /*width: 94%;*/
   width: 45%;
   /*height: 100px;*/
-  margin: 0 0 30px 0;
+  margin:5px;
   padding: 10px;
   /*background: #888;*/
   color: #fff;
@@ -118,6 +119,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
   background-color: #9F0028;
   /*border-bottom: 5px solid #e0dede;*/
   font-size: 18px;
+  padding: 10px;
 
 }
 .tile.container .tile > .act-desc,
