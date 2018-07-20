@@ -8,10 +8,11 @@ $map = get_field('link_to_activity_map');
 // Run the filter
 
 if( have_rows('activity') ) : ?>
-	
-	<h2>Filter By Activity Type:</h2>
-		<div class="button-group group1 filters-button-group">
-			<button class="button showall is-checked" data-filter="*">show all</button>
+	<div id="filters">
+		<h2>Filter By Activity Type:</h2>
+
+		<div class="button-group group1 filters-button-group" data-filter-group="type">
+			<button class="filbutton showall is-checked" data-filter="*">show all</button>
 
 			<?php 
 			// Set the Array for the whole thing.
@@ -60,7 +61,7 @@ if( have_rows('activity') ) : ?>
 
 				$str = strtolower($theAct);
 				?>
-			<button class="button " data-filter=".<?php echo $str;?>"><?php echo $theAct; ?></button>
+			<button class="filbutton " data-filter=".<?php echo $str;?>"><?php echo $theAct; ?></button>
 			<?php } //echo $final;?>
 		</div>
 	
@@ -71,8 +72,8 @@ if( have_rows('activity') ) : ?>
 <div class="clear"></div>
 <?php if( have_rows('activity') ) : ?>
 	<h2>Filter By Time:</h2>
-		<div class="button-group group2 filters-button-group">
-		<button class="button showall is-checked" data-filter="*">show all</button>
+		<div class="button-group group2 filters-button-group" data-filter-group="time">
+		<button class="filbutton showall is-checked" data-filter="*">show all</button>
 			<?php while( have_rows('activity') ) : the_row(); 
 
 				$time = get_sub_field('time_gen');
@@ -84,7 +85,7 @@ if( have_rows('activity') ) : ?>
 				// echo '</pre>';
 				if( !in_array($str, $save) ) {
 			?>
-					<button class="button " data-filter=".<?php echo $str;?>"><?php echo $time; ?></button>
+					<button class="filbutton " data-filter=".<?php echo $str;?>"><?php echo $time; ?></button>
 			
 			<?php 
 				}
@@ -95,6 +96,8 @@ if( have_rows('activity') ) : ?>
 		</div>
 	
 <?php endif; ?>
+	</div>
+	<!-- / #filter -->
 </section>
 
 <div class="clear"></div>
@@ -142,6 +145,8 @@ if( have_rows('activity') ) : ?>
 			$santiL = sanitize_title_with_dashes($location);
 			$type = get_sub_field('activity_type');
 			$description = get_sub_field('description');
+			$instrName = get_sub_field('instructor_name');
+			$instrLink = get_sub_field('instructor_link');
 			
 			$santitime = sanitize_title_with_dashes($timegen);
 
@@ -182,6 +187,9 @@ if( have_rows('activity') ) : ?>
 					<span class="upper">Description:</span>
 					<?php echo $description; ?>
 				</div>
+				<?php } ?>
+				<?php if( $instrName != '' ) { ?>
+					<div class="desc"><span class="upper">Intructor:</span> <?php echo $instrName; ?>
 				<?php } ?>
 			</div>
 				

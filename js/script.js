@@ -21,59 +21,123 @@ $('.grid').isotope({
 });
 
 
+//////////////////// new /////////
 
+// filter functions
+var filterFns = {
+  greaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  even: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) % 2 === 0;
+  }
+};
 
+// store filter for each group
+var filters = {};
 
-
-
+// init Isotope
 var $grid = $('.tile.container').isotope({
-          itemSelector: '.element-item',
-          layoutMode: 'masonry',
-          gutter: 10
-        });
-        // filter functions
-        var filterFns = {
-          // show if number is greater than 50
-          numberGreaterThan50: function() {
-            var number = $(this).find('.number').text();
-            return parseInt( number, 10 ) > 50;
-          },
-          // show if name ends with -ium
-          ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match( /ium$/ );
-          }
-        };
-        // bind filter button click
+  itemSelector: '.element-item',
+  filter: function() {
 
-        $('.filters-button-group').on( 'click', 'button', function() {
-          var filterValue = $( this ).attr('data-filter');
-          // use filterFn if matches value
-          filterValue = filterFns[ filterValue ] || filterValue;
-          $grid.isotope({ filter: filterValue });
-        });
-        // change is-checked class on buttons
-        $('.button-group').each( function( i, buttonGroup ) {
-          var $buttonGroup = $( buttonGroup );
-          $buttonGroup.on( 'click', 'button', function() {
-            $buttonGroup.find('.is-checked').removeClass('is-checked');
-            $( this ).addClass('is-checked');
-          });
+    var isMatched = true;
+    var $this = $(this);
+
+    for ( var prop in filters ) {
+      var filter = filters[ prop ];
+      // use function if it matches
+      filter = filterFns[ filter ] || filter;
+      // test each filter
+      if ( filter ) {
+        isMatched = isMatched && $(this).is( filter );
+      }
+      // break if not matched
+      if ( !isMatched ) {
+        break;
+      }
+    }
+    return isMatched;
+  }
+});
 
 
-          $('.showall').click(function(e){
-                $('.group1').find('.is-checked').removeClass('is-checked');
-                $('.group2').find('.is-checked').removeClass('is-checked');
 
-                $('.group1').find('.showall').addClass('is-checked');
-                $('.group2').find('.showall').addClass('is-checked');
+$('#filters').on( 'click', '.filbutton', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  filters[ filterGroup ] = $this.attr('data-filter');
+  // arrange, and use filter fn
+  $grid.isotope();
+});
 
-            });
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+///////////////////////////////////
+
+
+
+
+// var $grid = $('.tile.container').isotope({
+//           itemSelector: '.element-item',
+//           layoutMode: 'masonry',
+//           gutter: 10
+//         });
+//         // filter functions
+//         var filterFns = {
+//           // show if number is greater than 50
+//           numberGreaterThan50: function() {
+//             var number = $(this).find('.number').text();
+//             return parseInt( number, 10 ) > 50;
+//           },
+//           // show if name ends with -ium
+//           ium: function() {
+//             var name = $(this).find('.name').text();
+//             return name.match( /ium$/ );
+//           }
+//         };
+//         // bind filter button click
+
+//         $('.filters-button-group').on( 'click', 'button', function() {
+//           var filterValue = $( this ).attr('data-filter');
+//           // use filterFn if matches value
+//           filterValue = filterFns[ filterValue ] || filterValue;
+//           $grid.isotope({ filter: filterValue });
+//         });
+//         // change is-checked class on buttons
+//         $('.button-group').each( function( i, buttonGroup ) {
+//           var $buttonGroup = $( buttonGroup );
+//           $buttonGroup.on( 'click', 'button', function() {
+//             $buttonGroup.find('.is-checked').removeClass('is-checked');
+//             $( this ).addClass('is-checked');
+//           });
+
+
+//           $('.showall').click(function(e){
+//                 $('.group1').find('.is-checked').removeClass('is-checked');
+//                 $('.group2').find('.is-checked').removeClass('is-checked');
+
+//                 $('.group1').find('.showall').addClass('is-checked');
+//                 $('.group2').find('.showall').addClass('is-checked');
+
+//             });
 
           
 
 
-        });
+//         });
 
 
 

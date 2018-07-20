@@ -35,7 +35,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	margin: 6px;
 	font-family: 'Canter Bold';
 }
-.button {
+.filbutton {
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 10px;
@@ -51,14 +51,14 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
   letter-spacing: 4px;
 }
 
-.button:hover {
+.filbutton:hover {
   background-color: #FEA626;
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
  
 }
 
-.button:active,
-.button.is-checked {
+.filbutton:active,
+.filbutton.is-checked {
   background-color: #FEA626;
 }
 
@@ -72,7 +72,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
   clear: both;
 }
 
-.button-group .button {
+.button-group .filbutton {
   float: left;
   border-radius: 0;
   margin-left: 0;
