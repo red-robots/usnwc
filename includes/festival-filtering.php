@@ -130,7 +130,7 @@ if( have_rows('activity') ) : ?>
 
 if( have_rows('activity') ) : ?>
 	
-		<div class="tile container">
+		<div class="tile container filterzz">
 		<?php while( have_rows('activity') ) : the_row(); 
 
 			$name = get_sub_field('activity_name');

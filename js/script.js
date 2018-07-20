@@ -39,7 +39,7 @@ var filterFns = {
 var filters = {};
 
 // init Isotope
-var $grid = $('.tile.container').isotope({
+var $grid = $('.tile.container.filterzz').isotope({
   itemSelector: '.element-item',
   filter: function() {
 

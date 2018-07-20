@@ -24,15 +24,19 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 
 
 /* ---- button ---- */
+.tile.container.filterzz {
+	margin: 0;
+}
 .the-filter {
-	width: 910px;
-	margin: auto;
+	/*width: 910px;*/
+	/*margin: auto;*/
+	margin: 6px;
 }
 .the-filter h2 {
 	color: #767777;
 }
 .button-group {
-	margin: 6px;
+	/*margin: 6px;*/
 	font-family: 'Canter Bold';
 }
 .filbutton {
@@ -94,7 +98,10 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
   display: block;
   clear: both;
 }
-
+.filter-wraper {
+	width: 85%;
+	margin: 1% auto 2% auto;
+}
 /* ---- .element-item ---- */
 
 .element-item {

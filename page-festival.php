@@ -18,16 +18,22 @@ get_header('page'); ?>
     	   	<h1><?php the_title(); ?></h1>
   		</header>
     	<?php the_content(); ?>
-      <?php get_template_part('includes/festival-filtering'); ?>
+	</article> 
+
+
+
+<article class="filtering">
+  <div class="filter-wraper">
+    <?php get_template_part('includes/festival-filtering'); ?>
+  </div>
+</article>
+
+  <article class="post <?php echo $post->post_name; ?>">
       <?php the_field('bottom_content') ?>
-    	<?php comments_template(); ?>
-	</article>  
+      <?php comments_template(); ?>
+  </article> 
 
-<!-- <article class="filtering">
-  <?php 
-      ?>
 
-</article> -->
 	<?php if(in_array(get_field('sidebar'),array("bottom","both"),true)){
 		$sidebar="bottom";
 		get_template_part('sidebar');
