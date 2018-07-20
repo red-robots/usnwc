@@ -47,12 +47,12 @@ get_header('page'); ?>
     	<?php comments_template(); ?>
 	</article>  
 
-<article class="filtering">
+<!-- <article class="filtering">
   <?php 
       // for filtering big festival days
-      get_template_part('includes/festival-filtering'); ?>
+      //get_template_part('includes/festival-filtering'); ?>
 
-</article>
+</article> -->
 	<?php if(in_array(get_field('sidebar'),array("bottom","both"),true)){
 		$sidebar="bottom";
 		get_template_part('sidebar');
