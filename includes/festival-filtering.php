@@ -199,7 +199,7 @@ if( have_rows('activity') ) : ?>
 				</div>
 				<?php } ?>
 				<?php if( $instrName != '' ) { ?>
-					<div class="desc"><span class="upper">Intructor:</span> <?php echo $instrName; ?></div>
+					<div class="desc"><span class="upper">Instructor:</span> <?php echo $instrName; ?></div>
 				<?php } ?>
 			</div>
 				

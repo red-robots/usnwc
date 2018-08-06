@@ -94,37 +94,7 @@ var $grid = $('.tile.container.filterzz').isotope({
     return isMatched;
   }
 
-  
-  // $grid.on( 'arrangeComplete',
-  //     function( event, filteredItems ) {
-  //       // console.log( 'Isotope arrange completed on ' +
-  //       //   filteredItems.length + ' items' );
-  //       if ( !$grid.data('isotope').filteredItems.length ) {
-  //         $('.no-results').show();
-  //       }
-  //     }
-  //   );
-
-});
-// $grid.on( 'arrangeComplete', function( event, filteredItems ) {
-//   // if ( !$grid.data('isotope').filteredItems.length ) {
-//   //     $('.no-results').show();
-//   //   } else {
-//   //       $('.no-results').hide();
-//   //   }
-// });
-    
-
-
-
-// // display message box if no filtered items
-// if($(".isotope-hidden").length == $(".element-item").length) {
-// $("#mynoresults").show();
-// }
-
-
-
-$('#filters').on( 'click', '.filbutton', function() {
+  $('#filters').on( 'click', '.filbutton', function() {
   var $this = $(this);
   // get group key
   var $buttonGroup = $this.parents('.button-group');
@@ -191,7 +161,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 //                 $('.group1').find('.showall').addClass('is-checked');
 //                 $('.group2').find('.showall').addClass('is-checked');
 
-//             });
+//            });
 
           
 
