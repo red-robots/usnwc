@@ -528,7 +528,37 @@ function get_excerpt($count){
 ?>
 <?php
 function custom_login_logo() {
-        echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/images/USNWC-logo.jpg) 50% 50% no-repeat !important; }</style>';
+        echo '<style type="text/css">
+        h1 a { 
+        	background: url('.get_bloginfo('template_directory').'/images/login-logo.png) 50% 50% no-repeat !important; 
+        	background-size: cover !important;
+        }
+        body.login {
+        	background-color: #d41f48;
+        }
+        .login form {
+        	background-color: rgba(255,255,255,0) !important;
+        	color: rgba(255,255,255,1) !important;
+        	box-shadow: none;
+        	border-bottom: 4px solid #fff;
+        }
+        .login label {
+        	color: #fff;
+        }
+        .login .button-primary {
+        	background-color: #fff !important;
+        	border-radius: 0  !important;
+        	border: 1px solid #fff  !important;
+        	text-shadow: none;
+        	color: #d41f48;
+        }
+        .login #backtoblog a, .login #nav a {
+        	color: #fff;
+        }
+        .login form .input, .login form input[type=checkbox], .login input[type=text] {
+        	background-color: #fff !important;
+        }
+        </style>';
 }
 add_action('login_head', 'custom_login_logo'); 
 ?>
