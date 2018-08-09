@@ -93,7 +93,7 @@ var $grid = $('.tile.container.filterzz').isotope({
     }
     return isMatched;
   }
-
+});
   $('#filters').on( 'click', '.filbutton', function() {
   var $this = $(this);
   // get group key
