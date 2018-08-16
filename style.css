@@ -13,6 +13,18 @@ Author: Fritz Healy
 	font-weight: normal;
 	src: url('fonts/Canter-Bold.otf');
 }
+@font-face {
+	font-family: 'Ciderhouse';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/Ciderhouse-Regular.otf');
+}
+@font-face {
+	font-family: 'Bourbon';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/BourbonGrotesque-Regular+(1).otf');
+}
 
 /*//////////////////ELEMENT SYTLING/////////////*/
 /* //////////////// HTML5 Compatability///////////////*/
@@ -22,7 +34,12 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 
 
 
+.flowfest {
 
+}
+.outdoor-market {
+	
+}
 /* ---- button ---- */
 .tile.container.filterzz {
 	margin: 0;
@@ -32,42 +49,56 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	/*margin: auto;*/
 	margin: 6px;
 }
-.the-filter h2 {
-	color: #767777;
+.flowfest .the-filter h2 {color: #767777;}
+.outdoor-market .the-filter h2 {color: #767777;}
+.flowfest .filbutton {
+	background-color:  #9F0028;
+	color: #fff;
 }
-.button-group {
-	/*margin: 6px;*/
+.outdoor-market .filbutton {
+	background-color:  #1B3E3C;
+	color: #fff;
+}
+.flowfest .filbutton:hover {
+	background-color: #FEA626;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+}
+.flowfest .filbutton:active,
+.flowfest .filbutton.is-checked {
+	background-color: #FEA626;
+}
+.outdoor-market .filbutton:hover {
+	background-color: #FAA319;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+}
+.outdoor-market .filbutton:active,
+.outdoor-market .filbutton.is-checked {
+	background-color: #FAA319;
+}
+
+.flowfest .button-group {
 	font-family: 'Canter Bold';
 }
+.outdoor-market .button-group {
+	font-family: "Ciderhouse";
+}
+.flowfest .filbutton {
+	letter-spacing: 4px;
+	font-size: 14px;
+}
+.outdoor-market .filbutton {
+	/*letter-spacing: 4px;*/
+	font-size: 18px;
+}
 .filbutton {
-  display: inline-block;
-  padding: 10px 18px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 7px;
-  /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
-	background-color:  #9F0028;
-  color: #fff;
-  font-size: 14px;
-  /*text-shadow: 0 1px white;*/
-  cursor: pointer;
-  letter-spacing: 4px;
+	display: inline-block;
+	padding: 10px 18px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	border: none;
+	
+	cursor: pointer;
 }
-
-.filbutton:hover {
-  background-color: #FEA626;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
- 
-}
-
-.filbutton:active,
-.filbutton.is-checked {
-  background-color: #FEA626;
-}
-
-
-
 /* ---- button-group ---- */
 
 .button-group:after {
@@ -87,8 +118,6 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }*/
 
 /* ---- isotope ---- */
-
-
 .grid {
   border: 1px solid #333;
 }
@@ -105,22 +134,23 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 }
 /* ---- .element-item ---- */
 .no-results {display: none;}
+.flowfest .element-item {
+	color: #fff;
+	background-color: #9F0028;
+}
+.outdoor-market .element-item {
+	color: #fff;
+	background-color: #1B3E3C;
+	font-family: "Ciderhouse";
+}
 .element-item {
   position: relative;
   float: left;
-  /*width: 94%;*/
   width: 45%;
-  /*height: 100px;*/
   margin:5px;
   padding: 10px;
-  /*background: #888;*/
-  color: #fff;
-  /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
-  background-color: #9F0028;
-  /*border-bottom: 5px solid #e0dede;*/
   font-size: 18px;
   padding: 10px;
-
 }
 .tile.container .tile > .act-desc,
 .tile.container .tile > .desc {
@@ -128,10 +158,16 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	padding: 0;
 	line-height: 1.2;
 }
-.element-item h3 {
+.flowfest .element-item h3 {
 	font-family: 'Canter Bold';
 	color: #FEA626;
 	letter-spacing: 8px;
+	border-bottom: 1px solid #FEA626;
+}
+.outdoor-market .element-item h3 {
+	font-family: 'Bourbon';
+	color: #FAA319;
+	border-bottom: 1px solid #FAA319;
 }
 .tile.container .tile > .act-desc {
 	margin: 0 0 30px 0;
@@ -142,7 +178,6 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	letter-spacing: 1px;
 }
 .element-item h3 {
-	border-bottom: 1px solid #FEA626;
 	padding:0 0 0px 0;
 }
 
