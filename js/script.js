@@ -19,6 +19,14 @@ $('.grid').isotope({
     columnWidth: '.grid-sizer'
   }
 });
+/*
+
+
+########## controls the popup on festival filtering
+
+
+*/
+$(".pop-desc").colorbox({inline:true, width:"50%"});
 
 
 //////////////////// new /////////

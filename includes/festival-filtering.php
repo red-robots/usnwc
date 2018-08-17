@@ -194,14 +194,20 @@ if( have_rows('activity') ) : ?>
 				</div>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
-					<span class="upper">Description:</span>
-					<?php echo $description; ?>
+					<span class="upper">Description: <a class="pop-desc" href="#read-desc">Read Description</a></span>
+					<div style="display: none">
+						<div id="read-desc">
+							<?php echo $description; ?>
+						</div>
+					</div>
 				</div>
 				<?php } ?>
 				<?php if( $instrName != '' ) { ?>
 					<div class="desc"><span class="upper">Instructor:</span> <?php echo $instrName; ?></div>
 				<?php } ?>
 			</div>
+
+			
 				
 			
 

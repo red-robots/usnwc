@@ -233,6 +233,13 @@ function baker_register_sidebars(){
 function shaken_jquery(){
     if (!is_admin()) {
     	wp_enqueue_script('jquery');
+    	
+    	wp_enqueue_script( 
+			'colorbox', 
+			get_template_directory_uri() . '/js/colorbox.js', 
+			array(), '20120206', 
+			false 
+		);
     }
 }
 add_action( 'wp_enqueue_scripts', 'shaken_jquery' );

@@ -80,7 +80,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	font-family: 'Canter Bold';
 }
 .outdoor-market .button-group {
-	font-family: "Ciderhouse";
+	font-family: "Canter Bold";
 }
 .flowfest .filbutton {
 	letter-spacing: 4px;
@@ -141,7 +141,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .outdoor-market .element-item {
 	color: #fff;
 	background-color: #1B3E3C;
-	font-family: "Ciderhouse";
+	/*font-family: "Arial, Helvetica, sans-serif";*/
 }
 .element-item {
   position: relative;
@@ -165,9 +165,11 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	border-bottom: 1px solid #FEA626;
 }
 .outdoor-market .element-item h3 {
-	font-family: 'Bourbon';
+	font-family: 'Canter Bold';
 	color: #FAA319;
 	border-bottom: 1px solid #FAA319;
+	letter-spacing: 8px;
+	font-size: 16pt;
 }
 .tile.container .tile > .act-desc {
 	margin: 0 0 30px 0;
@@ -180,7 +182,11 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .element-item h3 {
 	padding:0 0 0px 0;
 }
-
+#read-desc {
+	/*width: 100%;*/
+	background-color: #fff;
+	padding: 20px;
+}
 
 
 .base .page a[name] {
@@ -2784,3 +2790,53 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		position: static;
 	}
 }
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:32px; overflow:visible; background:#000;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#d41f48; padding:1px;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(images/controls.png) no-repeat 0 0;}
+        #cboxClose {background:url(images/close.png) no-repeat 0 0;top:-25px;width:25px; height:25px;}
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxPrevious{background-position:0px 0px; right:44px;}
+        #cboxPrevious:hover{background-position:0px -25px;}
+        #cboxNext{background-position:-25px 0px; right:22px;}
+        #cboxNext:hover{background-position:-25px -25px;}
+        #cboxClose{background-position:0px 0px; right:0;transform: scale(1);}
+        #cboxClose:hover{transform: scale(1.3);}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
