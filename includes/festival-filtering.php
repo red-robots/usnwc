@@ -127,7 +127,7 @@ if( have_rows('activity') ) : ?>
 
 
 // run the fields
-
+$descCount = 0;
 if( have_rows('activity') ) : ?>
 		<div class="no-results">
 		   <div>No results</div>
@@ -147,8 +147,12 @@ if( have_rows('activity') ) : ?>
 			$instrName = get_sub_field('instructor_name');
 			$instrLink = get_sub_field('instructor_link');
 			$instrDescription = get_sub_field('instructor_description');
-			
 			$santitime = sanitize_title_with_dashes($timegen);
+			$santiName = sanitize_title_with_dashes($instrName);
+			if( $description != '' ) {
+				$descCount++;
+			}
+			// $santiDesc = sanitize_title_with_dashes($description);
 
 			// echo '<pre>';
 			// print_r($type );
@@ -195,30 +199,39 @@ if( have_rows('activity') ) : ?>
 				</div>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
-					<span class="upper"><a class="pop-desc" href="#read-desc">Information & Description</a></span>
-					<div style="display: none">
-						<div id="read-desc">
-							<?php echo $description; ?>
-						</div>
-					</div>
+					<span class="upper"><a class="pop-desc" href="#desc-<?php echo $descCount; ?>">Information & Description</a></span>
+					
 					
 				</div>
 				<?php } ?>
 				<?php if( $instrName != '' ) { ?>
 					<div class="desc"><span class="upper">Instructor:</span>
 					<?php if( $instrDescription != '' ) { ?>
-					<a class="instr-desc" href="#instr-desc"><?php echo $instrName; ?></a>
+						<a class="instr-desc" href="#<?php echo $santiName; ?>"><?php echo $instrName; ?></a>
 					<?php } else {
 						echo $instrName;
 						} ?>
 					</div>
 				<?php } ?>
-					<div style="display: none">
-						<div id="instr-desc">
-							<?php echo $instrDescription; ?>
-						</div>
-					</div>
+
 			</div>
+
+			<?php if( $description != '' ) { ?>
+			<div style="display: none">
+				<div id="desc-<?php echo $descCount; ?>" class="the-pop">
+					<?php echo $description; ?>
+				</div>
+			</div>
+			<?php } ?>
+			<?php if( $instrDescription != '' ) { ?>
+			<div style="display: none">
+				<div id="<?php echo $santiName; ?>" class="the-pop">
+					<?php echo $instrDescription; ?>
+				</div>
+			</div>
+			<?php } ?>
+
+
 
 			
 				

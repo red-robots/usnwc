@@ -182,13 +182,13 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .element-item h3 {
 	padding:0 0 0px 0;
 }
-#read-desc, #instr-desc {
+.the-pop {
 	width: 90%;
 	background-color: #fff;
 	padding: 5%;
 }
 @media screen and (min-width: 600px) {
-	#read-desc, #instr-desc {
+	.the-pop {
 		width: 50%;
 		margin: 0 auto;
 	}
