@@ -146,6 +146,7 @@ if( have_rows('activity') ) : ?>
 			$description = get_sub_field('description');
 			$instrName = get_sub_field('instructor_name');
 			$instrLink = get_sub_field('instructor_link');
+			$instrDescription = get_sub_field('instructor_description');
 			
 			$santitime = sanitize_title_with_dashes($timegen);
 
@@ -194,16 +195,21 @@ if( have_rows('activity') ) : ?>
 				</div>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
-					<span class="upper">Description: <a class="pop-desc" href="#read-desc">Read Description</a></span>
+					<span class="upper"><a class="pop-desc" href="#read-desc">Information & Description</a></span>
 					<div style="display: none">
 						<div id="read-desc">
 							<?php echo $description; ?>
 						</div>
 					</div>
+					<div style="display: none">
+						<div id="instr-desc">
+							<?php echo $instrDescription; ?>
+						</div>
+					</div>
 				</div>
 				<?php } ?>
 				<?php if( $instrName != '' ) { ?>
-					<div class="desc"><span class="upper">Instructor:</span> <?php echo $instrName; ?></div>
+					<div class="desc"><span class="upper">Instructor:</span> <a class="instr-desc" href="#instr-desc"><?php echo $instrName; ?></a></div>
 				<?php } ?>
 			</div>
 

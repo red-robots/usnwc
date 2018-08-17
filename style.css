@@ -183,9 +183,15 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	padding:0 0 0px 0;
 }
 #read-desc {
-	/*width: 100%;*/
+	width: 100%;
 	background-color: #fff;
 	padding: 20px;
+}
+@media screen and (min-width: 600px) {
+	#read-desc {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
 
 
@@ -2813,11 +2819,14 @@ div.trailer .fb-post, div.trailer .fb-post * {
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#fff;}
+body.page-id-1337 #cboxOverlay{background:#9F0028;}
+body.page-id-24780 #cboxOverlay{background:#1B3E3C;}
 #colorbox{outline:0;}
-    #cboxContent{margin-top:32px; overflow:visible; background:#000;}
+    #cboxContent{margin-top:32px; overflow:visible; /*background:#000;*/}
         .cboxIframe{background:#fff;}
+        
         #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{background:#d41f48; padding:1px;}
+        #cboxLoadedContent{/*background:#d41f48;*/ padding:0px;}
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxLoadingOverlay{background:#000;}
         #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
@@ -2825,7 +2834,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(images/controls.png) no-repeat 0 0;}
-        #cboxClose {background:url(images/close.png) no-repeat 0 0;top:-25px;width:25px; height:25px;}
+        #cboxClose {
+        	background:url(images/close.png) no-repeat 0 0;
+        	top:-25px;width:25px; height:25px;}
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
@@ -2840,3 +2851,8 @@ div.trailer .fb-post, div.trailer .fb-post * {
         .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
         .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
         .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
+        @media screen and (min-width: 600px) {
+        	#cboxClose {
+        		right:23%;
+        	}
+        }

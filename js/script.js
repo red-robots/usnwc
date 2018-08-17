@@ -26,7 +26,8 @@ $('.grid').isotope({
 
 
 */
-$(".pop-desc").colorbox({inline:true, width:"50%"});
+$(".pop-desc").colorbox({inline:true, width:"90%"});
+$(".instr-desc").colorbox({inline:true, width:"90%"});
 
 
 //////////////////// new /////////

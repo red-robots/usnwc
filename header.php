@@ -97,7 +97,7 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 </script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLX2GN6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
