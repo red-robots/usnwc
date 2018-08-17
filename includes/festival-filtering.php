@@ -201,16 +201,23 @@ if( have_rows('activity') ) : ?>
 							<?php echo $description; ?>
 						</div>
 					</div>
+					
+				</div>
+				<?php } ?>
+				<?php if( $instrName != '' ) { ?>
+					<div class="desc"><span class="upper">Instructor:</span>
+					<?php if( $instrDescription != '' ) { ?>
+					<a class="instr-desc" href="#instr-desc"><?php echo $instrName; ?></a>
+					<?php } else {
+						echo $instrName;
+						} ?>
+					</div>
+				<?php } ?>
 					<div style="display: none">
 						<div id="instr-desc">
 							<?php echo $instrDescription; ?>
 						</div>
 					</div>
-				</div>
-				<?php } ?>
-				<?php if( $instrName != '' ) { ?>
-					<div class="desc"><span class="upper">Instructor:</span> <a class="instr-desc" href="#instr-desc"><?php echo $instrName; ?></a></div>
-				<?php } ?>
 			</div>
 
 			
