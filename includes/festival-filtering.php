@@ -197,13 +197,7 @@ if( have_rows('activity') ) : ?>
 						} 
 						echo $fruitList;?>
 				</div>
-				<?php if( $description != '' ) { ?>
-				<div class="act-desc">
-					<span class="upper"><a class="pop-desc" href="#desc-<?php echo $descCount; ?>">Information & Description</a></span>
-					
-					
-				</div>
-				<?php } ?>
+				
 				<?php if( $instrName != '' ) { ?>
 					<div class="desc"><span class="upper">Instructor:</span>
 					<?php if( $instrDescription != '' ) { ?>
@@ -212,6 +206,13 @@ if( have_rows('activity') ) : ?>
 						echo $instrName;
 						} ?>
 					</div>
+				<?php } ?>
+				<?php if( $description != '' ) { ?>
+				<div class="act-desc">
+					<span class="upper"><a class="pop-desc" href="#desc-<?php echo $descCount; ?>">Information & Description</a></span>
+					
+					
+				</div>
 				<?php } ?>
 
 			</div>
