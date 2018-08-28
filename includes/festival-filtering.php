@@ -155,7 +155,7 @@ if( have_rows('activity') ) : ?>
 			// $santiDesc = sanitize_title_with_dashes($description);
 
 			// echo '<pre>';
-			// print_r($type );
+			// print_r($timegen );
 			// echo '</pre>';
 
 		?>
@@ -178,6 +178,12 @@ if( have_rows('activity') ) : ?>
 			" data-category="<?php //echo $str; ?>">
 				<h3><?php echo $name; ?></h3>
 				
+				<?php if( is_page('outdoor-market') ) { ?>
+					<div class="desc">
+						<span class="upper">Day:</span> <?php echo $timegen[0]; ?>
+					</div>
+				<?php } ?>
+
 				<div class="desc">
 					<span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?>
 				</div>
