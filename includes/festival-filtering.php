@@ -75,21 +75,18 @@ if( have_rows('activity') ) : ?>
 				// echo '<pre>';
 				// print_r($time);
 				// echo '</pre>';
-				//if( !in_array($str, $save) ) {
+				
 				endwhile;
 
 				foreach( $second as $theTime ) { 
-
-				$str = strtolower($theTime);
+					// for the link. grab it
+					$str = strtolower($theTime);
+					// grab the first 4 characters so multi names can still link
+					$str = substr($str, 0, 4);
 			?>
 					<button class="filbutton " data-filter=".<?php echo $str;?>"><?php echo $theTime; ?></button>
 			
-			<?php 
-				}
-			// Save term in array so we don't use it again.
-			//$save[] = $str;
-
-			?>
+			<?php } ?>
 		</div>
 	
 <?php endif; ?>
@@ -169,6 +166,8 @@ if( have_rows('activity') ) : ?>
 
 					foreach( $timegen as $tg ) {
 						$str = strtolower($tg);
+						// grab the first 4 characters so multi names can still link
+						$str = substr($str, 0, 4);
 						echo $str.' ';
 					}
 					
