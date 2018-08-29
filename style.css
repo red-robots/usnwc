@@ -96,11 +96,14 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .filbutton {
 	display: inline-block;
 	padding: 10px 18px;
-	margin-bottom: 10px;
+	margin-bottom: 2px;
 	text-transform: uppercase;
 	border: none;
 	
 	cursor: pointer;
+}
+h2.filter-title {
+	margin: 10px 0;
 }
 /* ---- button-group ---- */
 
@@ -116,7 +119,34 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
   margin-left: 0;
   margin-right: 1px;
 }
-
+/* ac */
+.the-filter.closed {
+	width: 100%;
+	max-height: 0;
+	overflow: hidden;
+}
+.the-filter.open {
+	max-height: 1000px;
+}
+.filter-options {
+	width: 100%;
+	display: block;
+	padding: 10px 0;
+	background-color: #9F0028;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+}
+@media screen and (min-width: 600px) {
+	.the-filter.closed, .the-filter.open {
+		width: 100%;
+		max-height: 1000px;
+	}
+	.filter-options {
+		display: none;
+	}
+}
 /*.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }*/
 
@@ -2399,10 +2429,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		margin: 2% auto 2% auto;
 		display: block;
 	}
-	/* ac */
-	.the-filter {
-		width: 100%;
-	}
+
 	.col-titles, .col-qual, .col-title, .pass-options-link, .activities-key-wrapper h2,
     .activities-key-wrapper .pair span {
 		font-size: 12pt;

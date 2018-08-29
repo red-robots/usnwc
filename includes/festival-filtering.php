@@ -3,13 +3,17 @@
 $map = get_field('link_to_activity_map'); 
 
 ?>
-<section class="the-filter">
+<div class="filter-options">
+	// Filter Options //
+</div>
+<div id="the-filter" class="the-filter closed">
 <?php 
 // Run the filter
 
 if( have_rows('activity') ) : ?>
-	<div id="filters">
-		<h2>Filter By Activity Type:</h2>
+	
+	<div id="filters" class=" ">
+		<h2 class="filter-title">Filter By Activity Type:</h2>
 
 		<div class="button-group group1 filters-button-group" data-filter-group="type">
 			<button class="filbutton showall is-checked" data-filter="*">show all</button>
@@ -55,7 +59,7 @@ if( have_rows('activity') ) : ?>
 
 <div class="clear"></div>
 <?php if( have_rows('activity') ) : ?>
-	<h2>Filter By Time:</h2>
+	<h2 class="filter-title">Filter By Time:</h2>
 		<div class="button-group group2 filters-button-group" data-filter-group="time">
 		<button class="filbutton showall is-checked" data-filter="*">show all</button>
 			<?php while( have_rows('activity') ) : the_row(); 
@@ -92,7 +96,7 @@ if( have_rows('activity') ) : ?>
 <?php endif; ?>
 	</div>
 	<!-- / #filter -->
-</section>
+</div>
 
 <div class="clear"></div>
 <?php //if( have_rows('activity') ) : ?>

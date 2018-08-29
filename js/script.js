@@ -19,6 +19,17 @@ $('.grid').isotope({
     columnWidth: '.grid-sizer'
   }
 });
+
+$(".filter-options").click( function() {
+    if( $('#the-filter').hasClass('closed') ) {
+        $('#the-filter').removeClass('closed');
+         $('#the-filter').addClass('open');
+    } else {
+        $('#the-filter').removeClass('open');
+         $('#the-filter').addClass('closed');
+    }
+   
+});
 /*
 
 
