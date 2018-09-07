@@ -205,7 +205,17 @@ $('a.filter').click(function() {
 
 
 
-
+/*
+    *
+    *   Smooth Scroll to Anchor
+    *
+    ------------------------------------*/
+     $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 500);
+        return false;
+    });
 
 
 
@@ -218,42 +228,45 @@ $('a.filter').click(function() {
             $this.addClass('active');
         }
     });
-    $('section.post.container.passes-tours .buttons .button.expand-button.type-passes').click(function(){
-        var $section = $('section.post.container.passes');
-        var $section_hide = $('section.post.container.tours');
-        if($section_hide.length>0){
-            $section_hide.removeClass('active');
-        }
-        if($section.length>0){
-            if($section.hasClass('active')){
-                $section.removeClass('active');
-            } else {
-                $section.addClass('active');
-            }
-        }
-        $('html').animate({
-            scrollTop: $section.offset().top,
-        }, 200);
-        // gtag('event', 'click',{event_category:'Passes and Tours',event_action:'Toggle',event_label:'Passes Button'});
-    });
-    $('section.post.container.passes-tours .buttons .button.expand-button.type-tours').click(function(){
-        var $section = $('section.post.container.tours');
-        var $section_hide = $('section.post.container.passes');
-        if($section_hide.length>0){
-            $section_hide.removeClass('active');
-        }
-        if($section.length>0){
-            if($section.hasClass('active')){
-                $section.removeClass('active');
-            } else {
-                $section.addClass('active');
-            }
-        }
-        $('html').animate({
-            scrollTop: $section.offset().top,
-        }, 200);
-        // gtag('event', 'click',{event_category:'Passes and Tours',event_action:'Toggle',event_label:'Tours Button'}); 
-    });
+    //####################   section creates passes tours toggle expand ##############
+    // $('section.post.container.passes-tours .buttons .button.expand-button.type-passes').click(function(){
+    //     var $section = $('section.post.container.passes');
+    //     var $section_hide = $('section.post.container.tours');
+    //     if($section_hide.length>0){
+    //         $section_hide.removeClass('active');
+    //     }
+    //     if($section.length>0){
+    //         if($section.hasClass('active')){
+    //             $section.removeClass('active');
+    //         } else {
+    //             $section.addClass('active');
+    //         }
+    //     }
+    //     $('html').animate({
+    //         scrollTop: $section.offset().top,
+    //     }, 200);
+        
+    // });
+    // $('section.post.container.passes-tours .buttons .button.expand-button.type-tours').click(function(){
+    //     var $section = $('section.post.container.tours');
+    //     var $section_hide = $('section.post.container.passes');
+    //     if($section_hide.length>0){
+    //         $section_hide.removeClass('active');
+    //     }
+    //     if($section.length>0){
+    //         if($section.hasClass('active')){
+    //             $section.removeClass('active');
+    //         } else {
+    //             $section.addClass('active');
+    //         }
+    //     }
+    //     $('html').animate({
+    //         scrollTop: $section.offset().top,
+    //     }, 200);
+        
+    // });
+
+    //####################   / section creates passes tours toggle expand ##############
 
     // $('.type-passes').on('click', function(e){ 
     //     gtag('event', 'click',{event_category:'Passes and Tours',event_action:'Toggle',event_label:'Passes Button'}); 
@@ -261,6 +274,8 @@ $('a.filter').click(function() {
     // $('.type-Tours').on('click', function(e){ 
     //     gtag('event', 'click',{event_category:'Passes and Tours',event_action:'Toggle',event_label:'Tours Button'}); 
     // });
+
+
 
     $('.tribe-search-x').click(function(){
        window.location.href = window.location.protocol+'//'+window.location.hostname+window.location.pathname; 

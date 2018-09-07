@@ -55,11 +55,15 @@ get_header('page'); ?>
 				<div class="button expand-button type-passes" onClick="gtag('event', 'click', {
 					  'event_category' : 'PassesTours',
 					  'event_label' : 'Passes Button'
-					});">Passes</div><!--.expand-button-->
+					});">
+					<a href="#passes-details">Passes</a>
+					</div><!--.expand-button-->
 				<div class="button expand-button type-tours" onClick="gtag('event', 'click', {
 					  'event_category' : 'PassesTours',
 					  'event_label' : 'Tours Button'
-					});">Tours</div><!--.expand-button-->
+					});">
+					<a href="#tours-details">Tours</a>
+					</div><!--.expand-button-->
 			</div><!--.buttons-->
 		</div><!--.wrapper-->
 	</section>
@@ -75,8 +79,10 @@ get_header('page'); ?>
 		'Stand-Up Paddleboarding'=>'activity_sup'
 	);?>
 	<section class="post container passes">
+	<span class="anchor"><a name="passes-details"></a></span>
 	<a id="the-pass-section" name="<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($title)));?>"></a>
 		<header>
+		
 			<h1>Passes</h1>
 		</header>
 		<?php $passes_sections = get_field("passes_sections");
@@ -199,9 +205,11 @@ get_header('page'); ?>
 	</section>
 
 	<section class="post container tours">
+	<span class="anchor"><a name="tours-details"></a></span>
 	<a id="the-tours-section" name="<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($title)));?>"></a>
 		<header>
-			<h1>Tours</h1>
+		
+			<h1 >Tours</h1>
 		</header>
 		<?php $tours_sections = get_field("tours_sections");
 		if($tours_sections){

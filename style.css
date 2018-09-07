@@ -1927,7 +1927,7 @@ section.post.container.passes-tours >.wrapper >header {
 }
 .passes-tours section.post.container.passes,
 .passes-tours section.post.container.tours {
-	display: none;
+	/*display: none;*/
 }
 .passes-tours section.post.container.passes.active,
 .passes-tours section.post.container.tours.active {
@@ -1954,6 +1954,7 @@ section.post.container.passes-tours .buttons .button{
 	font-weight: 700;
 	position: relative;
 } 
+section.post.container.passes-tours .buttons .button a{color: #fff;}
 /*section.post.container.passes-tours .buttons .button a {
 	display: block;
 	color: #fff;
@@ -1962,6 +1963,11 @@ section.post.container.passes-tours .buttons .button{
 	position: absolute;
 	top: 0;
 	left: 0;
+}*/
+/*span.anchor { 
+  margin-top: -25px;        
+  padding-bottom: 25px; 
+  display: block; 
 }*/
 section.post.container.passes .buttons .button, section.post.container.tours .buttons .button{
 	background-color: #c10435;
