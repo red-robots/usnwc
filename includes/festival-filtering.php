@@ -3,10 +3,10 @@
 $map = get_field('link_to_activity_map'); 
 
 ?>
-<div class="filter-options">
+<!-- <div class="filter-options">
 	// Filter Options //
-</div>
-<div id="the-filter" class="the-filter closed">
+</div> -->
+<div id="the-filter" class="the-filter open">
 <?php 
 // Run the filter
 
