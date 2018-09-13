@@ -147,6 +147,8 @@ if( have_rows('activity') ) : ?>
 			$description = get_sub_field('description');
 			$instrName = get_sub_field('instructor_name');
 			$instrLink = get_sub_field('instructor_link');
+			$ledby = get_sub_field('led_by');
+			$ledbyLink = get_sub_field('led_by_link');
 			$instrDescription = get_sub_field('instructor_description');
 			$santitime = sanitize_title_with_dashes($timegen);
 			$santiName = sanitize_title_with_dashes($instrName);
@@ -214,6 +216,13 @@ if( have_rows('activity') ) : ?>
 					<?php } else {
 						echo $instrName;
 						} ?>
+					</div>
+				<?php } ?>
+				<?php if( $ledby ) { ?>
+					<div class="desc"><span class="upper">Led By:</span>
+						<?php if( $ledbyLink ) { ?><a target="_blank" href="<?php echo $ledbyLink; ?>"><?php } ?>
+							<?php echo $ledby; ?>
+						<?php if( $ledbyLink ) { ?></a><?php } ?>
 					</div>
 				<?php } ?>
 				<?php if( $description != '' ) { ?>
