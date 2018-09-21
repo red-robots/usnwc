@@ -8,7 +8,11 @@ jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
     
+new WOW().init();
 
+$('.helperclose').click(function(){
+    $(this).parent().css("display", "none");
+});
 
 $('.grid').isotope({
   // set itemSelector so .grid-sizer is not used in layout

@@ -79,6 +79,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=2012042315555"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/mobilemenu.js?"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/sort.js?"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/toggleSearch.js?"></script>
 
 </body>

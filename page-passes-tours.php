@@ -117,9 +117,17 @@ get_header('page'); ?>
 							<p style="margin-bottom: 0;">Please click items below for specific activities, difficulties, and qualifiers.</p>
 							<ul class="top-level-menu">
 								<?php /* loop for activity access section */
-								foreach($activities as $key => $activity){?>
+								$a=0;
+								foreach($activities as $key => $activity){ $a++;?>
 									<?php if($section[$activity]) {?>
 										<li class="top-level-item">
+											<?php if($a==1){ // helper box ?>
+												<div class="helper wow fadeInLeft">
+													<div class="helperarrow"><</div>
+													<div class="helperclose">X</div>
+													Please click items below for specific activities, difficulties, and qualifiers.
+												</div>
+											<?php } ?>
 											<div class="title"><span class="indicator-plus">+</span><span class="indicator-min">-</span> <?php echo $key;?></div><!--.title-->
 											<table class="sub-menu">
 												<thead>

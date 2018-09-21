@@ -33,7 +33,37 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 }
 
 
-
+.helper {
+	width: 200px;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(0,0,0, .8);
+	color: #fff;
+	top: 0;
+	left: 100px;
+	z-index: 100000;
+}
+.helperclose {
+	background-color: rgba(0,0,0,1);
+	color: #fff;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 0px;
+	right: 0px;
+	padding: 5px;
+	cursor: pointer;
+}
+.helperarrow {
+	width: 10px;
+	height: 20px;
+	position: absolute;
+	top: 20%;
+	left: -15px;
+	color: #000;
+	font-weight: bold;
+	font-size: 20px;
+}
 .flowfest {
 
 }
@@ -1992,6 +2022,8 @@ section.post.container.passes ul.top-level-menu li.top-level-item {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	width: auto;
+	position: relative;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item .title {	 
 	cursor: pointer;
