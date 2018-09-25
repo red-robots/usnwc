@@ -122,13 +122,13 @@ get_header('page'); ?>
 									<?php if($section[$activity]) {?>
 										<li class="top-level-item">
 											<?php if($a==1){ // helper box ?>
-												<div class="helper wow fadeInLeft">
+												<!-- <div class="helper wow fadeInLeft">
 													<div class="helperarrow"><</div>
 													<div class="helperclose">X</div>
 													Please click items below for specific activities, difficulties, and qualifiers.
-												</div>
+												</div> -->
 											<?php } ?>
-											<div class="title"><span class="indicator-plus">+</span><span class="indicator-min">-</span> <?php echo $key;?></div><!--.title-->
+											<div class="title  " ><span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php echo $key;?></div><!--.title-->
 											<table class="sub-menu">
 												<thead>
 													<tr>
