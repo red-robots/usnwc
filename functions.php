@@ -541,7 +541,8 @@ function custom_login_logo() {
         	background-size: cover !important;
         }
         body.login {
-        	background-color: #d41f48;
+        	// background-color: #d41f48;
+        	background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
         }
         .login form {
         	background-color: rgba(255,255,255,0) !important;

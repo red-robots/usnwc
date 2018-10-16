@@ -189,9 +189,11 @@ if( have_rows('activity') ) : ?>
 					</div>
 				<?php } ?>
 
+				<?php if( $time || $duration ) { ?>
 				<div class="desc">
-					<span class="upper">Time:</span> <?php echo $time; ?> <?php if($duration) { echo '('.$duration.')';} ?>
+					<span class="upper">Time:</span> <?php if($time) { echo $time;} ?> <?php if($duration) { echo '('.$duration.')';} ?>
 				</div>
+				<?php } ?>
 
 				<div class="desc"><span class="upper">Location:</span> <?php echo $location; ?> 
 					<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
