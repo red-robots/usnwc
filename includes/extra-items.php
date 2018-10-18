@@ -1,5 +1,5 @@
 <div class=" activity-card element-item music sund " data-category="<?php //echo $str; ?>">
-	<h3>The Brook & The Bluff</h3>
+	<h3>Live Music – The Brook & The Bluff</h3>
 	<div class="desc">
 		<span class="upper">Day:</span> Sunday, October 21
 	</div>
@@ -18,7 +18,7 @@
 
 
 <div class=" activity-card element-item music sund " data-category="<?php //echo $str; ?>">
-	<h3>Mipso</h3>
+	<h3>Live Music – Mipso</h3>
 	<div class="desc">
 		<span class="upper">Day:</span> Sunday, October 21
 	</div>
