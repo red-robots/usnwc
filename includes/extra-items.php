@@ -5,7 +5,7 @@
 	</div>
 	<div class="desc">
 		<span class="upper">Time:</span> 
-		3:30 pm
+		3:00 pm
 	</div>
 	<div class="desc"><span class="upper">Location:</span> River Jam Stage
 		<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
