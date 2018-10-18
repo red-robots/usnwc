@@ -258,7 +258,13 @@ if( have_rows('activity') ) : ?>
 				
 			
 
-		<?php endwhile; ?>
+		<?php endwhile; 
+
+			if(is_page('outdoor-market')) {
+				include(locate_template('includes/extra-items.php'));
+			}
+
+		?>
 		</div>
 
 <?php endif; ?>
