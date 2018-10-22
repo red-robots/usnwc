@@ -10,6 +10,9 @@
  * NOTE: This function is faster than the recursive loop-recursiveEnhanced but the two can be 
  * used interchangably for all intensive purposes
  */
+
+
+
 function display_loop_tile($args){
 	/*
 	 * Queries the posts with WP_Query and set up The Loop
@@ -43,6 +46,14 @@ function display_loop_tile($args){
 		//The Loop
 		while($query->have_posts()){
 			$query->the_post();
+
+      $expired=get_field('event_complete');
+      echo '<!--';
+      echo '<pre>';
+      echo get_the_title() . '<br>';
+      print_r($expired);
+      echo '</pre>';
+      echo '-->';
 			
 			/*
 			 * Get all of the page options using get_post_meta and get_field
