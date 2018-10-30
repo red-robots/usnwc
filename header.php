@@ -55,13 +55,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/franklin-webfonts/franklingothicfs_condensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/franklin-webfonts/franklingothicfs_condenseditalic_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/franklin-webfonts/franklingothicfs_mediumcondensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
+<!-- <link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css"> -->
 <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js?"></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js?"></script> -->
 <script src="https://use.fontawesome.com/4945cee666.js"></script>
-<script>
+<!-- <script>
 addToHomescreen({skipFirstVisit:true,maxDisplayCount:1});
-</script>
+</script> -->
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">
 	twttr.conversion.trackPid('l4lpc');
