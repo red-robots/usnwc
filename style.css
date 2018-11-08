@@ -257,7 +257,166 @@ h2.filter-title {
 	}
 }
 
+/*
 
+	Annual Pass
+
+*/ 
+section.small-flex {
+	width: 100%;
+	padding-bottom: 40px;
+}
+section.small-flex .flex-control-paging {
+	display: none;
+}
+@media screen and (min-width: 1100px) {
+	section.small-flex {
+		width: 94%;
+	    max-width: 940px;
+	    margin: 1% auto;
+	    padding: 0.5%;
+	}
+}
+section.small-flex .desc {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0;
+}
+.clear {
+	clear: both;
+}
+section.ann-pass {
+	width: 94%;
+    height: auto;
+    max-width: 940px;
+    margin: 1% auto;
+    padding: 0.5%;
+}
+section.offers, section.stats {
+	width: 100%;
+	float: left;
+	position: relative;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+section.offers {
+	padding: 40px 0;
+	-webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+               -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+section.offers .option .button a {
+	color: #fff;
+	background-color: #c10435;
+	padding: 10px 55px;
+	display: inline-block;
+}
+section.offers .option .button a:hover {
+	text-decoration: none;
+	background-color: rgba(193,4,53,.8);
+}
+section.offers .option {
+	-webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    text-align: center;
+    margin: 0 0 30px;
+}
+section.offers .option h2 {
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	color: #909295;
+}
+section.stats {
+	padding: 40px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+section.stats .stat {
+	-webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+section.stats .stat .image {
+	width: 35%;
+	margin: 0 auto 0px auto;
+}
+section.stats .stat img {
+	width: 100%;
+}
+section.stats .stat .number, section.stats .stat .txt {
+	font-weight: bold;
+	margin: 0 auto;
+}
+section.stats .stat .number {
+	font-size: 30px;
+	color: #c10435;
+	line-height: 1;
+	letter-spacing: 1.5px;
+}
+section.stats .stat .txt {
+	font-size: 14px;
+	color: #909295;
+	text-transform: uppercase;
+}
+@media screen and (min-width: 600px) {
+	section.offers {
+		-webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+	}
+	section.offers .option {
+		-webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+	}
+	section.stats {
+		 -webkit-justify-content: space-between;
+	    -ms-flex-pack: distribute;
+	    justify-content: space-between;
+	}
+	section.stats .stat {
+		-webkit-flex-basis: 30%;
+	    -ms-flex-preferred-size: 30%;
+	    flex-basis: 30%;
+	}
+}
+@media screen and (min-width: 1100px) {
+	section.stats {
+		-webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+	}
+	section.stats .stat {
+		-webkit-flex-basis: 15%;
+        -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+	}
+}
 .base .page a[name] {
 	width: 100%;
 	margin: 0;
