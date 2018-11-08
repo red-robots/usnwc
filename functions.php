@@ -620,4 +620,11 @@ if(function_exists('tribe_is_month')){
 	}
 	add_action('wp_head', 'bella_add_meta_for_calendar');
 }
+ /*-------------------------------------
+  Move Yoast to the Bottom
+---------------------------------------*/
+function yoasttobottom() {
+  return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 ?>
