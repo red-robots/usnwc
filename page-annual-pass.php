@@ -8,8 +8,10 @@ get_header('page'); ?>
 <?php while( have_posts() ) : the_post();
 
 		$offerOneTitle = get_field('offer_1_title');
+		$offerOneBtnTxt = get_field('offer_1_btn_txt');
 		$offerOneLink = get_field('offer_1_link');
 		$offerTwoTitle = get_field('offer_2_title');
+		$offerTwoBtnTxt = get_field('offer_2_btn_txt');
 		$offerTwoLink  = get_field('offer_2_link');
 
 	get_sidebar("banner");?>
@@ -26,13 +28,13 @@ get_header('page'); ?>
 			<div class="option">
 				<h2><?php echo $offerOneTitle; ?></h2>
 				<div class="button">
-					<a href="<?php echo $offerOneLink; ?>">BUY</a>
+					<a href="<?php echo $offerOneLink; ?>"><?php echo $offerOneBtnTxt; ?></a>
 				</div>
 			</div>
 			<div class="option">
 				<h2><?php echo $offerTwoTitle; ?></h2>
 				<div class="button">
-					<a href="<?php echo $offerTwoLink; ?>">BUY</a>
+					<a href="<?php echo $offerTwoLink; ?>"><?php echo $offerTwoBtnTxt; ?></a>
 				</div>
 			</div>
 		</section>
