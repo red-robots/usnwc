@@ -2321,7 +2321,8 @@ section.activity-schedule .activity-schedule-list li.top-level-item > ul li .tim
 	background-color: #92D24A;
 }
 section.activity-schedule .activity-schedule-list li.top-level-item > ul li.closed .time {
-	background-color: #c10435;
+	/*background-color: #c10435;*/
+	background-color: #c2c2c2;
 }
 section.activity-schedule .activity-schedule-list .copy {
 	padding: 10px 10px 10px 30px;
