@@ -34,7 +34,7 @@ while( have_posts() ) : the_post();
 
 				<div class="pass-headings">
 					<header>
-						<h3>Season Pass</h3>
+						<h3>Annual Pass</h3>
 					</header>
 					<header>
 						<h3>Day Pass</h3>
