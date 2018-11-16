@@ -129,12 +129,16 @@ if(is_category()){
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
 </header>
 <?php if(!is_home()&&!$is_tribe) { ?>
-<nav class="page breadcrumbs">
-<?php if (is_page()) { 
-	get_breadcrumbs();
-} else { 
-	bloglow_get_breadcrumb_navigation();
-} ?>
-</nav>
+  <nav class="page breadcrumbs">
+    <?php 
+
+      if ( is_page() || is_tax('product_cat') || get_post_type() == 'product') { 
+      	get_breadcrumbs();
+      } else { 
+      	bloglow_get_breadcrumb_navigation();
+      } 
+
+    //} ?>
+  </nav>
 <?php } ?>
 <main class="page">

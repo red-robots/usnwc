@@ -333,9 +333,12 @@ function get_breadcrumbs(){
 
 	$separator = '  &raquo; '; // what to place between the pages
 
-	if ( is_page() ){
+	if ( is_page() || get_post_type() == 'product'  ){
 		// bread crumb structure only logical on pages
 		$trail = array($post); // initially $trail only contains the current page
+		$lastElement = end($trail); // gather the last item to not link it.
+		//print_r ($lastElement);
+		//echo $trail['ID'];
 		$parent = $post; // initially set to current post
 		$show_on_front = get_option( 'show_on_front'); // does the front page display the latest posts or a static page
 		$page_on_front = get_option( 'page_on_front' ); // if it shows a page, what page
@@ -344,9 +347,23 @@ function get_breadcrumbs(){
 			$parent = get_post( $parent->post_parent ); // get the current page's parent
 			array_unshift( $trail, $parent ); // add the parent object to beginning of array
 		}
-		if ( 'posts' == $show_on_front ) // if the front page shows latest posts, simply display a home link
+		if ( 'posts' == $show_on_front ) { // if the front page shows latest posts, simply display a home link
 			echo "<li class='breadcrumb-item' id='breadcrumb-0'><a href='" . get_bloginfo('home') . "'>Home</a></li>\n"; // home page link
-		else{ // if the front page displays a static page, display a link to it
+			// now that we have Woocommerce...
+			if( class_exists( 'WooCommerce' ) ):
+			if( get_post_type() == 'product' || is_tax('product_cat') ) {
+				echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/shop'>Shop</a></li>\n";
+				if( is_product() ) { // if single product.
+					$terms = get_the_terms( $post->ID, 'product_cat' );
+					foreach ($terms as $term) {
+					    //$product_cat_id = $term->name;
+					    echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/product-category/".$term->slug."'>".$term->name."</a></li>\n";
+					    break;
+					}
+				}
+			}
+			endif; // end woocommerce changes.
+		} else { // if the front page displays a static page, display a link to it
 			$home_page = get_post( $page_on_front ); // get the front page object
 			echo "<li class='breadcrumb-item' id='breadcrumb-{$home_page->ID}'><a href='" . get_bloginfo('home') . "'>$home_page->post_title</a></li>\n"; // home page link
 			if($trail[0]->ID == $page_on_front) // if the home page is an ancestor of this page
@@ -354,7 +371,11 @@ function get_breadcrumbs(){
 		}
 		foreach ( $trail as $page){
 			// print the link to the current page in the foreach
-			echo "<li class='breadcrumb-item' id='breadcrumb-{$page->ID}' >$separator<a href='" . get_page_link( $page->ID ) . "'>{$page->post_title}</a></li>\n";
+			echo "<li class='breadcrumb-item' id='breadcrumb-".$page->ID."' >".$separator;
+			echo "<a href='" . get_page_link( $page->ID ) . "'>";
+			echo $page->post_title;
+			echo "</a>";
+			echo "</li>\n";
 		}
 	}else{
 		// if what we're looking at isn't a page, simply display a home link
