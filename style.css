@@ -31,7 +31,12 @@ Author: Fritz Healy
 article, aside, figure, figcaption, footer, header, main, nav, section, summary {
 	display: block;
 }
-
+.woocommerce div.product form.cart .button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce button.button.alt {
+	background-color: #c10435;
+	border-radius: 0;
+}
 
 .helper {
 	width: 200px;
