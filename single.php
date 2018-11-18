@@ -3,18 +3,21 @@
  * @since   1.0
  * @alter   2.0
 */
-get_header(); ?>
+get_header(); 
+
+global $post;
+
+?>
 
 <?php get_sidebar("banner");?>
-<?php if(have_posts()){
-	the_post(); ?>
-	<article class="post">
+<?php while(have_posts()) : the_post(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 		<header>
-			<h1><?php the_title(); ?></h1>
+			<?php the_title( '<h1 class="entry-title product_title">', '</h1>' ); ?>
 		</header>		        	        
 		<?php the_content(); ?>
    		<?php comments_template(); ?>
    	</article>
-<?php } //end of if have posts
+<?php endwhile; //end of if have posts
 get_footer(); 
 ?>
