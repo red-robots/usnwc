@@ -37,7 +37,12 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 	background-color: #c10435;
 	border-radius: 0;
 }
-
+h2.woocommerce-loop-category__title mark.count {
+	display: none;
+}
+h2.woocommerce-loop-category__title {
+	text-align: center;
+}
 .helper {
 	width: 200px;
 	position: absolute;
