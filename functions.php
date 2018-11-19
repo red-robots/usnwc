@@ -352,7 +352,7 @@ function get_breadcrumbs(){
 			// now that we have Woocommerce...
 			if( class_exists( 'WooCommerce' ) ):
 			if( get_post_type() == 'product' || is_tax('product_cat') ) {
-				echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/shop'>Shop</a></li>\n";
+				echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/buy'>Buy</a></li>\n";
 				if( is_product() ) { // if single product.
 					$terms = get_the_terms( $post->ID, 'product_cat' );
 					foreach ($terms as $term) {
