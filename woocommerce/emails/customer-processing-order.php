@@ -28,7 +28,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 <?php /* translators: %s: Order number */ ?>
 <p>
-Just to let you know &mdash; your payment has been confirmed, and your order is now being processed:
+Just to let you know &mdash; your payment has been confirmed, and your order is now being processed. We will send an email when your order has been shipped or is ready for pick-up. Please allow 24 hours processing time.
 <?php //printf( esc_html__( 'Just to let you know &mdash; your payment has been confirmed, and order #%s is now being processed:', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?>
 </p>
 
