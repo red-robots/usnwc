@@ -138,7 +138,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 					<?php } ?>
 
-					<a class="button wc-backward" href="<?php echo get_permalink( wc_get_page_id( 'buy' ) ); ?>"><?php _e( 'Continue Shopping', 'woocommerce' ) ?></a> 
+					<a class="button wc-backward" href="<?php bloginfo('url'); ?>/buy"><?php _e( 'Continue Shopping', 'woocommerce' ) ?></a> 
 
 					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 

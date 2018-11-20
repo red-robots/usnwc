@@ -33,10 +33,11 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 }
 .woocommerce div.product form.cart .button,
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
-.woocommerce button.button.alt {
+.woocommerce button.button.alt,
+.woocommerce a.button {
 	background-color: #c10435;
 	border-radius: 0;
-	
+	color: #fff;
 	-webkit-transition:all ease .2s;
 	-moz-transition:all ease .2s;
 	-o-transition:all ease .2s;
@@ -45,7 +46,8 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 }
 .woocommerce div.product form.cart .button:hover,
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
-.woocommerce button.button.alt:hover {
+.woocommerce button.button.alt:hover,
+.woocommerce a.button:hover {
 	background-color: #c10435;
 	transform: scale(1.05);
 }
