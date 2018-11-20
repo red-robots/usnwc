@@ -50,6 +50,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 .woocommerce a.button:hover {
 	background-color: #c10435;
 	transform: scale(1.05);
+	color: #fff;
 }
 h2.woocommerce-loop-category__title mark.count {
 	display: none;
