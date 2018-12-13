@@ -155,7 +155,7 @@ global $is_tribe;
 			<!-- <a href="http://www.cascadedesigns.com/Therm-a-Rest" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Thermarest.png" alt="thermarest logo"></div></a> -->
 			<!-- <a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&amp;co logo"></div></a> -->
 			
-			<a href="https://unitedbyblue.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/PUnitedByBlue.png" alt="United By Blue"></div></a>
+			<a href="https://unitedbyblue.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/UnitedByBlue.png" alt="United By Blue"></div></a>
 			<a href="http://www.wernerpaddles.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/WearnerPaddles.png" alt="Wearner Paddles"></div></a>
 			<a href="https://www.drybags.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/Watershed.png" alt="Watershed"></div></a>
 		</div>
