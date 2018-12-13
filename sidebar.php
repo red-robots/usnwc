@@ -93,49 +93,71 @@ global $is_tribe;
 			<h1>Our Brands</h1>  
     		</header>
 		<div class="icon container outfitters">
+
+		<!-- <a href="https://www.astraldesigns.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/Astral_Logo.png" alt="Astral"></div></a> -->
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="https://www.altrarunning.com/" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2018/02/Altra_Logo.png" alt="altra logo"></div></a>
 			<a href="http://www.arcteryx.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ARCLOGO.png" alt="arc'teryx logo"></div></a>
 			<a href="https://www.astraldesigns.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Astral_Logo.png" alt="astral logo"></div></a>
-			<a href="http://www.atpaddles.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/AT_Paddles.png" alt="at paddles logo"></div></a>
+			<!-- <a href="http://www.atpaddles.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/AT_Paddles.png" alt="at paddles logo"></div></a> -->
 			<a href="http://blackdiamondequipment.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/BlackDiamond.png" alt="black diamond logo"></div></a>
 			<a href="http://www.chacos.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Chaco_logo.png" alt="chaco logo"></div></a>
 			<a href="http://www.dagger.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Dagger_Logo.png" alt="dagger logo"></div></a>
 			<a href="https://www.eaglesnestoutfittersinc.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Eno_logo.png" alt="eno logo"></div></a>
 			<a href="http://www.evolvsports.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Evolv.logo_.png" alt="evolv logo"></div></a>
-			<a href="http://www.farmtofeet.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/FarmToFeet.png" alt="farm to feet logo"></div></a>
+			<!-- <a href="http://www.farmtofeet.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/FarmToFeet.png" alt="farm to feet logo"></div></a> -->
 			<a href="http://www.freestyleusa.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/FreestyleLogo.png" alt="freestyle logo"></div></a>
 			<a href="http://www.giant-bicycles.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Giant.png" alt="giant logo"></div></a>
-			<a href="http://www.goalzero.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Goal_Zero.png" alt="goal zero logo"></div></a>
+			<!-- <a href="http://www.goalzero.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Goal_Zero.png" alt="goal zero logo"></div></a> -->
 			<a href="https://gopro.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/GoPro_Logo.png" alt="gopro logo"></div></a>
-			<a href="https://www.harimari.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Hari-Marii_Logo.png" alt="hari mari logo"></div></a>
-			<a href="http://www.pearlizumi.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/IP_logo.png" alt="pearl izumi logo"></div></a>
-			<a href="https://www.immersionresearch.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/IR_ImmersionReasearch.png" alt="immersion research logo"></div></a>
-			<a href="http://jacksonkayak.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/JacksonKayaks.png" alt="jackson kayak logo"></div></a>
+			<!-- <a href="https://www.harimari.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Hari-Marii_Logo.png" alt="hari mari logo"></div></a> -->
+			<a href="https://www.hokaoneone.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/Hoka.png" alt="Hoka"></div></a>
+			
+			<a href="https://immersionresearch.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/IR_ImmersionReasearch.png" alt="Immersion Reasearch"></div></a>
+			<a href="https://www.inov-8.com/us" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/inov-8.png" alt="Inov8"></div></a>
+			<!-- <a href="http://jacksonkayak.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/JacksonKayaks.png" alt="jackson kayak logo"></div></a> -->
 			<a href="http://www.jetboil.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/JetBoil.png" alt="jetboil logo"></div></a>
+			<a href="https://www.kuhl.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/KUHL.png" alt="KUHL"></div></a>
 			<a href="http://www.kavu.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/KAVUCircle_Logo.png" alt="kavu logo"></div></a>
 			<a href="https://kokatat.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Kokatat.png" alt="kokatat logo"></div></a>
 			<a href="http://www.sportiva.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/LaSportiva_Logo.png" alt="la sportiva logo"></div></a>
 			<a href="https://www.liquidlogickayaks.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/LiquidLogic_Logo.png" alt="liquid logic logo"></div></a>
+			<a href="https://www.llmapparel.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/LLM.png" alt="LLM"></div></a>
 			<a href="http://www.mountainkhakis.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/mountainkhakisLogo.png" alt="mountain khakis logo"></div></a>
 			<a href="http://www.cascadedesigns.com/msr" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/MSR.png" alt="msr logo"></div></a>
 			<a href="http://www.nemoequipment.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/NEMO_logo.png" alt="nemo logo"></div></a>
 			<a href="http://www.nrs.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/NRS_Logo.png" alt="nrs logo"></div></a>
 			<a href="http://www.ospreypacks.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Osprey.png" alt="osprey logo"></div></a>
+			<a href="http://www.pyranha.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/Pyranah.png" alt="Pyranah"></div></a>
 			<a href="http://www.patagonia.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Patagonia_Logo.png" alt="patagonia logo"></div></a>
+			<a href="http://www.pearlizumi.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/IP_logo.png" alt="pearl izumi logo"></div></a>
 			<a href="https://www.petzl.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/PETZL_black.png" alt="petzl logo"></div></a>
 			<a href="http://www.prana.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Prana.png" alt="prana logo"></div></a>
 			<a href="https://recoverbrands.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/RecoverLogo.png" alt="recover logo"></div></a>
 			<a href="http://www.ruffwear.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Ruffwear.png" alt="ruffwear logo"></div></a>
-			<a href="http://www.salewa.us/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Salewa.png" alt="salewa logo"></div></a>
+			<!-- <a href="http://www.salewa.us/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Salewa.png" alt="salewa logo"></div></a> -->
 			<a href="http://www.salomon.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/SalomonLogo.png" alt="salomon logo"></div></a>
 			<a href="http://www.smithoptics.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Smith_Logo.png" alt="smith logo"></div></a>
 			<a href="http://www.sterlingrope.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Sterling.png" alt="sterling logo"></div></a>
 			<a href="http://www.suncloudoptics.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/SuncloudLogo2015.png" alt="suncloud logo"></div></a>
-			<a href="https://www.suunto.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Suunto.png" alt="suunto logo"></div></a>
+			<!-- <a href="https://www.suunto.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Suunto.png" alt="suunto logo"></div></a> -->
 			<a href="http://www.teva.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Teva.png" alt="teva logo"></div></a>
-			<a href="https://www.thenorthface.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/TheNorthFace_logo.png" alt="the north face logo"></div></a>
-			<a href="http://www.cascadedesigns.com/Therm-a-Rest" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Thermarest.png" alt="thermarest logo"></div></a>
-			<a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&amp;co logo"></div></a>
-			<a href="https://www.altrarunning.com/" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2018/02/Altra_Logo.png" alt="altra logo"></div></a>
+			<!-- <a href="https://www.thenorthface.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/TheNorthFace_logo.png" alt="the north face logo"></div></a> -->
+			<!-- <a href="http://www.cascadedesigns.com/Therm-a-Rest" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Thermarest.png" alt="thermarest logo"></div></a> -->
+			<!-- <a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&amp;co logo"></div></a> -->
+			
+			<a href="https://unitedbyblue.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/PUnitedByBlue.png" alt="United By Blue"></div></a>
+			<a href="http://www.wernerpaddles.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/WearnerPaddles.png" alt="Wearner Paddles"></div></a>
+			<a href="https://www.drybags.com/" target="_blank"><div class="icon"><img src="<?php bloginfo('template_url'); ?>/images/outfitters/Watershed.png" alt="Watershed"></div></a>
 		</div>
 	</section>
 <?php }?>
