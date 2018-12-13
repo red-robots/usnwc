@@ -1454,6 +1454,9 @@ footer.page div.row.search #gform_wrapper_13 {
 #mc_embed_signup div.mce_inline_error {
 	clear: both;
 }
+.mc-sign-field-usnwc {
+	/*width: 190px;*/
+}
 footer.page div.row.search #mc_embed_signup {
 	float: left;
 	min-width: 300px;
