@@ -237,15 +237,17 @@ global $is_tribe;
 			</header>
 			<h2>When are we open?</h2>
 			<ul>
-				<li>Our main gate and trails are open, weather permitting, 365 days a year, from dawn until dusk.</li>
-				<li>The availability of our activities and related operating hours vary with the seasons. Daily hours of operation can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
-				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="https://usnwc.org/visit/groups/">Groups page</a>.</li>
+				<li>Our main gate and trails are open, weather permitting, 365 days a year.</li>
+				<li>The availability of our activities and related operating hours vary with the seasons. Day-of activity availability is accessed through the <a href="https://usnwc.org/visit/daily-activity-schedule/">Activity Schedule</a>; other daily hours of operation, such as food and beverage, can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
+				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a href="https://usnwc.org/visit/groups/">Groups page</a>.</li>
 				<li>All activity availability, schedules and hours are subject to change without notice.</li>
+				<li>For other questions about activities at the USNWC, please visit our <a href="https://usnwc.org/visit/faqs/">Frequently Asked Questions</a>.</li>
 			</ul>
 			<h2>What activities will be open when I visit?</h2>
 			<ul>
 				<li>Due to the seasonality of the USNWC, activities will be limited in their availability, particularly in the months after Labor Day and before Memorial Day.</li>
-				<li>Because the timing and availability of our activities can change from day to day, the <a title="Activity Schedule" href="/visit/daily-activity-schedule/">Activity Schedule</a> is the best resource for daily activity information.</li>
+				<li>Because the timing and availability of our activities can change from day to day, the <a href="https://usnwc.org/visit/daily-activity-schedule/">Activity Schedule</a> is the best resource for day-of activity information.</li>
+				<li>Activity lines may close prior to pass hours.</li>
 			</ul>
 			<h2>Notes about the weather:</h2>
 			<ul>
