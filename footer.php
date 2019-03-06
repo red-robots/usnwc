@@ -21,7 +21,7 @@
 	           		<img src="<?php bloginfo('template_url'); ?>/images/ParksRec_Grey_119x35.png" alt="Mecklenburg County Park and Recreation Logo">
 	           	</a>
            	</li>
-           	<li class="parknrec">
+           	<!-- <li class="parknrec">
 	           	<a href="https://www.bellsbeer.com/" target="_blank">
 	           		<img src="<?php bloginfo('template_url'); ?>/images/footer-Bells_black.png" alt="Mecklenburg County Park and Recreation Logo">
 	           	</a>
@@ -35,7 +35,7 @@
 	           	<a href="http://www.blackdiamondequipment.com/" target="_blank">
 	           		<img src="<?php bloginfo('template_url'); ?>/images/footer-BlackDiamond_black.png" alt="Mecklenburg County Park and Recreation Logo">
 	           	</a>
-           	</li>
+           	</li> -->
 		</ul>
 	</div>
 	<div class="row search">
