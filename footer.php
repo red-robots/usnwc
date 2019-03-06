@@ -11,8 +11,31 @@
 	</div>
 	<div class="row sponsors"> 
 		<ul>
-   	        <li class="subaru"><a href="http://www.subaru.com/" target="_blank"><img src="/wp-content/uploads/2015/09/Subaru_Grey_156x25.png" alt="Subaru Logo"></a></li>
-           	<li class="parknrec"><a href="https://www.mecknc.gov/ParkandRec/Pages/Home.aspx" target="_blank"><img src="/wp-content/uploads/2015/06/ParksRec_Grey_119x35.png" alt="Mecklenburg County Park and Recreation Logo"></a></li>
+   	        <li class="subaru">
+	   	        <a href="http://www.subaru.com/" target="_blank">
+	   	        	<img src="<?php bloginfo('template_url'); ?>/images/Subaru_Grey_156x25.png" alt="Subaru Logo">
+	   	        </a>
+   	        </li>
+           	<li class="parknrec">
+	           	<a href="https://www.mecknc.gov/ParkandRec/Pages/Home.aspx" target="_blank">
+	           		<img src="<?php bloginfo('template_url'); ?>/images/ParksRec_Grey_119x35.png" alt="Mecklenburg County Park and Recreation Logo">
+	           	</a>
+           	</li>
+           	<li class="parknrec">
+	           	<a href="https://www.bellsbeer.com/" target="_blank">
+	           		<img src="<?php bloginfo('template_url'); ?>/images/footer-Bells_black.png" alt="Mecklenburg County Park and Recreation Logo">
+	           	</a>
+           	</li>
+           	<li class="parknrec">
+	           	<a href="https://www.keenfootwear.com/" target="_blank">
+	           		<img src="<?php bloginfo('template_url'); ?>/images/footer-Keen_Black.png" alt="Mecklenburg County Park and Recreation Logo">
+	           	</a>
+           	</li>
+           	<li class="parknrec">
+	           	<a href="http://www.blackdiamondequipment.com/" target="_blank">
+	           		<img src="<?php bloginfo('template_url'); ?>/images/footer-BlackDiamond_black.png" alt="Mecklenburg County Park and Recreation Logo">
+	           	</a>
+           	</li>
 		</ul>
 	</div>
 	<div class="row search">
