@@ -160,6 +160,28 @@ h2.woocommerce-loop-category__title {
 h2.filter-title {
 	margin: 10px 0;
 }
+.pass-title {
+	width: 70%;
+	display: inline-block;
+	padding: 20px 0;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.pass-button {
+	width: auto;
+	display: inline-block;
+}
+.pass-button a {
+	display: block;
+	padding: 5px 25px;
+	color: #ffff;
+	text-decoration: none;
+	background-color: #c10435;
+}
+.pass-button a:hover {
+	text-decoration: none;
+	opacity: .8;
+}
 /* ---- button-group ---- */
 
 .button-group:after {
@@ -1710,6 +1732,12 @@ article.post, section.post, section.post.container, article.filtering {
 	-o-box-shadow: 0 0 3px rgba(0,0,0,0.15);
 	box-shadow: 0 0 3px rgba(0,0,0,0.15);
 }
+section.post-noborder {
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0) !important;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0) !important;
+	-o-box-shadow: 0 0 3px rgba(0,0,0,0) !important;
+	box-shadow: 0 0 3px rgba(0,0,0,0) !important;
+}
 article.post > *, section.post > *, article.row > * {
 	width: 85%;
 	height: auto;
@@ -2231,16 +2259,19 @@ section.post.container.passes ul.top-level-menu li.top-level-item .title .indica
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{
 	display: none;
 }
-section.post.container.passes ul.top-level-menu li.top-level-item table.sub-menu{
+section.post.container.passes ul.top-level-menu li.top-level-item table.sub-menu,
+section.post.container.passes ul.top-level-menu li.top-level-item .pass-desc {
 	display: none;
 }
+
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-plus{
 	display: none;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-min{
 	display: inline-block;
 }
-section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu{
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,
+section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc {
 	display: block;
 	padding: 0 0 0 20px;
 }
@@ -2712,6 +2743,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2) {
 		padding: 0 20px;
 	}
+
 
 	/*///////////////////// Corporate Groups page ////////////////////////////////*/
 	article.post.groups {

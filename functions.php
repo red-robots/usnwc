@@ -648,4 +648,71 @@ function yoasttobottom() {
   return 'low';
 }
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+/* Custom Post Types */
+
+add_action('init', 'js_custom_init');
+function js_custom_init() 
+{
+	
+	// Register the Passes Post Type
+  
+     $labels = array(
+	'name' => _x('Passes', 'post type general name'),
+    'singular_name' => _x('Pass', 'post type singular name'),
+    'add_new' => _x('Add New', 'Pass'),
+    'add_new_item' => __('Add New Pass'),
+    'edit_item' => __('Edit Passes'),
+    'new_item' => __('New Pass'),
+    'view_item' => __('View Passes'),
+    'search_items' => __('Search Passes'),
+    'not_found' =>  __('No Passes found'),
+    'not_found_in_trash' => __('No Passes found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Passes'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
+	
+  ); 
+  register_post_type('pass',$args); // name used in query
+  
+  // Add more between here
+  
+  // and here
+  
+  } // close custom post type
+
+  /*
+##############################################
+	Custom Taxonomies
+*/
+add_action( 'init', 'build_taxonomies', 0 );
+ 
+function build_taxonomies() {
+// cusotm tax
+    register_taxonomy( 'pass_type', 'pass',
+	 array( 
+	'hierarchical' => true, // true = acts like categories false = acts like tags
+	'label' => 'Pass Type', 
+	'query_var' => true, 
+	'rewrite' => true ,
+	'show_admin_column' => true,
+	'public' => true,
+	'rewrite' => array( 'slug' => 'pass-type' ),
+	'_builtin' => true
+	) );
+	
+} // End build taxonomies
 ?>
