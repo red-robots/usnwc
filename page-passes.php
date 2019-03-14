@@ -39,6 +39,17 @@ get_header('page'); ?>
         
         $term = get_queried_object();
         $image = get_field('featured_image', $term);
+        $section_title = get_field('section_title');
+        $section_desc = get_field('section_desc');
+        $title_day = get_field('title_day');
+        $price_day = get_field('price_day');
+        $buy_link_day = get_field('buy_link_day');
+        $title_two = get_field('title_two');
+        $price_two = get_field('price_two');
+        $buy_link_two = get_field('buy_link_two');
+        $title_ann = get_field('title_ann');
+        $price_ann = get_field('price_ann');
+        $buy_link_ann = get_field('buy_link_ann');
     ?>
     <section class="post container passes post-noborder ">
         <article class="post row <?php echo $post->post_name; ?>">
@@ -60,7 +71,34 @@ get_header('page'); ?>
             */
             ?>
             <section class="copy">
-                <ul class="top-level-menu">
+                
+                
+                    <div class="title  " >
+                        <div class="pass-title"><?php echo $title_day; ?> - <?php echo $price_day; ?></div>
+                        <div class="pass-button">
+                            <a href="<?php echo $buy_link_day; ?>">BUY</a>
+                        </div>
+                    </div>
+                    <div class="title  " >
+                        <div class="pass-title"><?php echo $title_two; ?> - <?php echo $price_two; ?></div>
+                        <div class="pass-button">
+                            <a href="<?php echo $buy_link_two; ?>">BUY</a>
+                        </div>
+                    </div>
+                    <div class="title  " >
+                        <div class="pass-title"><?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
+                        <div class="pass-button">
+                            <a href="<?php echo $buy_link_ann; ?>">BUY</a>
+                        </div>
+                    </div>
+
+                    <section class="passdesc">
+                        <h3><?php echo $section_title; ?></h3>
+                        <?php echo $section_desc; ?>
+                    </section>
+                    
+                    
+               <ul class="top-level-menu">
                 <?php 
                     while ($wp_query->have_posts()) : $wp_query->the_post(); 
 
@@ -71,13 +109,13 @@ get_header('page'); ?>
 
                     <li class="top-level-item">
                         <div class="title  " >
-                            <div class="pass-title">
+                            <div class="">
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
-                            <div class="pass-button">
-                                <a href="<?php echo $buyLink; ?>">BUY</a>
-                            </div>
+                            <!-- <div class="pass-button">
+                                <a href="<?php //echo $buyLink; ?>">BUY</a>
+                            </div> -->
                         </div><!--.title-->
 
                         <div class="pass-desc">

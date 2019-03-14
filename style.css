@@ -167,6 +167,9 @@ h2.filter-title {
 	font-size: 22px;
 	text-transform: uppercase;
 }
+section.passdesc {
+	padding: 20px 0;
+}
 .pass-button {
 	width: auto;
 	display: inline-block;
@@ -176,11 +179,12 @@ h2.filter-title {
 	padding: 5px 25px;
 	color: #ffff;
 	text-decoration: none;
-	background-color: #c10435;
+	background-color: #c2c2c2;
 }
 .pass-button a:hover {
 	text-decoration: none;
-	opacity: .8;
+	/*opacity: .8;*/
+	background-color: #c10435;
 }
 /* ---- button-group ---- */
 
