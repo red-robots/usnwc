@@ -43,7 +43,7 @@ $desc_ann = get_field('desc_expand_ann');
     */
     $wp_query = new WP_Query();
     $wp_query->query(array(
-        'post_type'=>'pass',
+        'post_type'=>'activity',
         'posts_per_page' => -1,
         'paged' => $paged,
         'tax_query' => array(
@@ -243,7 +243,7 @@ $desc_ann = get_field('desc_expand_ann');
     */
     $wp_query = new WP_Query();
     $wp_query->query(array(
-        'post_type'=>'pass',
+        'post_type'=>'activity',
         'posts_per_page' => -1,
         'paged' => $paged,
         'tax_query' => array(
