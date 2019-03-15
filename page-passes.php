@@ -86,10 +86,10 @@ $desc_ann = get_field('desc_expand_ann');
                 </section>
 
                 <ul class="top-level-menu">
-                    <li class="top-level-item">
+                    <li class="top-level-items">
                         <div class="title  " >
                             <div class="pass-title">
-                            <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span><?php echo $title_day; ?> - <?php echo $price_day; ?>
+                            <?php echo $title_day; ?> - <?php echo $price_day; ?>
                             </div>
                             <div class="pass-button">
                                 <a href="<?php echo $buy_link_day; ?>">BUY</a>
@@ -99,10 +99,10 @@ $desc_ann = get_field('desc_expand_ann');
                             <?php echo $desc_day; ?>
                         </div>
                     </li>
-                    <li class="top-level-item">
+                    <li class="top-level-items">
                        <div class="title  " >
                             <div class="pass-title">
-                            <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span><?php echo $title_two; ?> - <?php echo $price_two; ?>
+                            <?php echo $title_two; ?> - <?php echo $price_two; ?>
                             </div>
                             <div class="pass-button">
                                 <a href="<?php echo $buy_link_two; ?>">BUY</a>
@@ -112,10 +112,10 @@ $desc_ann = get_field('desc_expand_ann');
                             <?php echo $desc_day; ?>
                         </div>
                     </li>
-                    <li class="top-level-item">
+                    <li class="top-level-items">
                        <div class="title  " >
                             <div class="pass-title">
-                                <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span><?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
+                                <?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
                             <div class="pass-button">
                                 <a href="<?php echo $buy_link_ann; ?>">BUY</a>
                             </div>

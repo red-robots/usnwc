@@ -180,6 +180,9 @@ section.passdesc {
 	color: #ffff;
 	text-decoration: none;
 	background-color: #c2c2c2;
+	-webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .pass-button a:hover {
 	text-decoration: none;
@@ -2238,7 +2241,8 @@ section.post.container.passes ul.top-level-menu {
 	margin: 0;
 	padding: 0;
 }
-section.post.container.passes ul.top-level-menu li.top-level-item {
+section.post.container.passes ul.top-level-menu li.top-level-item,
+section.post.container.passes ul.top-level-menu li.top-level-items {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;

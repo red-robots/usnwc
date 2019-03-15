@@ -655,21 +655,21 @@ add_action('init', 'js_custom_init');
 function js_custom_init() 
 {
 	
-	// Register the Passes Post Type
+	// Register the Activities Post Type
   
      $labels = array(
-	'name' => _x('Passes', 'post type general name'),
-    'singular_name' => _x('Pass', 'post type singular name'),
-    'add_new' => _x('Add New', 'Pass'),
-    'add_new_item' => __('Add New Pass'),
-    'edit_item' => __('Edit Passes'),
-    'new_item' => __('New Pass'),
-    'view_item' => __('View Passes'),
-    'search_items' => __('Search Passes'),
-    'not_found' =>  __('No Passes found'),
-    'not_found_in_trash' => __('No Passes found in Trash'), 
+	'name' => _x('Activities', 'post type general name'),
+    'singular_name' => _x('Activity', 'post type singular name'),
+    'add_new' => _x('Add New', 'Activity'),
+    'add_new_item' => __('Add New Activity'),
+    'edit_item' => __('Edit Activities'),
+    'new_item' => __('New Activity'),
+    'view_item' => __('View Activities'),
+    'search_items' => __('Search Activities'),
+    'not_found' =>  __('No Activities found'),
+    'not_found_in_trash' => __('No Activities found in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Passes'
+    'menu_name' => 'Activities'
   );
   $args = array(
 	'labels' => $labels,
@@ -686,7 +686,7 @@ function js_custom_init()
     'supports' => array('title','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('pass',$args); // name used in query
+  register_post_type('activity',$args); // name used in query
   
   // Add more between here
   
@@ -702,7 +702,7 @@ add_action( 'init', 'build_taxonomies', 0 );
  
 function build_taxonomies() {
 // cusotm tax
-    register_taxonomy( 'pass_type', 'pass',
+    register_taxonomy( 'pass_type', 'activity',
 	 array( 
 	'hierarchical' => true, // true = acts like categories false = acts like tags
 	'label' => 'Pass Type', 
