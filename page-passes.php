@@ -115,7 +115,7 @@ $desc_ann = get_field('desc_expand_ann');
                     <li class="top-level-items">
                        <div class="title  " >
                             <div class="pass-title">
-                                <?php echo $title_ann; ?> <?php echo $price_ann; ?></div>
+                                <?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
                             <div class="pass-button">
                                 <a href="<?php echo $buy_link_ann; ?>">BUY</a>
                             </div>
@@ -144,7 +144,7 @@ $desc_ann = get_field('desc_expand_ann');
                     <li class="top-level-item">
                         <div class="title  " >
                             <div class="">
-                                <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
+                                <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> <?php echo $price; ?>
                             </div>
                             
                             <!-- <div class="pass-button">
