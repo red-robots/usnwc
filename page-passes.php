@@ -115,7 +115,7 @@ $desc_ann = get_field('desc_expand_ann');
                     <li class="top-level-items">
                        <div class="title  " >
                             <div class="pass-title">
-                                <?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
+                                <?php echo $title_ann; ?> <?php echo $price_ann; ?></div>
                             <div class="pass-button">
                                 <a href="<?php echo $buy_link_ann; ?>">BUY</a>
                             </div>
