@@ -161,7 +161,7 @@ h2.filter-title {
 	margin: 10px 0;
 }
 .pass-title {
-	width: 70%;
+	width: 100%;
 	display: inline-block;
 	padding: 20px 0;
 	font-size: 22px;
@@ -458,7 +458,12 @@ section.stats .stat .txt {
 	    -ms-flex-preferred-size: 30%;
 	    flex-basis: 30%;
 	}
+	.pass-title {
+		width: 70%;
+		padding: 20px 0;
+	}
 }
+
 @media screen and (min-width: 1100px) {
 	section.stats {
 		-webkit-flex-wrap: nowrap;
@@ -2281,7 +2286,7 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active .title 
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,
 section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc {
 	display: block;
-	padding: 0 0 0 20px;
+	padding: 20px 0 0 0;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{
 	color: grey;
@@ -2572,6 +2577,10 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	}
 	.riverjam .music img.mobile {
 		display: none;
+	}
+	section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc {
+	
+		padding: 0 0 0 20px;
 	}
 
 }
