@@ -109,7 +109,7 @@ $desc_ann = get_field('desc_expand_ann');
                             </div>
                         </div>
                         <div class="pass-desc">
-                            <?php echo $desc_day; ?>
+                            <?php echo $desc_two; ?>
                         </div>
                     </li>
                     <li class="top-level-items">
@@ -121,7 +121,7 @@ $desc_ann = get_field('desc_expand_ann');
                             </div>
                         </div>
                         <div class="pass-desc">
-                            <?php echo $desc_day; ?>
+                            <?php echo $desc_ann; ?>
                         </div>
                     </li>
                     </ul>
