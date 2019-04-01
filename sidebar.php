@@ -439,7 +439,7 @@ global $is_tribe;
 	  		</table>
 		</div>
 	</section>          
-	<article class="post sidebar more-pass-info">
+	<!-- <article class="post sidebar more-pass-info">
 		<header>
 			<h1 class="widget-title">More Pass Info</h1>
 		</header>
@@ -447,6 +447,6 @@ global $is_tribe;
 		<p>Looking to upgrade your experience? We offer upgrades that get you closer to the action with: full suspension and 29er mountain bikes and <a href="/whitewater-activities">rodeo rafting</a>. Upgrades can be purchased on-site and over the phone at 704.391.3900.</p>
 		<h2>Notes on Activities</h2>
 		<p>Please be aware that all of our activities have capacity limits and are subject to seasonal, weather and other limitations that may cause activities to close without advance notice. Please see the <a href="/hours-of-operation/">Activities Schedule</a> for more information on activity availability. Refunds and rain checks are not available.</p>
-	</article>
+	</article> -->
 	<?php } 
 }?>
