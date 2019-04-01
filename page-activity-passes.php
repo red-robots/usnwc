@@ -28,7 +28,9 @@ while( have_posts() ) : the_post();
 		</header>
 
 		<article class="row-activity">
-
+			<section class="passes copyz passes-section">
+				<?php the_content(); ?>
+			</section>
 			<!-- <section class="passes copyz passes-section">
 				<h2>PASSES</h2>
 
