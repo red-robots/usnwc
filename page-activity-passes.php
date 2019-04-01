@@ -29,7 +29,7 @@ while( have_posts() ) : the_post();
 
 		<article class="row-activity">
 
-			<section class="passes copyz passes-section">
+			<!-- <section class="passes copyz passes-section">
 				<h2>PASSES</h2>
 
 				<div class="pass-headings">
@@ -46,16 +46,16 @@ while( have_posts() ) : the_post();
 				<div class="act-pass-cont">
 					<div class="passes-col">
 						<?php echo $season_pass; ?>
-					</div><!-- col -->
+					</div>
 					<div class="passes-col">
 						<?php echo $day_pass; ?>
-					</div><!-- col -->
+					</div><
 					<div class="passes-col">
 						<?php echo $single_activity_pass; ?>
-					</div><!-- col -->
-				</div><!-- act-pass-cont -->
+					</div>
+				</div>
 
-			</section>
+			</section> -->
 
 			<?php 
 			// set some conditionals for the difficulty
