@@ -433,7 +433,7 @@ global $is_tribe;
 					<tr>
 						<td><a href="/land-activities/ropes/#hawk-jump">Hawk Jump</a></td>
 						<td>70 to 265 pounds</td>
-						<td>Up to 30 minutes</td>
+						<td>Up to 30 minutes <!-- in code --></td>
 					</tr>
 	  			</tbody>
 	  		</table>
