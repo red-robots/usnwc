@@ -279,7 +279,7 @@ global $is_tribe;
 		</div><!--.iframe-dynamic-->
 	</article>
 <?php }?>
-<?php if(is_page("activity-passes")){
+<?php if(is_page(62)){
 	if($sidebar==="top"){?>
 		<section class="post container sidebar rafting-notice">
 			<header>
