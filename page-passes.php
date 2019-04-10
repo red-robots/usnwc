@@ -114,7 +114,7 @@ $desc_ann = get_field('desc_expand_ann');
                     </li>
                     <li class="top-level-items">
                        <div class="title  " >
-                            <div class="pass-title">
+                            <div class="pass-title ">
                                 <?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
                             <div class="pass-button track-annual">
                                 <a href="<?php echo $buy_link_ann; ?>">BUY</a>
@@ -139,10 +139,11 @@ $desc_ann = get_field('desc_expand_ann');
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
+                    $click = 'track-' . sanitize_title_with_dashes( get_the_title() );
                 ?>
 
                     <li class="top-level-item">
-                        <div class="title  " >
+                        <div class="title  <?php echo $click; ?>" >
                             <div class="">
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> <?php echo $price; ?>
                             </div>
@@ -291,18 +292,16 @@ $desc_ann = get_field('desc_expand_ann');
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
-                    $tName = get_the_title();
-                    $tName = sanitize_title_with_dashes($tName);
-                    $tName = 'track-'.$tName;
+                    $click = 'track-' . sanitize_title_with_dashes( get_the_title() );
                 ?>
 
                     <li class="top-level-item">
                         <div class="title  " >
-                            <div class="pass-title">
+                            <div class="pass-title <?php echo $click; ?>">
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
-                            <div class="pass-button <?php echo $tName; ?>">
+                            <div class="pass-button <?php echo $click; ?>">
                                 <a href="<?php echo $buyLink; ?>">BUY</a>
                             </div>
                         </div><!--.title-->
