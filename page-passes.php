@@ -91,7 +91,7 @@ $desc_ann = get_field('desc_expand_ann');
                             <div class="pass-title">
                             <?php echo $title_day; ?> - <?php echo $price_day; ?>
                             </div>
-                            <div class="pass-button">
+                            <div class="pass-button track-day">
                                 <a href="<?php echo $buy_link_day; ?>">BUY</a>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ $desc_ann = get_field('desc_expand_ann');
                             <div class="pass-title">
                             <?php echo $title_two; ?> - <?php echo $price_two; ?>
                             </div>
-                            <div class="pass-button">
+                            <div class="pass-button track-two-day">
                                 <a href="<?php echo $buy_link_two; ?>">BUY</a>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ $desc_ann = get_field('desc_expand_ann');
                        <div class="title  " >
                             <div class="pass-title">
                                 <?php echo $title_ann; ?> - <?php echo $price_ann; ?></div>
-                            <div class="pass-button">
+                            <div class="pass-button track-annual">
                                 <a href="<?php echo $buy_link_ann; ?>">BUY</a>
                             </div>
                         </div>
@@ -177,6 +177,7 @@ $desc_ann = get_field('desc_expand_ann');
                                 $difficulty = get_sub_field('difficulty');
                                 $qualifiers = get_sub_field('qualifiers');
                                 $show = get_sub_field('show');
+                                
                             ?>
                             <?php 
                                 
@@ -290,6 +291,9 @@ $desc_ann = get_field('desc_expand_ann');
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
+                    $tName = get_the_title();
+                    $tName = sanitize_title_with_dashes($tName);
+                    $tName = 'track-'.$tName;
                 ?>
 
                     <li class="top-level-item">
@@ -298,7 +302,7 @@ $desc_ann = get_field('desc_expand_ann');
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
-                            <div class="pass-button">
+                            <div class="pass-button <?php echo $tName; ?>">
                                 <a href="<?php echo $buyLink; ?>">BUY</a>
                             </div>
                         </div><!--.title-->
