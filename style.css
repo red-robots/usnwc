@@ -952,7 +952,7 @@ margin: 0 auto;
     padding: 25px 5px 10px;
 }
 
-.activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(1), .activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(1) {
+/*.activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(1), .activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(1) {
 	width:45%; 
 	display: inline-block; 
 	margin: 10px 5% 10px 10px;
@@ -963,7 +963,7 @@ margin: 0 auto;
 	display: inline-block;
 	margin: 10px 0 10px 0;
 	vertical-align: middle;
-}
+}*/
 /*///////////////////styling for register buttons/lists/////////////////////*/
 .register-list p {
 	margin: 0 0 5px 0;
