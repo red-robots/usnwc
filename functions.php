@@ -712,7 +712,7 @@ function js_custom_init()
     'show_ui' => true, 
     'show_in_menu' => true, 
     'query_var' => true,
-    'rewrite' => true,
+    'rewrite'  => array( 'slug' => 'festival-activity' ),
     'capability_type' => 'post',
     'has_archive' => false, 
     'hierarchical' => false, // 'false' acts like posts 'true' acts like pages

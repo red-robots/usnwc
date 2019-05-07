@@ -3154,8 +3154,12 @@ div.trailer .fb-post, div.trailer .fb-post * {
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#fff;}
-body.page-id-1337 #cboxOverlay{background:#9F0028;}
-body.page-id-24780 #cboxOverlay{background:#1B3E3C;}
+body.page-id-1337 #cboxOverlay {background:#9F0028;}
+body.page-id-24780 #cboxOverlay {background:#1B3E3C;}
+body.page-id-33826 #cboxOverlay {background:#91BD9F;}
+body.page-id-33826 #colorbox .the-pop {
+	color: #4D6A59;
+}
 #colorbox{outline:0;}
     #cboxContent{margin-top:32px; overflow:visible; /*background:#000;*/}
         .cboxIframe{background:#fff;}

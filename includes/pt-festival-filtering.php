@@ -85,7 +85,7 @@ if ($wp_query->have_posts()) : ?>
 	)
 ));
 if ($wp_query->have_posts()) : ?>
-	<h2 class="filter-title">Filter By Time:</h2>
+	<h2 class="filter-title">Filter by Day:</h2>
 		<div class="button-group group2 filters-button-group" data-filter-group="time">
 		<button class="filbutton showall is-checked" data-filter="*">show all</button>
 			<?php 
@@ -219,7 +219,9 @@ if ($wp_query->have_posts()) : ?>
 				<?php } ?>
 
 				<div class="desc"><span class="upper">Location:</span> <?php echo $location[0]; ?> 
-					<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+					<?php if( $map ) { ?>
+						<a target="_blank" href="<?php echo $map; ?>">(Map)</a>
+					<?php } ?>
 				</div>
 
 				<div class="desc">
