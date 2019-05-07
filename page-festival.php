@@ -26,7 +26,15 @@ get_header('page'); ?>
 <!-- <header><h1><?php the_title(); ?> Schedule</h1></header> -->
   <div class="filter-wraper">
 
-    <?php get_template_part('includes/festival-filtering'); ?>
+    <?php 
+    	if( is_page('confluence') ) {
+    		get_template_part('includes/pt-festival-filtering');
+    	} else {
+    		get_template_part('includes/festival-filtering');
+    	}
+    	 ?>
+    	
+
   </div>
 </article>
 

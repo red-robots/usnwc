@@ -106,12 +106,17 @@ h2.woocommerce-loop-category__title {
 }
 .flowfest .the-filter h2 {color: #767777;}
 .outdoor-market .the-filter h2 {color: #767777;}
+.confluence .the-filter h2 {color: #767777;}
 .flowfest .filbutton {
 	background-color:  #9F0028;
 	color: #fff;
 }
 .outdoor-market .filbutton {
 	background-color:  #1B3E3C;
+	color: #fff;
+}
+.confluence .filbutton {
+	background-color:  #4D6A59;
 	color: #fff;
 }
 .flowfest .filbutton:hover {
@@ -121,6 +126,7 @@ h2.woocommerce-loop-category__title {
 .flowfest .filbutton:active,
 .flowfest .filbutton.is-checked {
 	background-color: #FEA626;
+
 }
 .outdoor-market .filbutton:hover {
 	background-color: #FAA319;
@@ -129,6 +135,16 @@ h2.woocommerce-loop-category__title {
 .outdoor-market .filbutton:active,
 .outdoor-market .filbutton.is-checked {
 	background-color: #FAA319;
+}
+.confluence .filbutton:hover {
+	background-color: #F6D498;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+	color: #4D6A59;
+}
+.confluence .filbutton:active,
+.confluence .filbutton.is-checked {
+	background-color: #F6D498;
+	color: #4D6A59;
 }
 
 .flowfest .button-group {
@@ -258,7 +274,13 @@ section.passdesc {
 .outdoor-market .element-item {
 	color: #fff;
 	background-color: #1B3E3C;
-	/*font-family: "Arial, Helvetica, sans-serif";*/
+}
+.confluence .element-item {
+	color: #fff;
+	background-color: #4D6A59;
+}
+.confluence .element-item a {
+	color: #aed2f1;
 }
 .element-item {
   position: relative;
@@ -285,6 +307,13 @@ section.passdesc {
 	font-family: 'Canter Bold';
 	color: #FAA319;
 	border-bottom: 1px solid #FAA319;
+	letter-spacing: 8px;
+	font-size: 16pt;
+}
+.outdoor-market .element-item h3 {
+	font-family: 'Canter Bold';
+	color: #F6D498;
+	border-bottom: 1px solid #F6D498;
 	letter-spacing: 8px;
 	font-size: 16pt;
 }

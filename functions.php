@@ -687,6 +687,40 @@ function js_custom_init()
 	
   ); 
   register_post_type('activity',$args); // name used in query
+
+
+  // Register the Activities Post Type
+  
+     $labels = array(
+	'name' => _x('Festival Activities', 'post type general name'),
+    'singular_name' => _x('Festival Activity', 'post type singular name'),
+    'add_new' => _x('Add New', 'Activity'),
+    'add_new_item' => __('Add New Activity'),
+    'edit_item' => __('Edit Festival Activities'),
+    'new_item' => __('New Activity'),
+    'view_item' => __('View Activities'),
+    'search_items' => __('Search Activities'),
+    'not_found' =>  __('No Activities found'),
+    'not_found_in_trash' => __('No Activities found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Festival Activities'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
+	
+  ); 
+  register_post_type('festival_activity',$args); // name used in query
   
   // Add more between here
   
@@ -704,14 +738,27 @@ function build_taxonomies() {
 // cusotm tax
     register_taxonomy( 'pass_type', 'activity',
 	 array( 
-	'hierarchical' => true, // true = acts like categories false = acts like tags
-	'label' => 'Pass Type', 
-	'query_var' => true, 
-	'rewrite' => true ,
-	'show_admin_column' => true,
-	'public' => true,
-	'rewrite' => array( 'slug' => 'pass-type' ),
-	'_builtin' => true
+		'hierarchical' => true, // true = acts like categories false = acts like tags
+		'label' => 'Pass Type', 
+		'query_var' => true, 
+		'rewrite' => true ,
+		'show_admin_column' => true,
+		'public' => true,
+		'rewrite' => array( 'slug' => 'pass-type' ),
+		'_builtin' => true
+	) );
+
+
+	register_taxonomy( 'festival', 'festival_activity',
+	 array( 
+		'hierarchical' => true, // true = acts like categories false = acts like tags
+		'label' => 'Festival', 
+		'query_var' => true, 
+		'rewrite' => true ,
+		'show_admin_column' => true,
+		'public' => true,
+		'rewrite' => array( 'slug' => 'festival-day' ),
+		'_builtin' => true
 	) );
 	
 } // End build taxonomies
