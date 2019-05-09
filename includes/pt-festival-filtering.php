@@ -233,7 +233,7 @@ if ($wp_query->have_posts()) : ?>
 
 				<?php if( $time || $duration ) { ?>
 				<div class="desc">
-					<span class="upper">Time:</span>
+					<span class="upper">When:</span>
 					<?php 
 					if($fullDate){ echo $fullDate.' ';}
 					if($time) { echo $time.' ';}
