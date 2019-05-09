@@ -55,6 +55,8 @@ if ($wp_query->have_posts()) : ?>
 
 				foreach( $first as $theAct ) { 
 					$str = strtolower($theAct);
+					// grab the first 4 characters so multi names can still link
+					$str = substr($str, 0, 4);
 			?>
 					<button class="filbutton " data-filter=".<?php echo $str;?>">
 						<?php echo $theAct; ?>
@@ -95,7 +97,7 @@ if ($wp_query->have_posts()) : ?>
 					$dayD = get_field('date');
 					$timestamp = strtotime($dayD);
 					$day = date('l', $timestamp);
-
+					
 					$str = strtolower($day);
 					$str = sanitize_title_with_dashes($str);
 					$timeName = $day;
@@ -138,7 +140,21 @@ $wp_query = new WP_Query();
 $wp_query->query(array(
 	'post_type'=>'festival_activity',
 	'posts_per_page' => -1,
-	'paged' => $paged,
+	'meta_query' => array(
+        'relation' => 'AND',
+        'date_clause' => array(
+            'key' => 'date',
+            'compare' => 'EXISTS',
+        ),
+        'time_clause' => array(
+            'key' => 'time',
+            'compare' => 'EXISTS',
+        ),
+    ),
+    'orderby' => array(
+        'date_clause' => 'ASC',
+        'time_clause' => 'ASC',
+    ),
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'festival', // your custom taxonomy
@@ -157,8 +173,9 @@ if ($wp_query->have_posts()) : ?>
 			$name = get_field('activity_name');
 			$timegen = get_field('time_gen');
 			$dayD = get_field('date');
-					$timestamp = strtotime($dayD);
-					$day = date('l', $timestamp);
+			$timestamp = strtotime($dayD);
+			$day = date('l', $timestamp);
+			$fullDate = date('F j, ', $timestamp);
 			$time = get_field('time');
 			$duration = get_field('duration');
 			$location = get_field('location');
@@ -190,6 +207,8 @@ if ($wp_query->have_posts()) : ?>
 				<?php //if($str) {
 					foreach( $type as $t ) {
 						$str = strtolower($t);
+						// grab the first 4 characters so multi names can still link
+						$str = substr($str, 0, 4);
 						echo $str.' ';
 					}
 
@@ -214,7 +233,11 @@ if ($wp_query->have_posts()) : ?>
 
 				<?php if( $time || $duration ) { ?>
 				<div class="desc">
-					<span class="upper">Time:</span> <?php if($time) { echo $time;} ?> <?php if($duration) { echo '('.$duration.')';} ?>
+					<span class="upper">Time:</span>
+					<?php 
+					if($fullDate){ echo $fullDate.' ';}
+					if($time) { echo $time.' ';}
+					if($duration) { echo '('.$duration.')';} ?>
 				</div>
 				<?php } ?>
 
