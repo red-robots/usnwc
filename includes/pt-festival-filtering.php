@@ -77,7 +77,9 @@ if ($wp_query->have_posts()) : ?>
 	$wp_query->query(array(
 	'post_type'=>'festival_activity',
 	'posts_per_page' => -1,
-	'paged' => $paged,
+	'meta_key'	=> 'date',
+	'orderby'	=> 'meta_value_num',
+	'order'		=> 'ASC',
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'festival', // your custom taxonomy
