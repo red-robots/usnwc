@@ -28,7 +28,7 @@ if( is_page('confluence') ) {
 if ($wp_query->have_posts()) : ?>
 	
 	<div id="filters" class=" ">
-		<h2 class="filter-title">Filter By Activity Type:</h2>
+		<h2 class="filter-title">Filter by programming:</h2>
 
 		<div class="button-group group1 filters-button-group" data-filter-group="type">
 			<button class="filbutton showall is-checked" data-filter="*">show all</button>
