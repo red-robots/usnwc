@@ -27,7 +27,7 @@ get_header('page'); ?>
   <div class="filter-wraper">
 
     <?php 
-    	if( is_page('confluence') ) {
+    	if( is_page( array('confluence', 'flowfest', 'outdoor-market') )){
     		get_template_part('includes/pt-festival-filtering');
     	} else {
     		get_template_part('includes/festival-filtering');

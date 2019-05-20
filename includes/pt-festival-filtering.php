@@ -4,6 +4,12 @@ $map = get_field('link_to_activity_map');
 
 if( is_page('confluence') ) {
 	$tax = 'confluence';
+} elseif( is_page('flowfest') ) {
+	$tax = 'flow-fest';
+} elseif( is_page('outdoor-market') ) {
+	$tax = 'outdoor-market';
+} else {
+	$tax = '';
 }
 ?>
 <!-- <div class="filter-options">
@@ -28,6 +34,9 @@ if( is_page('confluence') ) {
 if ($wp_query->have_posts()) : ?>
 	
 	<div id="filters" class=" ">
+
+
+
 		<h2 class="filter-title">Filter by programming:</h2>
 
 		<div class="button-group group1 filters-button-group" data-filter-group="type">
@@ -129,6 +138,69 @@ if ($wp_query->have_posts()) : ?>
 		</div>
 	
 <?php endif; ?>
+
+<div class="clear"></div>
+
+<?php 
+
+	$wp_query = new WP_Query();
+	$wp_query->query(array(
+	'post_type'=>'festival_activity',
+	'posts_per_page' => -1,
+	'meta_key'	=> 'date',
+	'orderby'	=> 'meta_value_num',
+	'order'		=> 'ASC',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'festival', // your custom taxonomy
+			'field' => 'slug',
+			'terms' => array( $tax ) // the terms (categories) you created
+		)
+	)
+));
+if ($wp_query->have_posts()) : ?>
+	<h2 class="filter-title">Filter by Location:</h2>
+
+		<div class="button-group group1 filters-button-group" data-filter-group="type">
+			<button class="filbutton showall is-checked" data-filter="*">show all</button>
+			<?php 
+			// Set the Array for the whole thing.
+			$save = array();
+			$first = array();
+			$second = array();
+
+			// loop through Activty type first.
+			while ($wp_query->have_posts()) : $wp_query->the_post();
+
+				$type = get_field('location');
+
+				foreach($type as $act) {
+					$actName = $act;
+					// echo $str;
+					if( !in_array($actName, $first) ) {
+						$first[] = $actName;
+					}
+				} 
+
+			endwhile; 
+
+				foreach( $first as $theAct ) { 
+					$str = strtolower($theAct);
+					// grab the first 4 characters so multi names can still link
+					$str = substr($str, 0, 4);
+			?>
+					<button class="filbutton " data-filter=".<?php echo $str;?>">
+						<?php echo $theAct; ?>
+					</button>
+				<?php
+				 } //echo $final;
+			 ?>
+		</div>
+	
+<?php endif; ?>
+
+
+
 	</div>
 	<!-- / #filter -->
 </div>
@@ -159,9 +231,9 @@ $wp_query->query(array(
     ),
 	'tax_query' => array(
 		array(
-			'taxonomy' => 'festival', // your custom taxonomy
+			'taxonomy' => 'festival',
 			'field' => 'slug',
-			'terms' => array( $tax ) // the terms (categories) you created
+			'terms' => array( $tax ) 
 		)
 	)
 ));
@@ -206,22 +278,30 @@ if ($wp_query->have_posts()) : ?>
 		?>
 		
 			<div class=" activity-card element-item 
-				<?php //if($str) {
+				<?php 
+					// spit out first 4 letters of programming class
 					foreach( $type as $t ) {
 						$str = strtolower($t);
 						// grab the first 4 characters so multi names can still link
 						$str = substr($str, 0, 4);
 						echo $str.' ';
 					}
-
-					
-						$str = strtolower($day);
+					// spit out first 4 letters of location class
+					foreach( $location as $t ) {
+						$str = strtolower($t);
 						// grab the first 4 characters so multi names can still link
 						$str = substr($str, 0, 4);
 						echo $str.' ';
+					}
+
+					// spit out first 4 letters of day class
+					$str = strtolower($day);
+					// grab the first 4 characters so multi names can still link
+					$str = substr($str, 0, 4);
+					echo $str.' ';
 					
 					
-					//} ?>
+					 ?>
 				<?php if($santitime) {echo $santitime.' ';} ?>
 				<?php if($santiL) {echo $santiL.' ';} ?>
 			" data-category="<?php //echo $str; ?>">
