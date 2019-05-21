@@ -108,7 +108,7 @@ h2.woocommerce-loop-category__title {
 .outdoor-market .the-filter h2 {color: #767777;}
 .confluence .the-filter h2 {color: #767777;}
 .flowfest .filbutton {
-	background-color:  #9A3433;
+	background-color:  #801B43;
 	color: #fff;
 }
 .outdoor-market .filbutton {
@@ -232,7 +232,7 @@ section.passdesc {
 	width: 100%;
 	display: block;
 	padding: 10px 0;
-	background-color: #9A3433;
+	background-color: #801B43;
 	color: #fff;
 	cursor: pointer;
 	text-align: center;
@@ -269,7 +269,7 @@ section.passdesc {
 .no-results {display: none;}
 .flowfest .element-item {
 	color: #fff;
-	background-color: #9A3433;
+	background-color: #801B43;
 }
 .outdoor-market .element-item {
 	color: #fff;
@@ -3154,7 +3154,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#fff;}
-body.page-id-1337 #cboxOverlay {background:#9A3433;}
+body.page-id-1337 #cboxOverlay {background:#801B43;}
 body.page-id-24780 #cboxOverlay {background:#1B3E3C;}
 body.page-id-33826 #cboxOverlay {background:#91BD9F;}
 body.page-id-33826 #colorbox .the-pop {
