@@ -1,5 +1,13 @@
 <?php 
-
+function sM($aStr) {
+	// grab the first 4 characters so multi names can still link
+	$aStr = substr($aStr, 0, 24);
+	$aStr = str_replace(" ", "", $aStr);
+	$aStr = str_replace("'", "", $aStr);
+	$aStr = str_replace("&", "", $aStr);
+	$aStr = str_replace("/", "", $aStr);
+	return $aStr;
+}
 $map = get_field('link_to_activity_map'); 
 
 if( is_page('confluence') ) {
@@ -64,8 +72,7 @@ if ($wp_query->have_posts()) : ?>
 
 				foreach( $first as $theAct ) { 
 					$str = strtolower($theAct);
-					// grab the first 4 characters so multi names can still link
-					$str = substr($str, 0, 4);
+					$str = sM($str);
 			?>
 					<button class="filbutton " data-filter=".<?php echo $str;?>">
 						<?php echo $theAct; ?>
@@ -127,8 +134,7 @@ if ($wp_query->have_posts()) : ?>
 				foreach( $second as $theTime ) { 
 					// for the link. grab it
 					$str = strtolower($theTime);
-					// grab the first 4 characters so multi names can still link
-					$str = substr($str, 0, 4);
+					$str = sM($str);
 			?>
 					<button class="filbutton " data-filter=".<?php echo $str;?>">
 						<?php echo $theTime; ?>
@@ -183,11 +189,10 @@ if ($wp_query->have_posts()) : ?>
 				} 
 
 			endwhile; 
-
+				
 				foreach( $first as $theAct ) { 
 					$str = strtolower($theAct);
-					// grab the first 4 characters so multi names can still link
-					$str = substr($str, 0, 4);
+					$str = sM($str);
 			?>
 					<button class="filbutton " data-filter=".<?php echo $str;?>">
 						<?php echo $theAct; ?>
@@ -282,22 +287,19 @@ if ($wp_query->have_posts()) : ?>
 					// spit out first 4 letters of programming class
 					foreach( $type as $t ) {
 						$str = strtolower($t);
-						// grab the first 4 characters so multi names can still link
-						$str = substr($str, 0, 4);
+						$str = sM($str);
 						echo $str.' ';
 					}
 					// spit out first 4 letters of location class
 					foreach( $location as $t ) {
 						$str = strtolower($t);
-						// grab the first 4 characters so multi names can still link
-						$str = substr($str, 0, 4);
+						$str = sM($str);
 						echo $str.' ';
 					}
 
 					// spit out first 4 letters of day class
 					$str = strtolower($day);
-					// grab the first 4 characters so multi names can still link
-					$str = substr($str, 0, 4);
+					$str = sM($str);
 					echo $str.' ';
 					
 					
