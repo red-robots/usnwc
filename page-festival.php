@@ -27,11 +27,13 @@ get_header('page'); ?>
   <div class="filter-wraper">
 
     <?php 
-    	if( is_page( array('confluence', 'flowfest', 'outdoor-market') )){
+    	if( is_page( array('confluence', 'outdoor-market') )){
     		get_template_part('includes/pt-festival-filtering');
+    	} elseif ( is_page( array('flowfest') )) {
+    		get_template_part('includes/pt-festival-filtering-flowfest');
     	} else {
-    		get_template_part('includes/festival-filtering');
-    	}
+        get_template_part('includes/festival-filtering');
+      }
     	 ?>
     	
 
