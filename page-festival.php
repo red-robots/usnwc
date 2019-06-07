@@ -8,7 +8,7 @@ get_header('page'); ?>
 
  <?php get_sidebar("banner");?>
 <?php if(have_posts()){ 
-   	the_post(); ?>
+   	the_post(); $bContent = get_field('bottom_content'); ?>
 	<?php if(in_array(get_field('sidebar'),array("top","both"),true)){
 		$sidebar="top";
 		get_template_part('sidebar');
@@ -41,7 +41,7 @@ get_header('page'); ?>
 </article>
 
   <article class="post <?php echo $post->post_name; ?>">
-      <?php the_field('bottom_content') ?>
+      <?php echo $bContent; ?>
       <?php comments_template(); ?>
   </article> 
 

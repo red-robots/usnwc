@@ -268,6 +268,7 @@ if ($wp_query->have_posts()) : ?>
 			
 			$ledby = get_field('led_by');
 			$ledbyLink = get_field('led_by_link');
+			$register = get_field('register');
 			
 			$santitime = sanitize_title_with_dashes($timegen);
 			
@@ -380,6 +381,11 @@ if ($wp_query->have_posts()) : ?>
 					
 				</div>
 				<?php } ?>
+				<?php if( $register ) { ?>
+					<div class="register">
+						<a target="_blank" href="<?php echo $register; ?>">Register</a>
+					</div>
+				<?php } ?>
 
 			</div>
 
@@ -406,11 +412,12 @@ if ($wp_query->have_posts()) : ?>
 
 		<?php endwhile; 
 
-			if(is_page('outdoor-market')) {
-				include(locate_template('includes/extra-items.php'));
-			}
+			
+				//include(locate_template('includes/bottom-content.php'));
+				
 
 		?>
+			
 		</div>
 
 <?php endif; ?>
