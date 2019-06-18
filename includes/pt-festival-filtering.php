@@ -366,6 +366,34 @@ if ($wp_query->have_posts()) : ?>
 				endwhile; ?>
 					</div>
 				<?php endif; ?>
+
+
+
+				<?php if( have_rows('moderator') ) : ?>
+					<div class="desc">
+						<span class="upper">Moderator:</span><br>
+					<?php while( have_rows('moderator') ) : the_row(); 
+
+					$moderator = get_sub_field('moderator');
+					$modDesc = get_sub_field('moderator_description');
+					$saniName = sanitize_title_with_dashes($moderator);
+				?>
+					
+					<?php if( $modDesc != '' ) { ?>
+						<a class="instr-desc" href="#<?php echo $saniName; ?>">
+							<?php echo $moderator; ?><br>
+						</a>
+					<?php } else {
+							echo $moderator . '<br>';
+						}
+					
+					
+				endwhile; ?>
+					</div>
+				<?php endif; ?>
+
+
+
 				<?php if( $ledby ) { ?>
 					<div class="desc"><span class="upper">Led By:</span>
 						<?php if( $ledbyLink ) { ?><a target="_blank" href="<?php echo $ledbyLink; ?>"><?php } ?>
@@ -400,6 +428,20 @@ if ($wp_query->have_posts()) : ?>
 			<div style="display: none">
 				<div id="<?php echo $santiName; ?>" class="the-pop">
 					<?php echo $instrDescription; ?>
+				</div>
+			</div>
+			<?php endwhile; endif; ?>
+
+
+			<?php if( have_rows('moderator') ) : while( have_rows('moderator') ) : the_row(); 
+
+					$moderator = get_sub_field('moderator');
+					$moderatorDesc = get_sub_field('moderator_description');
+					$saniName = sanitize_title_with_dashes($moderator);
+				?>
+			<div style="display: none">
+				<div id="<?php echo $saniName; ?>" class="the-pop">
+					<?php echo $moderatorDesc; ?>
 				</div>
 			</div>
 			<?php endwhile; endif; ?>
