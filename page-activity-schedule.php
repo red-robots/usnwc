@@ -33,8 +33,8 @@ $closedMessage = get_field('closed_message');
 		'Ziplines'=>'activity_ziplines',
 		'Ropes'=>'activity_ropes',
 		'Jumps'=>'activity_jumps',
-		'Yoga'=>'activity_yoga',
-		'Trails'=>'activity_trails'
+		'Trails'=>'activity_trails',
+		'Yoga'=>'activity_yoga'
 	);?>
 	<section class="post container activity-schedule">
 		<header>
