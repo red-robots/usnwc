@@ -12,10 +12,13 @@ $map = get_field('link_to_activity_map');
 
 if( is_page('confluence') ) {
 	$tax = 'confluence';
+	$more = 'Registration & Information';
 } elseif( is_page('flowfest') ) {
 	$tax = 'flow-fest';
+	$more = 'Information & Description';
 } elseif( is_page('outdoor-market') ) {
 	$tax = 'outdoor-market';
+	$more = 'Information & Description';
 } else {
 	$tax = '';
 }
@@ -403,7 +406,7 @@ if ($wp_query->have_posts()) : ?>
 				<?php } ?>
 				<?php if( $description != '' ) { ?>
 				<div class="act-desc">
-					<span class="upper"><a class="pop-desc" href="#desc-<?php echo $descCount; ?>">Information & Description</a></span>
+					<span class="upper"><a class="pop-desc" href="#desc-<?php echo $descCount; ?>"><?php echo $more; ?></a></span>
 					
 					
 				</div>
