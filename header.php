@@ -4,13 +4,13 @@ if(!isset($is_tribe)) $is_tribe = false;?>
 <html <?php language_attributes(); ?>>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-13073484-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47534226-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-13073484-1');
+  gtag('config', 'UA-47534226-1');
 </script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <?php
