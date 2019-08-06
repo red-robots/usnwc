@@ -22,6 +22,7 @@ while(have_posts()) : the_post(); ?>
 		<?php  echo $content; ?>
 
 		<?php if( have_rows('activities') ) : ?>
+			<div class="quali-acti">
             <table class="sub-menu">
 
                 <thead>
@@ -86,6 +87,7 @@ while(have_posts()) : the_post(); ?>
             <?php endwhile; ?>
                 </tbody>
             </table> 
+           </div>
         <?php endif; // end of Qualifiers ?>
 
 			<?php 

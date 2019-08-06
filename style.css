@@ -95,6 +95,16 @@ h2.woocommerce-loop-category__title {
 .outdoor-market {
 	
 }
+article.post .quali-acti {
+	/*width: 85%;*/
+	border-bottom: 2px solid #efefef;
+	border-top: 2px solid #efefef;
+	padding: 40px 5%;
+}
+.quali-acti table.sub-menu {
+	width: auto;
+	margin: 0 auto;
+}
 /* ---- button ---- */
 .tile.container.filterzz {
 	margin: 0;
