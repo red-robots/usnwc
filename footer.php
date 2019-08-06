@@ -68,22 +68,6 @@
 </div><!--end of page container-->
 </div><!--end of base container-->
 
-<script type="text/javascript">
-
-  // var _gaq = _gaq || [];
-  // _gaq.push(['_setAccount', 'UA-13073484-1']);
-  // _gaq.push(['_trackPageview']);
-
-  // (function() {
-  //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  //   ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-  //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  // })();
-</script>
-
-
-
-
 <script>
   (function() {
     var cx = '003847185050192092312:rff-uwdmgtq';
