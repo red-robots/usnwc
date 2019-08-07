@@ -15,6 +15,7 @@ $btnLabel = 'Pass Options';
 $btn = get_field('pass_button');
 if( $btn ){ $btnLabel = $btn; }
 $passLink = get_field('pass_link');
+$addInfo = get_field('additional_information');
 
 get_sidebar("banner");
 
@@ -121,6 +122,12 @@ while(have_posts()) : the_post(); ?>
 			    </ul>
 			</div>
 		<?php endif; ?>
+
+		<?php if($addInfo){ ?>
+			<div class="addInfo">
+				<?php echo $addInfo; ?>
+			</div>
+		<?php } ?>
 
    	</article>
 
