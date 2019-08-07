@@ -95,6 +95,15 @@ h2.woocommerce-loop-category__title {
 .outdoor-market {
 	
 }
+article.post > .act-pass-options {
+	width: 100%;
+	padding: 40px 0 !important ;
+	text-align: center;
+}
+article.post .act-pass-options .desc {
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+}
 article.post .quali-acti {
 	/*width: 85%;*/
 	border-bottom: 2px solid #efefef;

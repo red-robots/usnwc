@@ -10,6 +10,11 @@ global $post;
 $content = get_field('activity_descr');
 $images = get_field('gallery');
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
+$passDesc = get_field('pass_availability');
+$btnLabel = 'Pass Options';
+$btn = get_field('pass_button');
+if( $btn ){ $btnLabel = $btn; }
+$passLink = get_field('pass_link');
 
 get_sidebar("banner");
 
@@ -19,45 +24,39 @@ while(have_posts()) : the_post(); ?>
 		<header>
 			<?php the_title( '<h1 class="entry-title product_title">', '</h1>' ); ?>
 		</header>		        	        
-		<?php  echo $content; ?>
+		<?php  
+		/* Single Activity Description */
+			echo $content;
 
-		<?php if( have_rows('activities') ) : ?>
+		/*
+
+			Single Activity Qualifiers
+
+		*/
+		if( have_rows('activities') ) : ?>
 			<div class="quali-acti">
             <table class="sub-menu">
-
-                <thead>
-
-                    <tr>
+				<thead>
+					<tr>
                         <th>Activities</th>
                         <th>Difficulty</th>
                         <th>Qualifiers</th>
                     </tr>
                 </thead>
                 <tbody>
-                                    
-                                
-
             <?php while( have_rows('activities') ) : the_row(); 
-
-                $name = get_sub_field('name');
+				$name = get_sub_field('name');
                 $difficulty = get_sub_field('difficulty');
                 $qualifiers = get_sub_field('qualifiers');
-                $show = get_sub_field('show');
-                
-            ?>
-            <?php 
-                
-                if(strcmp('no',$show)!==0){?>
+                $show = get_sub_field('show'); 
+
+                if(strcmp('no',$show)!==0){ ?>
                     <tr>
                         <?php // fields
-                        // $name = $act['name'];
-                        // $difficulty = $act['difficulty'];
-                        // $qualifiers = $act['qualifiers'];
                         $beg = in_array( 'Easy', $difficulty );
                         $int = in_array( 'Intermediate', $difficulty );
                         $adv = in_array( 'Difficult', $difficulty );?>
-
-                        <td>
+						<td>
                             <?php if($name) echo $name;?>
                         </td>
                         <td>
@@ -88,9 +87,24 @@ while(have_posts()) : the_post(); ?>
                 </tbody>
             </table> 
            </div>
-        <?php endif; // end of Qualifiers ?>
+        <?php endif; // end of Qualifiers 
+        /* Pass Options */ 
+        ?>
+        <div class="act-pass-options">
+        	<div class="desc"><?php echo $passDesc; ?></div>
+        	<?php if( $passLink ) { ?>
+        		<div class="pass-button">
+        			<a href="<?php echo $passLink; ?>"><?php echo $btnLabel; ?></a>
+        		</div>
+        	<?php } ?>
+        </div>
+        <?php 
+		/*
 
-			<?php 
+			Single Activity Gallery
+
+
+		*/
 			// Begin Flexslider
 
 			// see variable above in header
@@ -107,7 +121,9 @@ while(have_posts()) : the_post(); ?>
 			    </ul>
 			</div>
 		<?php endif; ?>
+
    	</article>
+
 <?php endwhile; //end of if have posts
 get_footer(); 
 ?>
