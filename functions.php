@@ -5,6 +5,21 @@
  *
  */
 
+
+add_filter('pto/posts_orderby/ignore', 'theme_pto_posts_orderby', 10, 3);
+function theme_pto_posts_orderby($ignore, $orderBy, $query)
+  {
+      if( (! is_array($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'festival_activity') || 
+              (is_array($query->query_vars)   &&  in_array('festival_activity', $query->query_vars)))
+              $ignore = TRUE;
+      
+      
+      return $ignore;
+  }
+
+
+
+
 add_action( 'after_setup_theme', 'shaken_setup' );
 
 /**
