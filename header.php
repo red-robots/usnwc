@@ -109,15 +109,16 @@ if(is_category()){
 	echo $post->post_name;
 }
 ?>">
-<nav class="mobile">
-</nav>
+<!-- <nav class="mobile">
+</nav> -->
 <div class="page container">
 <div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
 	<?php get_search_form();?>
+  <?php get_template_part('mobilenav'); ?>
 	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/search.png";?>">
-	<img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>">
-    <nav>
+	<!-- <img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>"> -->
+    <nav class="desktop">
    		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
 	</nav>
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
@@ -126,7 +127,7 @@ if(is_category()){
   <nav class="page breadcrumbs">
     <?php 
 
-      if ( is_page() || is_tax('product_cat') || get_post_type() == 'product') { 
+      if (is_page() || is_tax('product_cat') || is_singular(array('product','activity')) ) { 
       	get_breadcrumbs();
       } else { 
       	bloglow_get_breadcrumb_navigation();

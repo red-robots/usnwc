@@ -1,0 +1,89 @@
+* { -webkit-hyphens: none; }
+a {
+	text-decoration:none;
+	@include transition(all ease .2s);
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+#masthead {
+	width: 100%;
+	position: relative;
+	background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 280px;
+	background-image: url(images/logo.png);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 100%;
+	display: block;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+.site-footer {
+	width: 100%;
+	clear: both;
+	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	a {
+		color: #fff;
+	}
+}

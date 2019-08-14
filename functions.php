@@ -348,7 +348,7 @@ function get_breadcrumbs(){
 
 	$separator = '  &raquo; '; // what to place between the pages
 
-	if ( is_page() || get_post_type() == 'product'  ){
+	if ( is_page() || get_post_type() == 'product'  || get_post_type() == 'activity' ){
 		// bread crumb structure only logical on pages
 		$trail = array($post); // initially $trail only contains the current page
 		$lastElement = end($trail); // gather the last item to not link it.
@@ -378,6 +378,20 @@ function get_breadcrumbs(){
 				}
 			}
 			endif; // end woocommerce changes.
+
+			if( is_single() && get_post_type() == 'activity' ) {
+				echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/activities'>Activities</a></li>\n";
+				//if( is_product() ) { // if single product.
+					// $terms = get_the_terms( $post->ID, 'product_cat' );
+					// foreach ($terms as $term) {
+					//     //$product_cat_id = $term->name;
+					//     echo $separator."<li class='breadcrumb-item' id='breadcrumb-0'><a href='".get_bloginfo('url')."/product-category/".$term->slug."'>".$term->name."</a></li>\n";
+					//     break;
+					// }
+				//}
+			}
+
+
 		} else { // if the front page displays a static page, display a link to it
 			$home_page = get_post( $page_on_front ); // get the front page object
 			echo "<li class='breadcrumb-item' id='breadcrumb-{$home_page->ID}'><a href='" . get_bloginfo('home') . "'>$home_page->post_title</a></li>\n"; // home page link
