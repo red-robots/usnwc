@@ -379,7 +379,7 @@ header.post h2,header.post h1{width:98%;height:auto;font-size:18pt;letter-spacin
 .tile.container .tile header,.icon.container .icon header{width:98%;height:auto;background-color:#fff;margin:1%;padding:0}
 .tile.container .tile header h2,.icon.container .icon header h2{color:#333;font-size:1em;letter-spacing:.05em;text-transform:capitalize;margin:0;padding:.5em 1em;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif}
 .tile.container .tile header h2{text-align:left}
-.tile.container .tile header.overlay{position:absolute;top:0;left:0;opacity:.80}
+.tile.container .tile header.overlay{position:absolute;top:0;left:0;opacity:.80;visibility:visible}
 .tile.container .tile p.date{width:94%;height:auto;margin:0;padding:2% 3%;text-align:right;font-size:1.2em;color:#6f777d;border-top:1px solid #ddd}
 .tile.container .tile>div{width:97.4%;height:auto;margin:1% auto;padding:0;position:static;display:block;background-repeat:no-repeat;background-position:center;background-size:300px;line-height:0}
 .tile.container .tile>div>img{width:100%;height:auto}
