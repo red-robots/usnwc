@@ -1669,11 +1669,11 @@ nav.mobilemenu ul a {
   color: black; }
 
 nav.mobilemenu .mobile-top-level {
-  font-size: 1.9em;
+  font-size: 1.5em;
   letter-spacing: 3pt; }
 
 nav.mobilemenu .mobile-sub-menu {
-  font-size: .9em;
+  font-size: .8em;
   text-transform: capitalize;
   letter-spacing: 1pt;
   opacity: .8; }

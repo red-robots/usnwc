@@ -314,8 +314,8 @@ nav.mobilemenu ul li{list-style-type:none;margin:0 0 20px 8px;color:#4b5054}
 nav.mobilemenu ul li ul li{margin:10px 0 10px 8px}
 nav.mobilemenu .mobile-top-level{text-transform:uppercase}
 nav.mobilemenu ul a{text-decoration:none;color:black}
-nav.mobilemenu .mobile-top-level{font-size:1.9em;letter-spacing:3pt}
-nav.mobilemenu .mobile-sub-menu{font-size:.9em;text-transform:capitalize;letter-spacing:1pt;opacity:.8}
+nav.mobilemenu .mobile-top-level{font-size:1.5em;letter-spacing:3pt}
+nav.mobilemenu .mobile-sub-menu{font-size:.8em;text-transform:capitalize;letter-spacing:1pt;opacity:.8}
 .false.header{width:100%}
 .false.header img.false.img{max-width:360px}
 nav.page.breadcrumbs{display:block;position:static;width:95%;margin:0 0 0 40px;color:black;font-size:11pt}
