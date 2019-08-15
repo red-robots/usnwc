@@ -242,7 +242,7 @@ label{font-size:13px;font-weight:bold;display:inline-block;margin-bottom:5px}
 #trail-status{font-size:9px;width:inherit;text-align:center}
 #activity-schedule{font-size:9px;width:inherit}
 .email-signup input.email-signup-button{width:50px;padding:0;margin:2px 0 0 5px;border-radius:5px}
-.activity-passes .activity-passes table{margin:0 auto}
+.activity-passes .activity-passes table{margin:0 auto 30px auto}
 .activity-passes .activity-passes td{vertical-align:middle;width:25%}
 .activity-passes .activity-passes th{text-align:center;clear:both;margin-left:auto;margin-right:auto}
 .activity-passes .activity-passes a:hover{opacity:.7}
@@ -300,10 +300,10 @@ header.page nav.desktop{display:block;float:right;margin:1.7em 4em 0 0;width:aut
 header.page nav.desktop ul{list-style:none;padding:0;float:right;margin-bottom:0;margin-left:0}
 header.page nav.desktop ul a,footer.page nav ul a{color:#4b5054;letter-spacing:.30em;padding-right:15px;border-right-width:2px;border-right-style:solid;border-right-color:#989898}
 header.page nav.desktop ul li:last-child a,footer.page nav ul li:last-child a{border-right:0;padding-right:0;margin-right:0}
-header.page nav.desktop ul ul{margin:0;position:absolute;top:69px;left:-10px;z-index:99;width:135px;background-color:rgba(255,255,255,0.8);padding:0 10px;display:none;background-position:top;background-repeat:no-repeat}
+header.page nav.desktop ul ul{margin:0;position:absolute;top:69px;left:-10px;z-index:99;width:200px;background-color:rgba(255,255,255,0.8);padding:0 10px;display:none;background-position:top;background-repeat:no-repeat}
 header.page nav.desktop ul ul li{display:block;clear:both;margin:0;position:relative;width:100%;background:url(images/dotted-border.png) bottom repeat-x}
 header.page nav.desktop ul ul li:last-child{background:0}
-header.page nav.desktop ul ul li a{font-size:10pt;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;text-transform:none;display:block;padding:8px 0;letter-spacing:0;border-right:0;line-height:20px}
+header.page nav.desktop ul ul li a{font-size:13pt;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;text-transform:none;display:block;padding:8px 0;letter-spacing:0;border-right:0;line-height:20px}
 header.page nav.desktop li{display:inline-block;float:left;text-transform:uppercase;margin-left:20px;position:relative;z-index:99}
 header.page nav.desktop li:first-child{margin-left:0}
 header.page nav.desktop li a{text-decoration:none;color:#383838}
@@ -482,7 +482,7 @@ section.post.container.passes .buttons .button,section.post.container.tours .but
 section.post.container.passes .buttons,section.post.container.tours .buttons{margin:20px 0 0 0}
 section.post.container.passes ul.top-level-menu{margin:0;padding:0}
 section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:0;list-style-type:none;width:auto;position:relative}
-section.post.container.passes ul.top-level-menu li.top-level-item .title{cursor:pointer;font-size:12pt;text-transform:capitalize}
+section.post.container.passes ul.top-level-menu li.top-level-item .title{cursor:pointer;font-size:16pt;text-transform:capitalize}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min,section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-plus{font-size:16pt;font-weight:700;width:15px;display:inline-block;height:1px;line-height:0;vertical-align:middle}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{display:none}
 section.post.container.passes ul.top-level-menu li.top-level-item table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item .pass-desc{display:none}

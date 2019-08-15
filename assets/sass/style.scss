@@ -976,7 +976,7 @@ label{
 }
 /*////////////////Activity passes and pass table styling////////////////*/
 .activity-passes .activity-passes table{
-margin: 0 auto;
+margin: 0 auto 30px auto;
 }
 
 .activity-passes .activity-passes td{
@@ -1338,7 +1338,7 @@ header.page nav.desktop ul ul {
 	top:69px;
 	left: -10px;
 	z-index:99;
-	width: 135px;
+	width: 200px;
 	background-color: rgba(255,255,255,0.80);
 	padding: 0 10px;
 	display:none;
@@ -1357,7 +1357,7 @@ header.page nav.desktop ul ul li:last-child {
 	background: none;
 }
 header.page nav.desktop ul ul li a{
-	font-size: 10pt;
+	font-size: 13pt;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 	text-transform:none;
 	display:block;
@@ -2337,7 +2337,7 @@ section.post.container.passes ul.top-level-menu li.top-level-items {
 }
 section.post.container.passes ul.top-level-menu li.top-level-item .title {	 
 	cursor: pointer;
-	font-size: 12pt;
+	font-size: 16pt;
 	text-transform: capitalize;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min, 

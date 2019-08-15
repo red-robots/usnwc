@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <!-- <link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/style.css?v=<?php //echo time();?>" /> -->
-    <link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/style.css?version=3.3" />
+    <link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/style.css?version=3.4" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/flexslider.css" />
     <link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/css/animate.css" />
 <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/uploads/2014/10/W_57x57.jpg" />
