@@ -189,13 +189,14 @@ global $is_tribe;
 			<h1>Contact Links</h1>
 		</header>
 		<div class="icon container">
-			<a href="mailto:info@usnwc.org"><div class="icon"><img src="/wp-content/uploads/2015/09/Mail_Icon.png"><header><h2>Email</h2></header></div></a>
-			<a href="tel:+17043913900"><div class="icon"><img src="/wp-content/uploads/2015/09/Phone_Icon.png"><header><h2>Call</h2></header></div></a>
-			<a href="<?php bloginfo(url); ?>/employment"><div class="icon"><img src="/wp-content/uploads/2015/09/Employment_icon.png"><header><h2>Employment</h2></header></div></a>
-			<a href="<?php bloginfo(url); ?>/request-for-donation"><div class="icon"><img src="/wp-content/uploads/2015/09/Donation_request.png"><header><h2>Requests for Donation</h2></header></div></a>
-			<a href="<?php bloginfo('url'); ?>/band-submission-form"><div class="icon"><img src="/wp-content/uploads/2015/09/Band_submission_icon.png"><header><h2>Band Submission</h2></header></div></a>
-			<a href="<?php bloginfo('url'); ?>/feedback/"><div class="icon"><img src="/wp-content/uploads/2015/09/Feedback_Icon.png"><header><h2>Feedback Form</h2></header></div></a>
-			<a href="http://eepurl.com/dppKBv" target="_blank"><div class="icon"><img src="/wp-content/uploads/2015/09/Newsletter_Signup.png"><header><h2>Newsletter Sign-Up</h2></header></div></a>
+			<a href="mailto:info@usnwc.org"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Mail_Icon.png"><header><h2>Email</h2></header></div></a>
+			<a href="tel:+17043913900"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Phone_Icon.png"><header><h2>Call</h2></header></div></a>
+			<a href="<?php bloginfo(url); ?>/employment"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Employment_icon.png"><header><h2>Employment</h2></header></div></a>
+			<a href="<?php bloginfo(url); ?>/request-for-donation"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Donation_request.png"><header><h2>Requests for Donation</h2></header></div></a>
+			<a href="<?php bloginfo('url'); ?>/band-submission-form"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Band_submission_icon.png"><header><h2>Band Submission</h2></header></div></a>
+			<a href="<?php bloginfo('url'); ?>/feedback/"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Feedback_Icon.png"><header><h2>Feedback Form</h2></header></div></a>
+			<a href="http://eepurl.com/dppKBv" target="_blank"><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/Newsletter_Signup.png"><header><h2>Newsletter Sign-Up</h2></header></div></a>
+			<a href="https://usnwc.org/sponsorship-vendor-submission/" ><div class="icon"><img src="<?php bloginfo(url); ?>/wp-content/uploads/2015/09/canopy.png"><header><h2>Sponsorship Vendor Submission</h2></header></div></a>
 			</div>
     </section>
     <section class="sidebar post container social-links">

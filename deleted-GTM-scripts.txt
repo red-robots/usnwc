@@ -27,3 +27,8 @@ http://4.bp.blogspot.com/-v42v10hmHx0/TpM5N_uPwAI/AAAAAAAAAJ4/MT48R66SvVg/s200/J
 http://narmourwright.com/wp/wp-content/uploads/2014/07/Ryan_headshot_sm.jpg
 
 https://sga.bellaworksdev.com
+
+
+
+All -SSLv2 -SSLv3
+All -SSLv2 -SSLv3

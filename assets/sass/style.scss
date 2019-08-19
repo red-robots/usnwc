@@ -2124,6 +2124,10 @@ section.post.container article.row:nth-child(2) {
 article.row .copy {
 	display: inline-block;
 	margin: 1em auto 1.5em auto;
+	&.center {
+		margin: 0 auto;
+		display: block;
+	}
 }
 article.row .copy header {
 	width: auto;
@@ -2331,7 +2335,7 @@ section.post.container.passes ul.top-level-menu {
 section.post.container.passes ul.top-level-menu li.top-level-item,
 section.post.container.passes ul.top-level-menu li.top-level-items {
 	margin: 0;
-	padding: 0;
+	padding: 20px 0;
 	list-style-type: none;
 	width: auto;
 	position: relative;
@@ -2368,7 +2372,7 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active .title 
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,
 section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc {
 	display: block;
-	padding: 20px 0 0 0;
+	padding: 0px 0 0 20px;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{
 	color: grey;

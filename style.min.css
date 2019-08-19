@@ -450,6 +450,7 @@ section.post .passes-col p,section.post .tours-col p{font-size:11pt}
 .astr-def{width:auto;display:inline-block}
 section.post.container article.row:nth-child(2){border-top:0}
 article.row .copy{display:inline-block;margin:1em auto 1.5em auto}
+article.row .copy.center{margin:0 auto;display:block}
 article.row .copy header{width:auto;height:auto;padding:0;margin:0 0 .5em 0}
 article.row .copy header h2{width:auto;height:auto;font-family:franklin_gothic_fsMdCn;font-size:14pt;letter-spacing:.20em;text-transform:uppercase;margin:0;padding:0}
 article.row .copy h3{width:auto;height:auto;font-family:franklin_gothic_fsMdCn;font-size:12pt;letter-spacing:.20em;text-transform:uppercase;margin:0;padding:0}
@@ -481,14 +482,14 @@ section.post.container.passes-tours .buttons .button a{color:#fff}
 section.post.container.passes .buttons .button,section.post.container.tours .buttons .button{background-color:#c10435;color:white;text-transform:uppercase;padding:8px 50px;font-size:18px;margin:0 12px;display:block;text-decoration:none;cursor:pointer;font-weight:700}
 section.post.container.passes .buttons,section.post.container.tours .buttons{margin:20px 0 0 0}
 section.post.container.passes ul.top-level-menu{margin:0;padding:0}
-section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:0;list-style-type:none;width:auto;position:relative}
+section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:20px 0;list-style-type:none;width:auto;position:relative}
 section.post.container.passes ul.top-level-menu li.top-level-item .title{cursor:pointer;font-size:16pt;text-transform:capitalize}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min,section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-plus{font-size:16pt;font-weight:700;width:15px;display:inline-block;height:1px;line-height:0;vertical-align:middle}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{display:none}
 section.post.container.passes ul.top-level-menu li.top-level-item table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item .pass-desc{display:none}
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-plus{display:none}
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-min{display:inline-block}
-section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc{display:block;padding:20px 0 0 0}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc{display:block;padding:0 0 0 20px}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{color:grey;text-transform:capitalize}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{padding:0;margin:0;text-align:left;font-size:10pt;width:33%}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2){padding:0 40px;margin:0}

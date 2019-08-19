@@ -4,6 +4,10 @@
 */
 get_header('page'); 
 
+
+
+$flexsliderAA = get_field('all_access_slider');
+$flexsliderSA = get_field('single_activity_slider');
 $allIntro = get_field('intro_text_all');
 $singleIntro = get_field('intro_text_single');
 $section_title = get_field('section_title');
@@ -66,20 +70,21 @@ $desc_ann = get_field('desc_expand_ann');
                 <h1>All Access Passes</h1>
             </header>
             <?php 
+            include( locate_template( 'includes/all-access-flexslider.php', false, false ) );
             /*
             * Display the video or post_thumbnail featured image (if any)
             */
             // $image = $section['image'];
             if($image){ ?>
-                <figure class="featured_image">
+                <!-- <figure class="featured_image">
                     <img src="<?php echo $image['sizes']['medium'];?>">
-                </figure>
+                </figure> -->
             <?php } 
             /*
             * Display the title of the post and the content
             */
             ?>
-            <section class="copy">
+            <section class="copy center">
                 
                 <section class="passdesc">
                     <?php echo $allIntro; ?>
@@ -267,20 +272,22 @@ $desc_ann = get_field('desc_expand_ann');
                 <h1>Single Activity Passes</h1>
             </header>
             <?php 
+            
+            include( locate_template( 'includes/single-activity-flexslider.php', false, false ) );
             /*
             * Display the video or post_thumbnail featured image (if any)
             */
             // $image = $section['image'];
             if($image){ ?>
-                <figure class="featured_image">
+                <!-- <figure class="featured_image">
                     <img src="<?php echo $image['sizes']['medium'];?>">
-                </figure>
+                </figure> -->
             <?php } 
             /*
             * Display the title of the post and the content
             */
             ?>
-            <section class="copy">
+            <section class="copy center">
                 <section class="passdesc">
                     <?php echo $singleIntro; ?>
                 </section>
@@ -311,7 +318,7 @@ $desc_ann = get_field('desc_expand_ann');
                         </div>
 
                         <?php if( have_rows('activities') ) : ?>
-                            <table class="sub-menu">
+                            <table class="sub-menu ">
 
                                 <thead>
 
@@ -320,6 +327,7 @@ $desc_ann = get_field('desc_expand_ann');
                                         <th>Difficulty</th>
                                         <th>Qualifiers</th>
                                     </tr>
+                                    
                                 </thead>
                                 <tbody>
                                                     
