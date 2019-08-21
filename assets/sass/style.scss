@@ -2333,6 +2333,8 @@ section.post.container.passes .buttons, section.post.container.tours .buttons{
 section.post.container.passes ul.top-level-menu {
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	float: left;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item,
 section.post.container.passes ul.top-level-menu li.top-level-items {
@@ -2343,6 +2345,11 @@ section.post.container.passes ul.top-level-menu li.top-level-items {
 	position: relative;
 	thead, tbody {
 		width: 100%;
+		display: inline-block;
+		tr {
+			width: 100%;
+			display: inline-table;
+		}
 	}
 }
 section.post.container.passes ul.top-level-menu li.top-level-item .title {	 
@@ -2377,11 +2384,18 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active .title 
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,
 section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc {
 	display: block;
-	padding: 0px 0 0 20px;
+	padding: 10px 0 0 0px;
+	 @media screen and (min-width: $tabwidth) {
+	 	padding: 0px 0 0 20px;
+	 }
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{
 	color: grey;
 	text-transform: capitalize;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu {
+	max-width: 400px;
+	float: left;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th {
@@ -3086,7 +3100,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		font-size: 8pt;
 	}
 	.activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(2), .activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(2) {
-		width: 40%;
+		// width: 40%;
 		font-size: 8pt;
 	}
 	section.post.container.food-beverage article.row table, section.post.container.special-events article.row table {
