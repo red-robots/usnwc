@@ -15,15 +15,7 @@
 	 */
 	wp_title( '|', true, 'right' );
 ?></title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47534226-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-47534226-1');
-</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -122,17 +114,18 @@ if(is_category()){
 	echo $post->post_name;
 }
 ?>">
-<nav class="mobile">
-</nav>
+<!-- <nav class="mobile">
+</nav> -->
 <div class="page container">
 <div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
 	<?php get_search_form();?>
-	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/search.png";?>">
-	<img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>">
-    <nav>
-   		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
-	</nav>
+  <?php get_template_part('mobilenav'); ?>
+  <img class="showsearch" src="<?php echo get_template_directory_uri()."/images/search.png";?>">
+  <!-- <img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>"> -->
+    <nav class="desktop">
+      <?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
+  </nav>
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
 </header>
 <?php if(!is_home()) { ?>
