@@ -481,8 +481,8 @@ section.post.container.passes-tours .buttons .button{background-color:#c10435;co
 section.post.container.passes-tours .buttons .button a{color:#fff}
 section.post.container.passes .buttons .button,section.post.container.tours .buttons .button{background-color:#c10435;color:white;text-transform:uppercase;padding:8px 50px;font-size:18px;margin:0 12px;display:block;text-decoration:none;cursor:pointer;font-weight:700}
 section.post.container.passes .buttons,section.post.container.tours .buttons{margin:20px 0 0 0}
-section.post.container.passes ul.top-level-menu{margin:0;padding:0;width:100%;float:left}
-section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:20px 0;list-style-type:none;width:auto;position:relative}
+section.post.container.passes ul.top-level-menu{margin:0;padding:0}
+section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:20px 0;list-style-type:none;position:relative;width:100%;float:left}
 section.post.container.passes ul.top-level-menu li.top-level-item thead,section.post.container.passes ul.top-level-menu li.top-level-item tbody,section.post.container.passes ul.top-level-menu li.top-level-items thead,section.post.container.passes ul.top-level-menu li.top-level-items tbody{width:100%;display:inline-block}
 section.post.container.passes ul.top-level-menu li.top-level-item thead tr,section.post.container.passes ul.top-level-menu li.top-level-item tbody tr,section.post.container.passes ul.top-level-menu li.top-level-items thead tr,section.post.container.passes ul.top-level-menu li.top-level-items tbody tr{width:100%;display:inline-table}
 section.post.container.passes ul.top-level-menu li.top-level-item .title{cursor:pointer;font-size:16pt;text-transform:capitalize}

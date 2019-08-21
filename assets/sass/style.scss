@@ -2333,16 +2333,17 @@ section.post.container.passes .buttons, section.post.container.tours .buttons{
 section.post.container.passes ul.top-level-menu {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	float: left;
+
 }
 section.post.container.passes ul.top-level-menu li.top-level-item,
 section.post.container.passes ul.top-level-menu li.top-level-items {
 	margin: 0;
 	padding: 20px 0;
 	list-style-type: none;
-	width: auto;
+	// width: auto;
 	position: relative;
+	width: 100%;
+	float: left;
 	thead, tbody {
 		width: 100%;
 		display: inline-block;
