@@ -5,6 +5,8 @@ Author: Fritz Healy
 --Version: 1
 --Author: Austin Crane
 */
+//variables for the upcoming transition
+$tabwidth: 600px;
 
 @import "reset.css";
 @font-face {
@@ -2339,6 +2341,9 @@ section.post.container.passes ul.top-level-menu li.top-level-items {
 	list-style-type: none;
 	width: auto;
 	position: relative;
+	thead, tbody {
+		width: 100%;
+	}
 }
 section.post.container.passes ul.top-level-menu li.top-level-item .title {	 
 	cursor: pointer;
@@ -2382,10 +2387,13 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active table.s
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th {
 	padding: 0;
 	margin: 0;
-	text-align: left;
+	text-align: center;
 	font-size: 10pt;
 	width: 33%;
 	/*text-transform: capitalize;*/
+	@media screen and (min-width: $tabwidth) {
+		text-align: left;
+	}
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2) {

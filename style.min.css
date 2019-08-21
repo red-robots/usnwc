@@ -483,6 +483,7 @@ section.post.container.passes .buttons .button,section.post.container.tours .but
 section.post.container.passes .buttons,section.post.container.tours .buttons{margin:20px 0 0 0}
 section.post.container.passes ul.top-level-menu{margin:0;padding:0}
 section.post.container.passes ul.top-level-menu li.top-level-item,section.post.container.passes ul.top-level-menu li.top-level-items{margin:0;padding:20px 0;list-style-type:none;width:auto;position:relative}
+section.post.container.passes ul.top-level-menu li.top-level-item thead,section.post.container.passes ul.top-level-menu li.top-level-item tbody,section.post.container.passes ul.top-level-menu li.top-level-items thead,section.post.container.passes ul.top-level-menu li.top-level-items tbody{width:100%}
 section.post.container.passes ul.top-level-menu li.top-level-item .title{cursor:pointer;font-size:16pt;text-transform:capitalize}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min,section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-plus{font-size:16pt;font-weight:700;width:15px;display:inline-block;height:1px;line-height:0;vertical-align:middle}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{display:none}
@@ -491,8 +492,9 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active .title 
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-min{display:inline-block}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc{display:block;padding:0 0 0 20px}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{color:grey;text-transform:capitalize}
-section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{padding:0;margin:0;text-align:left;font-size:10pt;width:33%}
-section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2){padding:0 40px;margin:0}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{padding:0;margin:0;text-align:center;font-size:10pt;width:33%}
+@media screen and (min-width:600px){section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{text-align:left}
+}section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2){padding:0 40px;margin:0}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:first-child,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:nth-child(2){margin:0 10% 0 0}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon .activity-key{max-width:10px}
 .passes-tours article.row .copy>h2{font-size:12pt}
