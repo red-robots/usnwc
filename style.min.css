@@ -498,7 +498,6 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active table.s
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{padding:0;margin:0;text-align:center;font-size:10pt;width:33%}
 @media screen and (min-width:600px){section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{text-align:left}
 }section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2){padding:0 40px;margin:0}
-section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:first-child,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:nth-child(2){margin:0 10% 0 0}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon .activity-key{max-width:10px}
 .passes-tours article.row .copy>h2{font-size:12pt}
 section.post.container.event-venues table,section.post.container.recommended-vendors table{width:90%;margin:0 auto}
