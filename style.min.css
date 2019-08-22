@@ -656,7 +656,7 @@ nav.bookmark-links{width:95%}
 nav.bookmark-links table tr td img{width:30px}
 nav.bookmark-links table tr td p,nav.bookmark-links table tr td a{font-size:8pt}
 .virtual-tour div.virtual-tour,.virtual-tour iframe.virtual-tour{height:300px}
-.activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(1),.activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(1){width:40%;font-size:8pt}
+.activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(1),.activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(1){font-size:8pt}
 .activity-passes .activity-passes table tr:nth-child(5) td:nth-child(2) div:nth-child(2),.activity-passes .activity-passes table tr:nth-child(6) td:nth-child(2) div:nth-child(2){font-size:8pt}
 section.post.container.food-beverage article.row table,section.post.container.special-events article.row table{margin:0 auto 1.5em auto}
 section.post.container.food-beverage article.row .inline-table{display:block;margin:0 auto}
