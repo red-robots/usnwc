@@ -22,6 +22,12 @@ $tabwidth: 600px;
 	src: url('fonts/Ciderhouse-Regular.otf');
 }
 @font-face {
+	font-family: 'Axis';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/axis.bold.otf');
+}
+@font-face {
 	font-family: 'Bourbon';
 	font-style: normal;
 	font-weight: normal;
@@ -129,15 +135,15 @@ article.post .quali-acti {
 	margin: 6px;
 }
 .flowfest .the-filter h2 {color: #767777;}
-.outdoor-market .the-filter h2 {color: #767777;}
+.outdoor-market .the-filter h2 {color: #faa339;}
 .confluence .the-filter h2 {color: #767777;}
 .flowfest .filbutton {
 	background-color:  #801B43;
 	color: #fff;
 }
 .outdoor-market .filbutton {
-	background-color:  #1B3E3C;
-	color: #fff;
+	background-color:  #d7ebe8;
+	color: #40637b;
 }
 .confluence .filbutton {
 	background-color:  #4D6A59;
@@ -153,12 +159,12 @@ article.post .quali-acti {
 
 }
 .outdoor-market .filbutton:hover {
-	background-color: #FAA319;
+	background-color: #faa339;
 	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
 }
 .outdoor-market .filbutton:active,
 .outdoor-market .filbutton.is-checked {
-	background-color: #FAA319;
+	background-color: #faa339;
 }
 .confluence .filbutton:hover {
 	background-color: #F6D498;
@@ -317,8 +323,8 @@ section.passdesc {
 	text-decoration: none;
 }
 .outdoor-market .element-item {
-	color: #fff;
-	background-color: #1B3E3C;
+	color: #40637b;
+	background-color: #d7ebe8;
 }
 .confluence .element-item {
 	color: #fff;
@@ -349,19 +355,19 @@ section.passdesc {
 	border-bottom: 1px solid #F89838;
 }
 .outdoor-market .element-item h3 {
-	font-family: 'Canter Bold';
-	color: #FAA319;
+	font-family: 'Axio';
+	color: #40637b;
 	border-bottom: 1px solid #FAA319;
 	letter-spacing: 8px;
 	font-size: 16pt;
 }
-.outdoor-market .element-item h3 {
-	font-family: 'Canter Bold';
-	color: #F6D498;
-	border-bottom: 1px solid #F6D498;
-	letter-spacing: 8px;
-	font-size: 16pt;
-}
+// .outdoor-market .element-item h3 {
+// 	font-family: 'Canter Bold';
+// 	color: #F6D498;
+// 	border-bottom: 1px solid #F6D498;
+// 	letter-spacing: 8px;
+// 	font-size: 16pt;
+// }
 .tile.container .tile > .act-desc {
 	margin: 0 0 30px 0;
 }
