@@ -141,10 +141,6 @@ article.post .quali-acti {
 	background-color:  #801B43;
 	color: #fff;
 }
-.outdoor-market .filbutton {
-	background-color:  #d7ebe8;
-	color: #40637b;
-}
 .confluence .filbutton {
 	background-color:  #4D6A59;
 	color: #fff;
@@ -192,7 +188,10 @@ article.post .quali-acti {
 }
 .outdoor-market .filbutton {
 	/*letter-spacing: 4px;*/
-	font-size: 18px;
+	font-size: 14px;
+	background-color:  #d7ebe8;
+	color: #40637b;
+	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 }
 .filbutton {
 	display: inline-block;
