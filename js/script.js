@@ -224,12 +224,20 @@ $('a.filter').click(function() {
 
 
 
-    $('section.post.container.passes ul.top-level-menu li.top-level-item').click(function(){
+    // $('section.post.container.passes ul.top-level-menu li.top-level-item').click(function(){
+    //     var $this = $(this);
+    //     if($this.hasClass('active')){
+    //         $this.removeClass('active');
+    //     } else {
+    //         $this.addClass('active');
+    //     }
+    // });
+    $('section.post.container.passes ul.top-level-menu li.top-level-item .title .pass-title').click(function(){
         var $this = $(this);
-        if($this.hasClass('active')){
-            $this.removeClass('active');
+        if($this.parents('li.top-level-item').hasClass('active')){
+            $this.parents('li.top-level-item').removeClass('active');
         } else {
-            $this.addClass('active');
+            $this.parents('li.top-level-item').addClass('active');
         }
     });
     //####################   section creates passes tours toggle expand ##############
