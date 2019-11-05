@@ -90,7 +90,7 @@ $desc_ann = get_field('desc_expand_ann');
                     <?php echo $allIntro; ?>
                 </section>
 
-                <ul class="top-level-menu">
+               <ul class="top-level-menu">
                     <li class="top-level-items">
                         <div class="title  " >
                             <div class="pass-title">
@@ -294,12 +294,31 @@ $desc_ann = get_field('desc_expand_ann');
 
                 <ul class="top-level-menu">
                 <?php 
+                    $showbutt = array();
+                    $shobtn = '';
+                    // function in_array_any($needles, $haystack) {
+                    //    return !empty(array_intersect($needles, $haystack));
+                    // }
                     while ($wp_query->have_posts()) : $wp_query->the_post(); 
 
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
                     $click = 'track-' . sanitize_title_with_dashes( get_the_title() );
+                    $showbutt[] = $click;
+                    if( in_array('track-ice-skating', $showbutt) ) {
+                        $shobtn = 'noshow';
+                        unset($showbutt);
+                        $showbutt = array();
+                    }
+                    if( in_array('track-lights', $showbutt) ) {
+                        $shobtn = 'noshow';
+                        unset($showbutt);
+                        $showbutt = array();
+                    }
+                    // echo '<pre>';
+                    // print_r($showbutt);
+                    // echo '</pre>';
                 ?>
 
                     <li class="top-level-item">
@@ -308,9 +327,11 @@ $desc_ann = get_field('desc_expand_ann');
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
+                            <?php if( $shobtn !== 'noshow' ) { ?>
                             <div class="pass-button <?php echo $click; ?>">
                                 <a href="<?php echo $buyLink; ?>">BUY</a>
                             </div>
+                            <?php } ?>
                         </div><!--.title-->
 
                         <div class="pass-desc">
