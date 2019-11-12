@@ -140,13 +140,13 @@ $desc_ann = get_field('desc_expand_ann');
                <ul class="top-level-menu">
                 <?php 
                     while ($wp_query->have_posts()) : $wp_query->the_post(); 
-
+                    $what = sanitize_title_with_dashes( get_the_title() );
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
                     $click = 'track-' . sanitize_title_with_dashes( get_the_title() );
                 ?>
-
+                <?php if( $what !== 'lights' ) { ?>
                     <li class="top-level-item">
                         <div class="title  <?php echo $click; ?>" >
                             <div class="">
@@ -230,7 +230,7 @@ $desc_ann = get_field('desc_expand_ann');
                         <?php endif; ?>
 
                     </li>
-                    
+                <?php } ?>
 
                     
                     
@@ -300,7 +300,7 @@ $desc_ann = get_field('desc_expand_ann');
                     //    return !empty(array_intersect($needles, $haystack));
                     // }
                     while ($wp_query->have_posts()) : $wp_query->the_post(); 
-
+                    $what = sanitize_title_with_dashes( get_the_title() );
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
@@ -320,7 +320,7 @@ $desc_ann = get_field('desc_expand_ann');
                     // print_r($showbutt);
                     // echo '</pre>';
                 ?>
-                 <?php //if( $shobtn !== 'noshow' ) { ?>
+                 <?php if( $what !== 'lights' ) { ?>
                     <li class="top-level-item">
                         <div class="title  " >
                             <div class="pass-title <?php echo $click; ?>">
@@ -407,7 +407,7 @@ $desc_ann = get_field('desc_expand_ann');
 
                     </li>
                     
-                    <?php //} // hide lights endif; ?>
+                    <?php } // hide lights endif; ?>
                     
                     
 
