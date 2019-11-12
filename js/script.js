@@ -240,6 +240,14 @@ $('a.filter').click(function() {
             $this.parents('li.top-level-item').addClass('active');
         }
     });
+        $('section.post.container.passes ul.top-level-menu li.top-level-item .title .pass-title-small').click(function(){
+        var $this = $(this);
+        if($this.parents('li.top-level-item').hasClass('active')){
+            $this.parents('li.top-level-item').removeClass('active');
+        } else {
+            $this.parents('li.top-level-item').addClass('active');
+        }
+    });
     //####################   section creates passes tours toggle expand ##############
     // $('section.post.container.passes-tours .buttons .button.expand-button.type-passes').click(function(){
     //     var $section = $('section.post.container.passes');

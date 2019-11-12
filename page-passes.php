@@ -145,11 +145,14 @@ $desc_ann = get_field('desc_expand_ann');
                     $price = get_field('price');
                     $desc = get_field('description');
                     $click = 'track-' . sanitize_title_with_dashes( get_the_title() );
+                    // echo '<pre>';
+                    // print_r($what);
+                    // echo '</pre>';
                 ?>
                 <?php if( $what !== 'lights' ) { ?>
                     <li class="top-level-item">
                         <div class="title  <?php echo $click; ?>" >
-                            <div class="">
+                            <div class="pass-title-small">
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> <?php echo $price; ?>
                             </div>
                             
@@ -317,7 +320,7 @@ $desc_ann = get_field('desc_expand_ann');
                         $showbutt = array();
                     }
                     // echo '<pre>';
-                    // print_r($showbutt);
+                    // print_r($what);
                     // echo '</pre>';
                 ?>
                  <?php if( $what !== 'lights' ) { ?>
@@ -327,7 +330,7 @@ $desc_ann = get_field('desc_expand_ann');
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
-                            <?php if( $shobtn !== 'noshow' ) { ?>
+                            <?php if( $what !== 'ice-skating' ) { ?>
                             <div class="pass-button <?php echo $click; ?>">
                                 <a href="<?php echo $buyLink; ?>">BUY</a>
                             </div>
