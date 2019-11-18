@@ -27,6 +27,8 @@ $closedMessage = get_field('closed_message');
 	?>
 
 	<?php $activities = array(
+		'Ice Skating'=>'activity_skating',
+		'Lights'=>'activity_lights',
 		'Whitewater'=>'activity_whitewater',
 		'Flatwater'=>'activity_flatwater',
 		'Climbing'=>'activity_climbing',
