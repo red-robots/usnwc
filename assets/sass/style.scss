@@ -1832,6 +1832,13 @@ article.post, section.post, section.post.container, article.filtering {
 	-o-box-shadow: 0 0 3px rgba(0,0,0,0.15);
 	box-shadow: 0 0 3px rgba(0,0,0,0.15);
 }
+section.post.onsite {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+section.post > .activity-columns-onsite {
+	width: 100% !important;
+}
 section.post-noborder {
 	-moz-box-shadow: 0 0 3px rgba(0,0,0,0) !important;
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0) !important;
@@ -2454,7 +2461,23 @@ section.post.container.event-venues hr {
 	margin: 10px auto;
 }
 /*////////////////activity schedule ////////////////////////*/
-
+section.activity-schedule ul.activity-schedule-list-onsite  {
+	columns: 2;
+  	-webkit-columns: 2;
+  	-moz-columns: 2;
+  	li {
+  		
+  	}
+  	ul {
+  		columns: 1;
+  		-webkit-columns: 1;
+  		-moz-columns: 1;
+  	}
+  	li.top-level-item {
+  		display: inline-block;
+  		width: 90%;
+  	}
+}
 section.activity-schedule >h2 {
 	text-align: center;
 }

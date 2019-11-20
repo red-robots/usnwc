@@ -391,6 +391,8 @@ header.post h2,header.post h1{width:98%;height:auto;font-size:18pt;letter-spacin
 .icon.container.outfitters .icon,.icon.container .icon:hover{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);-o-filter:grayscale(0)}
 .icon.container .icon header h2{text-align:center}
 article.post,section.post,section.post.container,article.filtering{width:94%;height:auto;max-width:940px;margin:1% auto;padding:.5%;-o-box-shadow:0 0 3px rgba(0,0,0,0.15);box-shadow:0 0 3px rgba(0,0,0,0.15)}
+section.post.onsite{max-width:100% !important;width:100% !important}
+section.post>.activity-columns-onsite{width:100% !important}
 section.post-noborder{-o-box-shadow:0 0 3px transparent !important;box-shadow:0 0 3px transparent !important}
 article.post>*,section.post>*,article.row>*{width:85%;height:auto;margin:1% auto 2% auto;padding:0}
 article.post img,section.post img{height:auto}
@@ -504,6 +506,9 @@ section.post.container.event-venues table tbody tr td,section.post.container.rec
 section.post.container.recommended-vendors table tbody tr td ul{margin:2% 0}
 section.post.container.event-venues table tbody tr td img{display:block;margin:0 auto 1.5% auto;width:100%}
 section.post.container.event-venues hr{border-bottom:2px solid #d4d4d6;margin:10px auto}
+section.activity-schedule ul.activity-schedule-list-onsite{columns:2;-webkit-columns:2;-moz-columns:2}
+section.activity-schedule ul.activity-schedule-list-onsite ul{columns:1;-webkit-columns:1;-moz-columns:1}
+section.activity-schedule ul.activity-schedule-list-onsite li.top-level-item{display:inline-block;width:90%}
 section.activity-schedule>h2{text-align:center}
 section.activity-schedule .activity-schedule-list{margin-bottom:30px}
 section.activity-schedule .activity-schedule-list .top-level-item{margin:10px 0 0 0}

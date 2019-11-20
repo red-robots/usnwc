@@ -4,7 +4,17 @@
 
  *
  */
+/*
 
+
+	Extend cookie for Onsite Activity Schedule
+
+*/
+add_filter( 'post_password_expires', 'acc_custom_post_password_expires' );
+function acc_custom_post_password_expires( $expires ) {
+    return time() + 100 * 86400; // Expire in 100 days
+    //return time() + 10; // Expire in 10 seconds
+}
 
 add_filter('pto/posts_orderby/ignore', 'theme_pto_posts_orderby', 10, 3);
 function theme_pto_posts_orderby($ignore, $orderBy, $query)
