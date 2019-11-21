@@ -63,12 +63,12 @@ $closedMessage = get_field('closed_message');
 		'Trails'=>'activity_trails'
 	);?>
 	<section class="post container activity-schedule">
-		<header>
+		<!-- <header>
 			<h1><?php the_title();?></h1>
-		</header>
+		</header> -->
 		<?php $date_notice = get_field("date_notice");
 		if($date_notice){?>
-			<?php echo $date_notice;?>
+			<?php //echo $date_notice;?>
 		<?php }//endif?>
 	</section>
 	<section class="post container onsite activity-schedule">
