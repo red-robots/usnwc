@@ -391,7 +391,7 @@ header.post h2,header.post h1{width:98%;height:auto;font-size:18pt;letter-spacin
 .icon.container.outfitters .icon,.icon.container .icon:hover{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);-o-filter:grayscale(0)}
 .icon.container .icon header h2{text-align:center}
 article.post,section.post,section.post.container,article.filtering{width:94%;height:auto;max-width:940px;margin:1% auto;padding:.5%;-o-box-shadow:0 0 3px rgba(0,0,0,0.15);box-shadow:0 0 3px rgba(0,0,0,0.15)}
-section.post.onsite{max-width:100% !important;width:100% !important}
+section.post.onsite{max-width:100% !important;width:100% !important;background-color:#fff;padding-left:5%}
 section.post>.activity-columns-onsite{width:100% !important}
 section.post-noborder{-o-box-shadow:0 0 3px transparent !important;box-shadow:0 0 3px transparent !important}
 article.post>*,section.post>*,article.row>*{width:85%;height:auto;margin:1% auto 2% auto;padding:0}
