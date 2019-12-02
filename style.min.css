@@ -508,7 +508,8 @@ section.post.container.event-venues table tbody tr td img{display:block;margin:0
 section.post.container.event-venues hr{border-bottom:2px solid #d4d4d6;margin:10px auto}
 section.activity-schedule ul.activity-schedule-list-onsite{columns:2;-webkit-columns:2;-moz-columns:2}
 section.activity-schedule ul.activity-schedule-list-onsite ul{columns:1;-webkit-columns:1;-moz-columns:1}
-section.activity-schedule ul.activity-schedule-list-onsite li.top-level-item{display:inline-block;width:90%}
+section.activity-schedule ul.activity-schedule-list-onsite li.top-level-item{display:inline-block;width:90%;font-size:28px !important}
+section.activity-schedule ul.activity-schedule-list-onsite li.top-level-item ul li.closed .time{background-color:#757575}
 section.activity-schedule>h2{text-align:center}
 section.activity-schedule .activity-schedule-list{margin-bottom:30px}
 section.activity-schedule .activity-schedule-list .top-level-item{margin:10px 0 0 0}

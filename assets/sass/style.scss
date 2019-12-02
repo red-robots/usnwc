@@ -2479,6 +2479,10 @@ section.activity-schedule ul.activity-schedule-list-onsite  {
   	li.top-level-item {
   		display: inline-block;
   		width: 90%;
+  		font-size: 28px !important;
+  		ul li.closed .time {
+  			background-color: #757575;
+  		}
   	}
 }
 section.activity-schedule >h2 {
