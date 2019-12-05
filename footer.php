@@ -38,6 +38,17 @@
            	</li> -->
 		</ul>
 	</div>
+	<?php if( is_page('ice-skating') ) { ?>
+		<div class="row sponsors"> 
+			<ul>
+	   	        <li class="subaru">
+		   	        <a href="http://www.subaru.com/" target="_blank">
+		   	        	<img src="<?php bloginfo('template_url'); ?>/images/gason-county-logo.png" alt="Subaru Logo">
+		   	        </a>
+	   	        </li>
+			</ul>
+		</div>
+	<?php } ?>
 	<div class="row search">
 		<!-- Begin MailChimp Signup Form -->
 		<div id="mc_embed_signup">
