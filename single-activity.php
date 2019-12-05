@@ -114,10 +114,43 @@ while(have_posts()) : the_post(); ?>
 			if( $images ): ?>
 			<div class="flexslider">
 			    <ul class="slides">
-			        <?php foreach( $images as $image ): ?>
+			        <?php foreach( $images as $image ): 
+
+                        // echo '<pre>';
+                        // print_r($image);
+                        // echo $i;
+                        // echo '</pre>';
+
+                        if( $image['caption'] ) {
+                            $output = $image['caption'];
+                            $class='youtube';
+                            $i++;
+                        } else {
+                            $output = $image['url'];
+                            $class='gallery';
+                        }
+
+                    ?>
 			            <li>
-			            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                        <?php if( $image['caption'] ) { ?>
+                            <a class="<?php echo $class; ?>" href="#video-<?php echo $i; ?>">
+                        <?php } ?>
+    			            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                            <?php if( $image['caption'] ) { ?></a><?php } ?>
 			            </li>
+
+                        <?php if( $image['caption'] ) { ?>
+                            <div style="display: none;">
+                            
+                                <div id="video-<?php echo $i; ?>" class="video">
+                                    <div class="embed-container">
+                                        <?php echo wp_oembed_get($output); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+
+
 			        <?php endforeach; ?>
 			    </ul>
 			</div>

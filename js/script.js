@@ -34,6 +34,18 @@ $(".filter-options").click( function() {
     }
    
 });
+
+/*
+    *
+    *   YouTube in Slider
+    *
+    ------------------------------------*/
+    $(".youtube").colorbox({
+        inline:true, 
+        width:"60%"
+    });
+
+    
 /*
 
 
