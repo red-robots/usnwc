@@ -38,7 +38,9 @@
            	</li> -->
 		</ul>
 	</div>
-	<?php if( is_page('ice-skating') ) { ?>
+	<?php //wp_reset_postdata(); 
+	 $ID = get_the_ID(); ?>
+	<?php if( $ID == 36121 ) { ?>
 		<div class="row sponsors"> 
 			<ul>
 	   	        <li class="subaru">
