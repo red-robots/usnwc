@@ -44,7 +44,7 @@
 		<div class="row sponsors"> 
 			<ul>
 	   	        <li class="subaru">
-		   	        <a href="http://www.subaru.com/" target="_blank">
+		   	        <a href="http://www.visitgaston.org/" target="_blank">
 		   	        	<img src="<?php bloginfo('template_url'); ?>/images/gason-county-logo.png" alt="Subaru Logo">
 		   	        </a>
 	   	        </li>
