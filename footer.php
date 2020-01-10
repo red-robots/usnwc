@@ -40,7 +40,7 @@
 	</div>
 	<?php //wp_reset_postdata(); 
 	 $ID = get_the_ID(); ?>
-	<?php if( $ID == 36121 ) { ?>
+	<?php if( $ID == 36121 || $ID == 37971 ) { ?>
 		<div class="row sponsors"> 
 			<ul>
 	   	        <li class="subaru">

@@ -96,12 +96,18 @@ jQuery(document).ready(function(){
 jQuery(document).ready(function ($) {
 	populateMobileNav();
 	showMobileNav();
-	$('.burger, .overlay').click(function(){
+	$('.burger').click(function(){
 	  $('.burger').toggleClass('clicked');
 	  $('.overlay').toggleClass('show');
 	  $('nav').toggleClass('show');
 	  $('body').toggleClass('overflow');
 	});
+	// $('.burger, .overlay').click(function(){
+	//   $('.burger').toggleClass('clicked');
+	//   $('.overlay').toggleClass('show');
+	//   $('nav').toggleClass('show');
+	//   $('body').toggleClass('overflow');
+	// });
 	$('nav.mobilemenu li').click(function() {
 	    $(this).find('ul.dropdown').toggleClass('active');
 	});
