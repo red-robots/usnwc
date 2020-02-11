@@ -536,7 +536,7 @@ section.post.whitewater-race-series,section.post.river-jam,section.post.whitewat
 .virtual-tour article.virtual-tour{width:95%;max-width:100%;margin:auto;padding:0}
 article.open-positions{overflow:hidden}
 section.employment{width:100%;float:left;overflow:hidden;padding:20px 0}
-section.employment h2{margin-bottom:20px}
+section.employment h2{margin-bottom:20px;margin:0 0 20px 10px}
 section.employment .position{width:100%;float:left;font-size:16px}
 section.employment .position a{display:block;width:100%;padding:10px;color:#777;text-decoration:none;border-bottom:1px solid #c2c2c2}
 section.employment .position a:hover{background-color:#c10435;color:#fff}
