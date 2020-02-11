@@ -2679,6 +2679,43 @@ margin: 0 auto !important;
 	margin: auto;
 	padding: 0;
 }
+article.open-positions {
+	overflow: hidden;
+}
+section.employment {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 20px 0;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+	}
+	&.right {
+		@media screen and (min-width: $tabwidth) {
+			float: right;
+		}
+	}
+	h2 {
+		margin-bottom: 20px;
+	}
+	.position {
+		width: 100%;
+		float: left;
+		font-size: 16px;
+		a {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			color: #777777;
+			text-decoration: none;
+			border-bottom: 1px solid #c2c2c2;
+			&:hover {
+				background-color: #c10435;
+				color: #fff;
+			}
+		}
+	}
+}
 /* /////////////////// EVENT DETAILS AND TRAILER ////////////////////////////*/
 div.event-details {
 	margin: 2% 0% 2% 7.5%;
