@@ -22,7 +22,7 @@ get_header('page'); ?>
       
 
     	<?php if( have_rows('full_time_positions') ):  ?>
-    		<section class="employment">
+    		<section class="employment-pos">
     			<h2>Full-Time positions</h2>
     		<?php while( have_rows('full_time_positions') ):  the_row(); 
     				$pos = get_sub_field('position');
@@ -38,7 +38,7 @@ get_header('page'); ?>
 
 
     	<?php if( have_rows('part_time_positions') ):  ?>
-    		<section class="employment right">
+    		<section class="employment-pos right">
     			<h2>Part-Time positions</h2>
     		<?php while( have_rows('part_time_positions') ):  the_row(); 
     				$pos = get_sub_field('position');
