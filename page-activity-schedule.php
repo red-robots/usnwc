@@ -29,12 +29,12 @@ $closedMessage = get_field('closed_message');
 	<?php $activities = array(
 		// 'Ice Skating'=>'activity_skating',
 		// 'Lights'=>'activity_lights',
+		'Whitewater'=>'activity_whitewater',
+		'Flatwater'=>'activity_flatwater',
 		'Ziplines'=>'activity_ziplines',
 		'Ropes'=>'activity_ropes',
 		'Jumps'=>'activity_jumps',
 		'Climbing'=>'activity_climbing',
-		'Whitewater'=>'activity_whitewater',
-		'Flatwater'=>'activity_flatwater',
 		'Yoga'=>'activity_yoga',
 		'Trails'=>'activity_trails'
 	);?>
