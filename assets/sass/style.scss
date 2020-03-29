@@ -6,7 +6,12 @@ Author: Fritz Healy
 --Author: Austin Crane
 */
 //variables for the upcoming transition
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
 $tabwidth: 600px;
+$midwidth: 900px;
+$deskwidth: 1200px;
 
 @import "reset.css";
 @font-face {
@@ -58,6 +63,28 @@ object {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+#alert-ban {
+	// width: 100%;
+	// float: left;
+	text-align: center;
+	color: #fff;
+	background-color: #d22246;
+	padding: 20px;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+	a {
+		text-decoration: underline;
+		color: #fff;
+	}
 }
 /*--------------------------------------------------------------
 # Navigation

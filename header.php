@@ -91,6 +91,16 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 	“https://vimeo.com/usnwc”]
 }
 </script>
+<?php 
+// Alert Banner
+$alertOn  = get_field('turn_on', 'option');
+$alertOn = $alertOn[0];
+$alert  = get_field('alert_message', 'option');
+
+// echo '<pre>';
+// print_r($alertOn);
+// echo '</pre>';
+ ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -112,8 +122,11 @@ if(is_category()){
 <!-- <nav class="mobile">
 </nav> -->
 <div class="page container">
+
 <div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
+  
+
 	<?php get_search_form();?>
   <?php get_template_part('mobilenav'); ?>
 	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/search.png";?>">
@@ -122,7 +135,11 @@ if(is_category()){
    		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
 	</nav>
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
+    
 </header>
+
+
+
 <?php if(!is_home()&&!$is_tribe) { ?>
   <nav class="page breadcrumbs">
     <?php 
@@ -136,4 +153,12 @@ if(is_category()){
     //} ?>
   </nav>
 <?php } ?>
+
 <main class="page">
+<?php if( $alertOn == 'on' ) { ?>
+  <div>
+      <div id="alert-ban">
+        <?php echo $alert; ?>
+      </div>
+      </div>
+    <?php } ?>
