@@ -158,7 +158,7 @@ get_header('page'); ?>
         <?php if( $sponsors ) { ?>
         	<section class="sponsors">
                	<header><h2>Sponsors:</h2></header>
-               	<?php echo $sponsors ?>
+               	<?php echo $sponsors; ?>
           	</section>
         <?php } ?>
         <?php if( $additional_info ) { ?>

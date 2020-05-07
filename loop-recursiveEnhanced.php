@@ -194,21 +194,22 @@ function display_loop_tile_recursive_enhanced($args){
            					 */	
            					} elseif( has_post_thumbnail() ){  
            						$img_url=wp_get_attachment_image_src(get_post_thumbnail_id($query->post->ID),array(294,455))[0]; //absolute path
-            					$img_url_rel=str_replace(home_url(),"",$img_url); //relative path
+                      // Don't need a rel path edit: 4/2020
+            					//$img_url_rel=str_replace(home_url(),"",$img_url); //relative path
             					if ( in_array( 'yes', get_field('event_complete') ) ) { ?>
             						<div style="background-image:url(<?php echo $img_url;?>);">
             							<?php //have to use absolute path to getimagesize if you don't
 	            						//specify how many folders to go up in relative path
     	        						if(getimagesize($img_url)[0]===getimagesize($img_url)[1]){?> 	   
- 			               					<img src="/wp-content/uploads/2015/05/Event_Complete_Square.png">
+ 			               					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/05/Event_Complete_Square.png">
         		        				<?php } 
         	    	    				else {?>
-        	        						<img src="/wp-content/uploads/2014/10/Event_Complete_Slide.png">
+        	        						<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/Event_Complete_Slide.png">
         	        					<?php } ?>
         	        				</div>
  	    	   	        		<?php }
     	    	        		else {?>                 
- 	            	  				<img class="<?php echo $my_size;?>" src="<?php echo $img_url_rel;?>">
+ 	            	  				<img class="<?php echo $my_size;?>" src="<?php echo $img_url;?>">
             	 				<?php }
              				}
    	         				/*
