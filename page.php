@@ -17,7 +17,14 @@ get_header('page'); ?>
 	  	<header>
     	   	<h1><?php the_title(); ?></h1>
   		</header>
-    	<?php the_content(); ?>
+    	<?php 
+
+      // summer camp forms
+      if( is_page() ) {get_template_part('camp-forms');}
+
+      the_content(); 
+
+      ?>
 
       
 
