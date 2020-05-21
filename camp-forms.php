@@ -7,7 +7,7 @@
 			</header>
 		</div>
 	</a>
-	<a href="https://usnwc.org/wp-content/uploads/2020/05/Summer-Camp-Parent-Information-Packet-2020-Updated-edition.pdf">
+	<a href="https://usnwc.org/wp-content/uploads/2020/05/Summer-Camp-Parent-Information-Packet-2020-Updated-edition.pdf" target="_blank">
 		<div class="icon size-Default daily-activity-schedule">
 	    	<img class="size-Default" src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/Activity_schedule_New.png">
 			<header>
@@ -15,7 +15,7 @@
 			</header>
 		</div>
 	</a>
-	<a href="https://fs24.formsite.com/usnwc/form113/index.html">
+	<a href="https://fs24.formsite.com/usnwc/form113/index.html" target="_blank">
 		<div class="icon size-Default food-beverage">
 	    	<img class="size-Default" src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/food_bev.jpg">
 			<header>
