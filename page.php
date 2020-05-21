@@ -20,7 +20,7 @@ get_header('page'); ?>
     	<?php 
 
       // summer camp forms
-      if( is_page() ) {get_template_part('camp-forms');}
+      if( is_page('summer-camp-forms') ) {get_template_part('camp-forms');}
 
       the_content(); 
 
