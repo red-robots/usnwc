@@ -15,7 +15,7 @@ get_header('page'); ?>
 
 		// camp ID's that don't have program info 415  37905 1699
 		// so let's create an array to check against
-		$dontShow = array(415,37905,1699);
+		$dontShow = array(415,37905,1699,1682);
 		// then get current ID
 		$pID = get_the_ID();
 		// $pID = 415;
