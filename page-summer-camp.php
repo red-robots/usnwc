@@ -12,6 +12,16 @@ get_header('page'); ?>
 		// reg link
 		$regLink = '';
 		$regLink = get_field('camp_registration_link');
+
+		// camp ID's that don't have program info 415  37905 1699
+		// so let's create an array to check against
+		$dontShow = array(415,37905,1699);
+		// then get current ID
+		$pID = get_the_ID();
+		// $pID = 415;
+		// echo '<pre>';
+		// print_r($pID);
+		// echo '</pre>';
 	?>
 	<?php if(in_array(get_field('sidebar'),array("top","both"),true)){
 		$sidebar="top";
@@ -30,6 +40,7 @@ get_header('page'); ?>
 					</header>
 				</div>
 			</a>
+			<?php if( !in_array($pID, $dontShow) ) { ?>
 			<a href="#campprograms">
 				<div class="icon size-Default what-to-bring">
 			    	<img class="size-Default" src="<?php bloginfo('template_url'); ?>/images/trail-map.png">
@@ -38,6 +49,7 @@ get_header('page'); ?>
 					</header>
 				</div>
 			</a>
+			<?php } ?>
 			<?php if( $regLink !='' ) { ?>
 				<!-- newlink -->
 				<a href="<?php echo $regLink; ?>" target="_blank">
