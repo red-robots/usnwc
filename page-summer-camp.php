@@ -10,6 +10,7 @@ get_header('page'); ?>
 <?php if(have_posts()){ the_post(); 
 
 		// reg link
+		$regLink = '';
 		$regLink = get_field('camp_registration_link');
 	?>
 	<?php if(in_array(get_field('sidebar'),array("top","both"),true)){
@@ -37,7 +38,8 @@ get_header('page'); ?>
 					</header>
 				</div>
 			</a>
-			<?php if( $regLink ) { ?>
+			<?php if( $regLink !='' ) { ?>
+				<!-- newlink -->
 				<a href="<?php echo $regLink; ?>" target="_blank">
 					<div class="icon size-Default what-to-bring">
 				    	<img class="size-Default" src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/what_to_bring.jpg">
