@@ -70,9 +70,11 @@ function display_loop_icon($args){
 		    			echo $category_classes . $my_size. ' '.$query->post->post_name; 
 	    			?>">
     			        <?php
+    			        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
        	  				// Display featured image using the url of the featured image instead of 
        	 				//a thumbnail to avoid formatting issues with inline styling ?>
-	       			    <img class="<?php echo $my_size?>" src="<?php echo str_replace(home_url(),"",wp_get_attachment_image_src(get_post_thumbnail_id($query->post->ID),array(294,455))[0]);?>">
+	       			    <!-- <img class="<?php echo $my_size?>" src="<?php echo str_replace(home_url(),"",wp_get_attachment_image_src(get_post_thumbnail_id($query->post->ID),array(294,455))[0]);?>"> -->
+	       			    <img class="<?php echo $my_size?>" src="<?php echo $featured_img_url; ?>"/>
     	       			<header>
         	   				<h2><?php the_title(); ?></h2>
            				</header>
