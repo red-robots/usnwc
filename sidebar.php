@@ -238,8 +238,8 @@ global $is_tribe;
 			</header>
 			<h2>COVID-19 Information</h2>
 			<ul>
-				<li>Guest Services queue areas and Activity queue areas  have been lengthened to encourage adequate spacing between individuals.</li>
-				<li>Per current policy and procedure, disinfection of equipment will take place pre and post use - based on guidance from the manufacturers to ensure both cleanliness and integrity of the gear.</li>
+				<li>Guest Services queue areas and Activity queue areas have been lengthened to encourage adequate spacing between individuals.</li>
+				<li>Per current policy and procedure, disinfection of equipment will take place based on guidance from the manufacturers to ensure both cleanliness and integrity of the gear.</li>
 				<li>There will be continuous disinfection of surfaces, counters and door handles.</li>
 				<!-- <li>Annual Passholders will redeem their pass verbally rather than utilizing fingerprint scanners.</li> -->
 				<!-- <li>Guests will be required to attach their own wristbands upon purchasing a pass.</li> -->
