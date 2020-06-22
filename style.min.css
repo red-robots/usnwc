@@ -9,6 +9,14 @@ embed,iframe,object{max-width:100%}
 #alert-ban p{margin:0;padding:0}
 #alert-ban a{text-decoration:underline;color:#fff}
 a.anchor{display:block;position:relative;top:-150px;visibility:hidden}
+.footericons{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;float:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:20px 0}
+.footericons .footicon{width:100px}
+.footericons .footicon:hover .icon img:hover{-webkit-transform:scale(1);transform:scale(1)}
+.footericons .icon{width:100%;margin:0 8px;width:60px}
+.footericons .icon img{width:100%;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-o-filter:grayscale(100%);transition:top .5s ease,left .5s ease,grayscale 0s;-webkit-transition:top .5s ease,left .5s ease,grayscale 0s;-moz-transition:top .5s ease,left .5s ease,grayscale 0s;-o-transition:top .5s ease,left .5s ease,grayscale 0s;-webkit-transform:scale(0.9);transform:scale(0.9);-webkit-transition:all ease .2s;transition:all ease .2s}
+.footericons .icon img .mission{opacity:.7}
+.footericons header h2{width:100%;text-align:center;color:#333;font-size:1em;letter-spacing:.05em;text-transform:capitalize;margin:0;padding:.3em 0;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif}
+.footericons a,.footericons a:hover{text-decoration:none}
 #menuToggle span{display:block;width:33px;height:4px;margin-bottom:5px;position:relative;background:#fff;border-radius:3px;z-index:1;-webkit-transform-origin:4px 0;transform-origin:4px 0;-webkit-transition:background .5s cubic-bezier(0.77,0.2,0.05,1),opacity .55s ease,-webkit-transform .5s cubic-bezier(0.77,0.2,0.05,1);transition:background .5s cubic-bezier(0.77,0.2,0.05,1),opacity .55s ease,-webkit-transform .5s cubic-bezier(0.77,0.2,0.05,1);transition:transform .5s cubic-bezier(0.77,0.2,0.05,1),background .5s cubic-bezier(0.77,0.2,0.05,1),opacity .55s ease;transition:transform .5s cubic-bezier(0.77,0.2,0.05,1),background .5s cubic-bezier(0.77,0.2,0.05,1),opacity .55s ease,-webkit-transform .5s cubic-bezier(0.77,0.2,0.05,1)}
 #menuToggle span:first-child{-webkit-transform-origin:0 0;transform-origin:0 0}
 #menuToggle span:nth-last-child(2){-webkit-transform-origin:0 100%;transform-origin:0 100%}

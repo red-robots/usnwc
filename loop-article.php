@@ -126,22 +126,22 @@ function display_loop_article($args){
 								<span>Available <br>With:</span>
 								<div class="checks">
 									<?php if( $asp ){ ?>
-										<a href="/activity-passes"><img src="/wp-content/uploads/2014/11/AllSport.png" /></a>
+										<a href="<?php bloginfo('url'); ?><?php bloginfo('url'); ?>/activity-passes"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/AllSport.png" /></a>
 									<?php } else { ?>
-      									<img src="/wp-content/uploads/2014/11/AllSport_gray.png" />
+      									<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/AllSport_gray.png" />
  									<?php } ?> 
 									<?php if( $csp ){ ?>
-										<a href="/activity-passes"><img src="/wp-content/uploads/2014/11/CoolSport.png" /></a>
+										<a href="<?php bloginfo('url'); ?>/activity-passes"><img src="<?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?>/wp-content/uploads/2014/11/CoolSport.png" /></a>
 									<?php } else { ?>
-							    		<img src="/wp-content/uploads/2014/11/CoolSport_Gray.png" />
+							    		<img src="<?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?>/wp-content/uploads/2014/11/CoolSport_Gray.png" />
 									<?php } ?> 
 									<?php if( $qsp ){ ?>
-										<a href="/activity-passes" /><img src="/wp-content/uploads/2014/11/QuickSport.png" /></a>
+										<a href="<?php bloginfo('url'); ?>/activity-passes" /><img src="<?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?><?php bloginfo('url'); ?>/wp-content/uploads/2014/11/QuickSport.png" /></a>
 									<?php } else { ?>
-										<img src="/wp-content/uploads/2014/11/QuickSport_Gray.png" />
+										<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/QuickSport_Gray.png" />
 									<?php } ?> 					
 									<?php if( $ctp ) { ?>
-										<a href="/activity-passes" /><img src="/wp-content/uploads/2014/11/Canopy-Tour.png" /></a>
+										<a href="<?php bloginfo('url'); ?>/activity-passes" /><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/Canopy-Tour.png" /></a>
 									<?php } ?> 
 								</div>
 							</div>
@@ -164,13 +164,13 @@ function display_loop_article($args){
 										<span>Difficulty:</span>
 										<div>
 											<?php if( $beg ) { ?>
-												 <img src="/wp-content/uploads/2014/11/Easy2.png" /> <span>Beginner</span> <br />
+												 <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/Easy2.png" /> <span>Beginner</span> <br />
 											<?php }
 											if( $int ) { ?>
-							 					<img src="/wp-content/uploads/2014/11/medium2.png" /> <span>Intermediate</span> <br />
+							 					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/medium2.png" /> <span>Intermediate</span> <br />
 											<?php } 
 											if( $adv ) { ?>
-												<img src="/wp-content/uploads/2014/11/Advanced2.png" /> <span>Advanced</span> 
+												<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/Advanced2.png" /> <span>Advanced</span> 
 											<?php } ?>
 										</div>
 									</div>

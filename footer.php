@@ -9,6 +9,48 @@
         	<li><?php dynamic_sidebar( 'trail-status' ); ?></li>
 		</ul>
 	</div>
+	<div class="footericons">
+		<div class="footicon">
+			<a href="https://stories.usnwc.org/stories/" target="_blank">
+				<div class="icon stories">
+			        	<img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/stories.png"/>
+	       			<header>
+		   				<h2>Stories</h2>
+	   				</header>
+				</div>
+			</a>
+		</div>
+		<div class="footicon">
+			<a href="https://stories.usnwc.org/films/" target="_blank">
+				<div class="icon films">
+			        	<img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/films.png"/>
+	       			<header>
+		   				<h2>Films</h2>
+	   				</header>
+				</div>
+			</a>
+		</div>
+		<div class="footicon">
+			<a href="<?php bloginfo('url'); ?>/about">
+				<div class="icon about">
+			        	<img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/about.png"/>
+	       			<header>
+		   				<h2>About</h2>
+	   				</header>
+				</div>
+			</a>
+		</div>
+		<div class="footicon">
+			<a href="<?php bloginfo('url'); ?>/about/#mission">
+				<div class="icon ">
+			        	<img class="size-small mission>" src="<?php bloginfo('template_url'); ?>/images/mission.png"/>
+	       			<header>
+		   				<h2>Mission</h2>
+	   				</header>
+				</div>
+			</a>
+		</div>
+	</div>
 	<div class="row sponsors"> 
 		<ul>
    	        <li class="subaru">
@@ -38,6 +80,7 @@
            	</li> -->
 		</ul>
 	</div>
+	
 	<?php //wp_reset_postdata(); 
 	 $ID = get_the_ID(); ?>
 	<?php if( $ID == 36121 || $ID == 37971 ) { ?>
