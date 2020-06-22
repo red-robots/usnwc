@@ -391,7 +391,7 @@ header.post h2,header.post h1{width:98%;height:auto;font-size:18pt;letter-spacin
 .icon.container .icon{width:198px;height:auto;margin:1% 0;padding:1px;display:inline-block;position:static;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-o-filter:grayscale(100%);transition:top .5s ease,left .5s ease,grayscale 0s;-webkit-transition:top .5s ease,left .5s ease,grayscale 0s;-moz-transition:top .5s ease,left .5s ease,grayscale 0s;-o-transition:top .5s ease,left .5s ease,grayscale 0s}
 .icon.container.outfitters .icon,.icon.container .icon:hover{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);-o-filter:grayscale(0)}
 .icon.container .icon header h2{text-align:center}
-article.post,section.post,section.post.container,article.filtering{width:94%;height:auto;max-width:940px;margin:1% auto;padding:.5%;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.15);-o-box-shadow:0 0 3px rgba(0,0,0,0.15);box-shadow:0 0 3px rgba(0,0,0,0.15)}
+article.post,section.post,section.post.container,article.filtering{width:94%;height:auto;max-width:940px;margin:1% auto;padding:.5%;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.15);-o-box-shadow:0 0 3px rgba(0,0,0,0.15);box-shadow:0 0 3px rgba(0,0,0,0.15);clear:both}
 section.post.onsite{max-width:100% !important;width:100% !important;background-color:#fff;padding-left:5%;height:100vh}
 section.post>.activity-columns-onsite{width:100% !important}
 section.post-noborder{-webkit-box-shadow:0 0 3px rgba(0,0,0,0) !important;-o-box-shadow:0 0 3px rgba(0,0,0,0) !important;box-shadow:0 0 3px rgba(0,0,0,0) !important}

@@ -12,7 +12,55 @@ get_header('page'); ?>
 	<?php if(in_array(get_field('sidebar'),array("top","both"),true)){
 		$sidebar="top";
 		get_template_part('sidebar');
-	} ?>  
+	} ?> 
+
+<?php 
+      if( is_page('about') ) {
+       ?>
+       <div class="footericons">
+        <div class="footicon">
+          <a href="https://stories.usnwc.org/stories/" target="_blank">
+            <div class="icon stories">
+                    <img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/stories.png"/>
+                  <header>
+                  <h2>Stories</h2>
+                </header>
+            </div>
+          </a>
+        </div>
+        <div class="footicon">
+          <a href="https://stories.usnwc.org/films/" target="_blank">
+            <div class="icon films">
+                    <img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/films.png"/>
+                  <header>
+                  <h2>Films</h2>
+                </header>
+            </div>
+          </a>
+        </div>
+        <div class="footicon">
+          <a href="<?php bloginfo('url'); ?>/about">
+            <div class="icon about">
+                    <img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/about.png"/>
+                  <header>
+                  <h2>About</h2>
+                </header>
+            </div>
+          </a>
+        </div>
+        <div class="footicon">
+          <a href="<?php bloginfo('url'); ?>/about/#mission">
+            <div class="icon ">
+                    <img class="size-small mission>" src="<?php bloginfo('template_url'); ?>/images/mission.png"/>
+                  <header>
+                  <h2>Mission</h2>
+                </header>
+            </div>
+          </a>
+        </div>
+      </div>
+      <?php } ?>
+   
 	<article class="post <?php echo $post->post_name; ?>">
 	  	<header>
     	   	<h1><?php the_title(); ?></h1>
@@ -25,6 +73,8 @@ get_header('page'); ?>
       the_content(); 
 
       ?>
+
+      
 
       
 

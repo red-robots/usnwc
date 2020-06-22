@@ -9,7 +9,7 @@
         	<li><?php dynamic_sidebar( 'trail-status' ); ?></li>
 		</ul>
 	</div>
-	<div class="footericons">
+	<!-- <div class="footericons">
 		<div class="footicon">
 			<a href="https://stories.usnwc.org/stories/" target="_blank">
 				<div class="icon stories">
@@ -50,7 +50,7 @@
 				</div>
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<div class="row sponsors"> 
 		<ul>
    	        <li class="subaru">
