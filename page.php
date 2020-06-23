@@ -63,7 +63,7 @@ get_header('page'); ?>
       </div>
       <?php } else {
         // else sanitise the title with dashes
-        $theID = sanitise_titie_with_dashes( get_the_title() );
+        $theID = sanitize_title_with_dashes( get_the_title() );
       }
 
       ?>
