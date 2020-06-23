@@ -16,6 +16,8 @@ get_header('page'); ?>
 
 <?php 
       if( is_page('about') ) {
+        // Add some id for the anchor below
+        $theID = "about";
        ?>
        <div class="footericons">
         <div class="footicon">
@@ -39,7 +41,7 @@ get_header('page'); ?>
           </a>
         </div>
         <div class="footicon">
-          <a href="<?php bloginfo('url'); ?>/about">
+          <a href="#about">
             <div class="icon about">
                     <img class="size-small >" src="<?php bloginfo('template_url'); ?>/images/about.png"/>
                   <header>
@@ -59,11 +61,19 @@ get_header('page'); ?>
           </a>
         </div>
       </div>
-      <?php } ?>
-   
+      <?php } else {
+        // else sanitise the title with dashes
+        $theID = sanitise_titie_with_dashes( get_the_title() );
+      }
+
+      ?>
+
 	<article class="post <?php echo $post->post_name; ?>">
+    <div id="<?php echo $theID; ?>" class="headanchor"></div>
 	  	<header>
-    	   	<h1><?php the_title(); ?></h1>
+    	   	<h1>
+            <?php the_title(); ?>
+          </h1>
   		</header>
     	<?php 
 
