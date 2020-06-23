@@ -274,7 +274,8 @@ global $is_tribe;
 <?php if(is_page('about')){?>
     <?php if ( get_field('mission_statement') ) { ?>
    		<article class="post sidebar mission-statement">
-   			<header id="mission">
+   			<div id="mission" class="headanchor"></div>
+   			<header>
    				<h1>Mission Statement</h1>
    			</header>
         	<?php the_field('mission_statement'); ?>
