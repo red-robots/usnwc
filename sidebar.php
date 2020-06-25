@@ -236,37 +236,26 @@ global $is_tribe;
 			<header>
 				<h1>Hours of Operation</h1>
 			</header>
-			<h2>COVID-19 Information</h2>
-			<ul>
-				<li>Guest Services queue areas and Activity queue areas have been lengthened to encourage adequate spacing between individuals.</li>
-				<li>Per current policy and procedure, disinfection of equipment will take place based on guidance from the manufacturers to ensure both cleanliness and integrity of the gear.</li>
-				<li>There will be continuous disinfection of surfaces, counters and door handles.</li>
-				<!-- <li>Annual Passholders will redeem their pass verbally rather than utilizing fingerprint scanners.</li> -->
-				<!-- <li>Guests will be required to attach their own wristbands upon purchasing a pass.</li> -->
-				<li>All retail operations have lowered capacity by at least 25% and taken measures to promote social distancing.</li>
-				<!-- <li>Only to-go food and beverage options are currently available.  No indoor/outdoor restaurant seating areas are currently available.</li> -->
-			</ul>
-			<h2>When are we open?</h2>
-			<ul>
-				<li>Our main gate and trails are open, weather permitting, 365 days a year.</li>
-				<li>The availability of our activities and related operating hours vary with the seasons. Day-of activity availability is accessed through the <a href="https://usnwc.org/visit/daily-activity-schedule/">Activity Schedule</a>; other daily hours of operation, such as food and beverage, can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
-				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a href="https://usnwc.org/visit/groups/">Groups page</a>.</li>
-				<li>All activity availability, schedules and hours are subject to change without notice.</li>
-				<li>For other questions about activities at the USNWC, please visit our <a href="https://usnwc.org/visit/faqs/">Frequently Asked Questions</a>.</li>
-			</ul>
-			<h2>What activities will be open when I visit?</h2>
-			<ul>
-				<li>Due to the seasonality of the USNWC, activities will be limited in their availability, particularly in the months after Labor Day and before Memorial Day.</li>
-				<li>Because the timing and availability of our activities can change from day to day, the <a href="https://usnwc.org/visit/daily-activity-schedule/">Activity Schedule</a> is the best resource for day-of activity information.</li>
-				<li>Activity lines may close prior to pass hours.</li>
-			</ul>
-			<h2>Notes about the weather:</h2>
-			<ul>
-				<li>Events and programming operate rain or shine unless otherwise stated by USNWC Staff.</li>
-				<li>In the event of adverse weather, some or all activities may not be available.</li>
-				<li>Please check weather conditions before purchasing any activity pass.</li>
-				<li>Refunds and rain checks are not available.</li>
-			</ul>
+			<?php 
+			/*
+
+				Pull in the Hours of Operation page for the Calendar
+				Added, June 25th, 2020 during Covid panic
+
+			*/
+
+				$post = get_post(20); 
+				setup_postdata( $post );
+
+					echo get_the_content();
+
+				wp_reset_postdata();
+
+
+
+
+
+			 ?>
 		</article>
 	<?php }
 } //end of calendar ?>

@@ -1,4 +1,3 @@
-hellow
 <?php if($flexslider):?>
 	<div class="flexslider">
 		<ul class="slides">
