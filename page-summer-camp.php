@@ -61,7 +61,8 @@ get_header('page'); ?>
 					</div>
 				</a>
 			<?php } ?>
-			<a href="<?php bloginfo('url'); ?>/learn/summer-camp/summer-camp-forms/" >
+			<!-- <a href="<?php bloginfo('url'); ?>/learn/summer-camp/summer-camp-forms/" > -->
+				<a href="#camp-forms" >
 				<div class="icon size-Default daily-activity-schedule">
 			    	<img class="size-Default" src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/11/Activity_schedule_New.png">
 					<header>
