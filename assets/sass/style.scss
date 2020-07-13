@@ -109,6 +109,8 @@ article.post > .headanchor::before {
 	flex-wrap: nowrap;
 	justify-content: center;
 	padding: 20px 0;
+	position: relative;
+	z-index: 1000000;
 	.footicon {
 		width: 100px;
 		&:hover {
