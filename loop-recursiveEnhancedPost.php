@@ -97,6 +97,7 @@ function display_loop_tile_recursive_enhanced_post(){
 		if($list_to_display||$query->post->post_content){ ?>
 			<a name="<?php echo $query->post->post_name;?>"></a>
 			<header class="post"><h1><?php echo the_title(); ?></h1></header>
+      <?php if( is_page('riverjam') ) { get_template_part('includes/riverjam-icons'); } ?>
 			<?php if($query->post->post_content){ ?>
 					<section class="post <?php echo $query->post->post_name; ?>">
 						<?php echo $query->post->post_content; ?>

@@ -1856,14 +1856,14 @@ header.post h2, header.post h1{
 	width: 133px;
 	padding: 1px;
 }
-.tile.container .tile header, .icon.container .icon header {
+.tile.container .tile header, .icon.container .icon header, .icon.container .icon-r header, .icon.container .icon-q header {
 	width: 98%;
 	height: auto;
 	background-color: #fff;
 	margin: 1%;
 	padding: 0;
 }
-.tile.container .tile header h2, .icon.container .icon header h2 {
+.tile.container .tile header h2, .icon.container .icon header h2, .icon.container .icon-r header h2, .icon.container .icon-q header h2 {
 	color: #333;
 	font-size: 1em;
 	letter-spacing: .05em;
@@ -1911,7 +1911,7 @@ header.post h2, header.post h1{
 .tile.container .tile > div > img:hover {
 	opacity: 0;
 }
-.tile.container .tile > img, .icon.container .icon > img {
+.tile.container .tile > img, .icon.container .icon > img, .icon.container .icon-r > img, .icon.container .icon-q > img {
 	height: auto;
 	padding: 0;
 	position: static;
@@ -1932,6 +1932,21 @@ header.post h2, header.post h1{
 }
 .icon.container .icon {
 	width: 198px;
+}
+.icon.container .icon-r, .icon.container .icon-q  {
+	text-align: center;
+	img {
+		display: inline-block;
+	}
+}
+.flexer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.icon.container .icon, .icon.container .icon-r, .icon.container .icon-q {
+	
 	height: auto;
 	margin: 1% 0;
 	padding: 1px;
@@ -1950,7 +1965,7 @@ header.post h2, header.post h1{
 	-moz-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 }
-.icon.container .icon header h2 {
+.icon.container .icon header h2, .icon.container .icon-r header h2, .icon.container .icon-q header h2 {
 	text-align: center;
 }
 article.post, section.post, section.post.container, article.filtering {
@@ -3411,7 +3426,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		height: auto !important;
 		width: 1000px ! important;
 	}
-	.tile.container .tile, .icon.container .icon, .icon.container.field-trips .icon {
+	.tile.container .tile, .icon.container .icon, .icon.container .icon-r, .icon.container .icon-q, .icon.container.field-trips .icon {
 		position: static ! important;
 		display: inline-block ! important;
 	}
