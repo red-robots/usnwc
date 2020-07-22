@@ -1796,12 +1796,14 @@ input.gsc-search-button-v2 {
 	margin-top: 0 !important;
 }
 /*////////////////////Styling for post level header/////////////////////////*/
+// Change to the Titles
 header.post {
 	width: 100%;
 	height: auto;
 	position: static;
 	display: block;
-	background-color: #c2c2c2;
+	// background-color: #c2c2c2;
+	background-color: #fff;
 	margin: 0;
 	padding: 0;
 }
@@ -1811,8 +1813,10 @@ header.post h2, header.post h1{
 	font-size: 18pt;
 	letter-spacing: .18em;
 	color: white;
+	color: #333;
 	text-align: center;
-	padding: 10px 1%;
+	// padding: 10px 1%;
+	padding: 30px 1%;
 	margin: auto;
 	text-transform: uppercase;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
@@ -2012,12 +2016,14 @@ section.post.container > article {
 article.post p:last-child {
 	//margin: 2% auto 4% auto;
 }
+// Change to the Titles
 article.post > header, section.post > header, section.post.container > header {
 	width: 100%;
 	height: auto;
 	position: static;
 	display: block;
-	background-color: #c2c2c2;
+	// background-color: #c2c2c2;
+	background-color: #fff;
 	margin: 0;
 	padding: 0;
 }
@@ -2028,9 +2034,12 @@ article.post > header > h1, section.post > header > h1, section.post.container >
 	font-size: 18pt;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 	letter-spacing: .18em;
-	color: white;
+	// color: white;
+	color: #333;
+	// padding: 1%;
+	padding: 30px 0;
 	text-align: center;
-	padding: 1%;
+	
 	margin: 0;
 	text-transform: uppercase;
 }
