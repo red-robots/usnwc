@@ -1810,16 +1810,19 @@ header.post {
 header.post h2, header.post h1{
 	width: 98%;
 	height: auto;
-	font-size: 18pt;
+	font-size: 24pt;
+	font-weight: bold;
 	letter-spacing: .18em;
 	color: white;
-	color: #333;
+	color: #484848;
 	text-align: center;
 	// padding: 10px 1%;
 	padding: 30px 1%;
 	margin: auto;
 	text-transform: uppercase;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+	 -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #484848;
 }
 /*/////////////////////////styling for tiles and tile container//////////////////////*/
 .tile.container, .icon.container {
@@ -2031,17 +2034,20 @@ article.post > header > h1, section.post > header > h1, section.post.container >
 	width: 98%;
 	max-width: 930px;
 	height: auto;
-	font-size: 18pt;
+	// font-size: 18pt;
+	font-size: 24pt;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 	letter-spacing: .18em;
 	// color: white;
-	color: #333;
+	color: #484848;
 	// padding: 1%;
 	padding: 30px 0;
 	text-align: center;
 	
 	margin: 0;
 	text-transform: uppercase;
+	 -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #484848;
 }
 article.post p, section.post p {
 	line-height: 1.3;

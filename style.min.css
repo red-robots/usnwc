@@ -369,7 +369,7 @@ div.gsc-control-cse,td.gsc-input,td.gsc-search-button{padding:0 !important}
 table.gsc-search-box td{vertical-align:top !important}
 input.gsc-search-button-v2{margin-top:0 !important}
 header.post{width:100%;height:auto;position:static;display:block;background-color:#fff;margin:0;padding:0}
-header.post h2,header.post h1{width:98%;height:auto;font-size:18pt;letter-spacing:.18em;color:white;color:#333;text-align:center;padding:30px 1%;margin:auto;text-transform:uppercase;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif}
+header.post h2,header.post h1{width:98%;height:auto;font-size:24pt;font-weight:bold;letter-spacing:.18em;color:white;color:#484848;text-align:center;padding:30px 1%;margin:auto;text-transform:uppercase;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;-webkit-text-stroke-width:1px;-webkit-text-stroke-color:#484848}
 .tile.container,.icon.container{margin:auto}
 .tile.container .tile{box-shadow:0 0 3px 0 rgba(0,0,0,0.14902);-moz-box-shadow:0 0 3px 0 rgba(0,0,0,0.14902);-webkit-box-shadow:0 0 3px 0 rgba(0,0,0,0.14902);-o-box-shadow:0 0 3px 0 rgba(0,0,0,0.14902);transition:top .5s,left .5s;-webkit-transition:top .5s,left .5s;-moz-transition:top .5s,left .5s;-o-transition:top .5s,left .5s;height:auto;margin:6px;display:inline-block}
 .tile.container .tile:hover{-webkit-box-shadow:0 0 10px rgba(0,0,0,0.7);-o-box-shadow:0 0 10px rgba(0,0,0,0.7);box-shadow:0 0 10px rgba(0,0,0,0.7)}
@@ -404,7 +404,7 @@ article.post>*,section.post>*,article.row>*{width:85%;height:auto;margin:1% auto
 article.post img,section.post img{height:auto}
 section.post.container>article{width:98%;margin:0}
 article.post>header,section.post>header,section.post.container>header{width:100%;height:auto;position:static;display:block;background-color:#fff;margin:0;padding:0}
-article.post>header>h1,section.post>header>h1,section.post.container>header>h1{width:98%;max-width:930px;height:auto;font-size:18pt;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;letter-spacing:.18em;color:#333;padding:30px 0;text-align:center;margin:0;text-transform:uppercase}
+article.post>header>h1,section.post>header>h1,section.post.container>header>h1{width:98%;max-width:930px;height:auto;font-size:24pt;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;letter-spacing:.18em;color:#484848;padding:30px 0;text-align:center;margin:0;text-transform:uppercase;-webkit-text-stroke-width:1px;-webkit-text-stroke-color:#484848}
 article.post p,section.post p{line-height:1.3;font-size:14pt}
 article.post h2{font-family:franklin_gothic_fsMdCn;font-size:14pt;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1%}
 article.post h2.q{font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;font-size:11pt;line-height:1.3;letter-spacing:normal;text-transform:uppercase;margin-bottom:1%}
