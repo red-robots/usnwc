@@ -9,6 +9,37 @@ embed,iframe,object{max-width:100%}
 #alert-ban p{margin:0;padding:0}
 #alert-ban a{text-decoration:underline;color:#fff}
 a.anchor{display:block;position:relative;top:-150px;visibility:hidden}
+.newnav{display:none}
+.newnav .subinav{width:100%;text-align:center}
+.newnav .subinav a{color:rgba(255,255,255,0.6);text-decoration:none;-webkit-transition:all ease .3s;transition:all ease .3s}
+.newnav .subinav a:hover{color:white;text-decoration:none}
+.newnav .subinav ul{margin:0;padding:0}
+.newnav .subinav li{width:auto;display:inline-block;list-style:none;font-size:15px}
+.newnav .right-wrap{width:auto;position:absolute;right:0;top:0;border-left:1px solid rgba(255,255,255,0.3);padding:9px 10px 5px 10px}
+.newnav .right-wrap .status{width:auto;float:right;padding:0 5px}
+.newnav .right-wrap .title{width:auto;float:left;color:rgba(255,255,255,0.6);text-decoration:none;font-size:15px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.newnav .right-wrap .title:hover{padding-right:10px}
+.newnav .right-wrap .icon{width:10px;float:left;margin:7px 4px 0 6px}
+.newnav .right-wrap .icon img{width:100%}
+.widget_tcstatus a,.widget_tcstatus_two a{display:inline-block;width:auto;float:left;color:rgba(255,255,255,0.6);text-decoration:none;font-size:15px}
+.widget_tcstatus a:first-of-type,.widget_tcstatus_two a:first-of-type{width:auto}
+.widget_tcstatus a:nth-child(2),.widget_tcstatus_two a:nth-child(2){width:15px}
+.widget_tcstatus .tcwstatus,.widget_tcstatus_two .tcwstatus{margin-right:10px}
+.widget_tcstatus .trails-current,.widget_tcstatus_two .trails-current{width:auto;display:inline-block;width:15px;margin:3px 0 10px 0}
+.widget_tcstatus .trails-current img,.widget_tcstatus_two .trails-current img{width:100%}
+.widget_tcstatus .trails,.widget_tcstatus_two .trails{width:auto;display:inline-block;margin-right:5px}
+.footer-status .trails,.footer-status .trails a{color:#333;font-size:16px}
+.footer-status .trails-current{padding:0}
+.footer-status .trails{padding:0 0 12px 10px}
+section.cards{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:5px}
+section.cards .card{width:100%;padding:5px;overflow:hidden;position:relative}
+section.cards .card:hover .card-overlay{top:0}
+section.cards .card .card-overlay{width:100%;height:100%;background-color:rgba(0,0,0,0.7);position:absolute;top:100%;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-transition:all ease .3s;transition:all ease .3s}
+section.cards .card .card-overlay a{color:rgba(255,255,255,0.8);display:block;line-height:0}
+section.cards .card .card-overlay h2,section.cards .card .card-overlay h3{color:rgba(255,255,255,0.8);line-height:1}
+section.cards .card .card-overlay h2{font-size:18px;margin-bottom:20px}
+section.cards .card .card-overlay h3{font-size:15px;margin:0}
+section.cards .card a{display:block;line-height:0}
 article.post>.headanchor::before{display:block;content:" ";margin-top:-120px;height:120px;visibility:hidden;pointer-events:none;width:100%}
 .footericons{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;float:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:20px 0;position:relative;z-index:1000000}
 .footericons .footicon{width:100px}
@@ -294,14 +325,14 @@ header.page h1{text-indent:-99999px;color:black;margin:0;padding:0;background-co
 #searchsubmit{width:100px;float:left;margin:5px 0 0 0;-webkit-box-sizing:border-box;box-sizing:border-box;line-height:1.2;font-size:16px;border:1px solid lightgrey}
 header.page #searchform,header.page #___gcse_0{display:none}
 header.page img.showsearch{display:none;vertical-align:top;width:5%;margin:4.5% 5% 0 0;float:right}
-header.page img.logo{width:auto;height:auto;max-width:360px;margin:0 0 0 20px;display:inline-block}
+header.page img.logo{width:auto;height:auto;max-width:300px;margin:0 0 0 20px;display:inline-block}
 header.page img.showmenu.hamburger{display:none;vertical-align:top;width:5%;margin:4.5% 0 0 5%}
 header.page nav.desktop,footer.page nav{font-family:franklin_gothic_fsMdCn;text-transform:uppercase}
-header.page nav.desktop{display:block;float:right;margin:1.7em 4em 0 0;width:auto;font-size:16.5pt}
+header.page nav.desktop{display:block;float:right;margin:1.2em 4em 0 0;width:auto;font-size:16.5pt}
 header.page nav.desktop ul{list-style:none;padding:0;float:right;margin-bottom:0;margin-left:0}
 header.page nav.desktop ul a,footer.page nav ul a{color:#4b5054;letter-spacing:.30em;padding-right:15px;border-right-width:2px;border-right-style:solid;border-right-color:#989898}
 header.page nav.desktop ul li:last-child a,footer.page nav ul li:last-child a{border-right:0;padding-right:0;margin-right:0}
-header.page nav.desktop ul ul{margin:0;position:absolute;top:69px;left:-10px;z-index:99;width:200px;background-color:rgba(255,255,255,0.8);padding:0 10px;display:none;background-position:top;background-repeat:no-repeat}
+header.page nav.desktop ul ul{margin:0;position:absolute;top:40px;left:-10px;z-index:99;width:200px;background-color:rgba(255,255,255,0.8);padding:0 10px;display:none;background-position:top;background-repeat:no-repeat}
 header.page nav.desktop ul ul li{display:block;clear:both;margin:0;position:relative;width:100%;background:url(images/dotted-border.png) bottom repeat-x}
 header.page nav.desktop ul ul li:last-child{background:0}
 header.page nav.desktop ul ul li a{font-size:13pt;font-family:franklin_gothic_fs_cdregular,Arial,Helvetica,sans-serif;text-transform:none;display:block;padding:8px 0;letter-spacing:0;border-right:0;line-height:20px}
@@ -607,7 +638,11 @@ body.page-id-33826 #colorbox .the-pop{color:#4d6a59}
 .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px}
 .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0;right:44px}
 .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px}
-@media screen and (min-width:600px){.burger{display:none}
+@media screen and (min-width:600px){.newnav{width:100%;position:relative;padding:0;margin:0;background-color:#000;padding:5px 0;display:block}
+.widget_tcstatus .trails-current,.widget_tcstatus_two .trails-current{margin:3px 0 10px 0}
+.widget_tcstatus .trails,.widget_tcstatus_two .trails{float:left}
+section.cards .card{width:33.33%}
+.burger{display:none}
 nav.mobilemenu{display:none}
 .the-filter.closed,.the-filter.open{width:100%;max-height:1000px}
 .filter-options{display:none}
@@ -617,6 +652,7 @@ section.offers .option{-ms-flex-preferred-size:25%;flex-basis:25%;-ms-flex-pack:
 section.stats{-ms-flex-pack:distribute;-webkit-box-pack:justify;justify-content:space-between}
 section.stats .stat{-ms-flex-preferred-size:30%;flex-basis:30%}
 .pass-title{width:70%;padding:20px 0}
+.false.header img.false.img{height:120px}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu,section.post.container.passes ul.top-level-menu li.top-level-item.active .pass-desc{padding:0 0 0 20px}
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th{text-align:left}
 section.employment-pos{width:45%}

@@ -14,6 +14,7 @@ $midwidth: 900px;
 $deskwidth: 1200px;
 
 @import "reset.css";
+@import "mixins/mixins-master";
 @font-face {
 	font-family: 'Canter Bold';
 	font-style: normal;
@@ -91,6 +92,189 @@ a.anchor {
     position: relative;
     top: -150px;
     visibility: hidden;
+}
+.newnav {
+	display: none;
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		background-color: #000;
+		padding: 5px 0;
+		display: block;
+	}
+	.subinav {
+		width: 100%;
+		text-align: center;
+		a {
+			color: rgba(#fff, .6);
+			text-decoration: none;
+			@include transition(all ease .3s);
+			&:hover {
+				color: rgba(#fff, 1);
+				text-decoration: none;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			width: auto;
+			display: inline-block;
+			list-style: none;
+			font-size: 15px;
+		}
+	}
+	.right-wrap {
+		width: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-left: 1px solid rgba(#fff, .3);
+		padding: 9px 10px 5px 10px;
+		.status {
+			width: auto;
+			float: right;
+			padding: 0 5px;
+		}
+		.title {
+			width: auto;
+			float: left;
+			color: rgba(#fff, .6);
+			text-decoration: none;
+			font-size: 15px;
+			@include transition(all ease .3s);
+			&:hover {
+				padding-right: 10px;
+			}
+		}
+		.icon {
+			width: 10px;
+			float: left;
+			margin: 7px 4px 0px 6px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.widget_tcstatus, .widget_tcstatus_two {
+	a {
+		display: inline-block;
+		width: auto;
+		float: left;
+		color: rgba(#fff, .6);
+		text-decoration: none;
+		font-size: 15px;
+		&:first-of-type {
+			width: auto;
+		}
+		&:nth-child(2) {
+			width: 15px;
+		}
+	}
+	.tcwstatus {
+		margin-right: 10px;
+	}
+	.trails-current {
+		width: auto;
+		display: inline-block;
+		width: 15px;
+		margin: 3px 0 10px 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 3px 0 10px 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.trails {
+		width: auto;
+		display: inline-block;
+		
+		margin-right: 5px;
+		@media screen and (min-width: $tabwidth) {
+			float: left;
+		}
+	}
+}
+.footer-status {
+	.trails, .trails a {
+		color: #333;
+		font-size: 16px;
+	}
+	.trails-current {
+		padding: 0;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+	}
+	.trails {
+		padding: 0 0 12px 10px;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+	}
+}
+section.cards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 5px;
+    @media screen and (min-width: $tabwidth) {
+
+    }
+    .card {
+    	width: 100%;
+    	padding: 5px;
+    	overflow: hidden;
+    	position: relative;
+    	@media screen and (min-width: $tabwidth) {
+    		width: 33.33%;
+    	}
+    	&:hover {
+    		.card-overlay {
+    			top: 0;
+    		}
+    	}
+    	.card-overlay {
+    		width: 100%;
+    		height: 100%;
+    		background-color: rgba(#000, .7);
+    		position: absolute;
+    		top: 100%;
+    		left: 0;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		text-align: center;
+    		@include transition(all ease .3s);
+    		a {
+    			color: rgba(#fff, .8);
+    			display: block;
+    			line-height: 0;
+    		}
+    		h2, h3 {
+    			color: rgba(#fff, .8);
+    			line-height: 1;
+    		}
+    		h2 {
+    			font-size: 18px;
+    			margin-bottom: 20px;
+    		}
+    		h3 {
+    			font-size: 15px;
+    			margin: 0;
+    		}
+    	}
+    	a {
+    		display: block;
+    		line-height: 0;
+    	}
+    }
 }
 article.post > .headanchor::before { 
   display: block; 
@@ -1430,7 +1614,8 @@ header.page img.showsearch {
 header.page img.logo {
 	width: auto;
 	height: auto;
-	max-width: 360px;
+	// max-width: 360px;
+	max-width: 300px;
 	margin: 0 0 0 20px;
 	display: inline-block;
 }
@@ -1447,7 +1632,8 @@ header.page nav.desktop, footer.page nav {
 header.page nav.desktop {
 	display: block;
 	float: right;
-	margin: 1.7em 4em 0 0;
+	// margin: 1.7em 4em 0 0;
+	margin: 1.2em 4em 0 0;
 	width: auto;
 	font-size: 16.5pt;
 }
@@ -1474,7 +1660,8 @@ header.page nav.desktop ul li:last-child a, footer.page nav ul li:last-child a{
 header.page nav.desktop ul ul {
 	margin:0;
 	position:absolute;
-	top:69px;
+	// top:69px;
+	top:40px;
 	left: -10px;
 	z-index:99;
 	width: 200px;
@@ -1568,6 +1755,9 @@ nav.mobilemenu .mobile-sub-menu{
 }
 .false.header img.false.img {
 	max-width: 360px;
+	@media screen and (min-width: $tabwidth) {
+		height: 120px; // new for new nav 7/28/2020
+	}
 }
 nav.page.breadcrumbs{
 	display: block;

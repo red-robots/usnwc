@@ -123,9 +123,44 @@ if(is_category()){
 </nav> -->
 <div class="page container">
 
+  
+
 <div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
   
+
+  <div class="newnav">
+    <div class="subinav">
+      <ul>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/visit">VISIT</a>
+        </li>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/calendar">CALENDAR</a>
+        </li>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/buy-online">BUY</a>
+        </li>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/visit">GROUPS</a>
+        </li>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/about">ABOUT</a>
+        </li>
+        <li>
+          <a href="<?php bloginfo('url'); ?>/contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-wrap">
+      <div class="status">
+            <?php dynamic_sidebar( 'trail-status' ); ?>
+      </div>
+      <div class="status">
+            <?php dynamic_sidebar( 'activity-schedule' ); ?>
+      </div>
+    </div>
+  </div>
 
 	<?php get_search_form();?>
   <?php get_template_part('mobilenav'); ?>
