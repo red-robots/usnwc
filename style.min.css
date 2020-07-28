@@ -3,6 +3,7 @@
 @font-face{font-family:'Axis';font-style:normal;font-weight:normal;src:url("fonts/axis.bold.otf")}
 @font-face{font-family:'Bourbon';font-style:normal;font-weight:normal;src:url("fonts/BourbonGrotesque-Regular+(1).otf")}
 embed,iframe,object{max-width:100%}
+body.logged-in .page{top:32px}
 .embed-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;height:auto}
 .embed-container iframe,.embed-container object,.embed-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
 #alert-ban{text-align:center;color:#fff;background-color:#d22246;padding:20px}
