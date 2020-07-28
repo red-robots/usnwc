@@ -3,12 +3,12 @@
 	<nav>
 		<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => '' ) ); ?>
 	</nav>
-	<div class="row sidebars footer-status">
+	<!-- <div class="row sidebars footer-status">
 		<ul>
 			<li><?php dynamic_sidebar( 'activity-schedule' ); ?></li>
         	<li><?php dynamic_sidebar( 'trail-status' ); ?></li>
 		</ul>
-	</div>
+	</div> -->
 	<!-- <div class="footericons">
 		<div class="footicon">
 			<a href="https://stories.usnwc.org/stories/" target="_blank">

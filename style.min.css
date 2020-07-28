@@ -29,12 +29,14 @@ a.anchor{display:block;position:relative;top:-150px;visibility:hidden}
 .widget_tcstatus .trails-current,.widget_tcstatus_two .trails-current{width:auto;display:inline-block;width:15px;margin:3px 0 10px 0}
 .widget_tcstatus .trails-current img,.widget_tcstatus_two .trails-current img{width:100%}
 .widget_tcstatus .trails,.widget_tcstatus_two .trails{width:auto;display:inline-block;margin-right:5px}
-.footer-status .trails,.footer-status .trails a{color:#333;font-size:16px}
-.footer-status .trails-current{padding:0}
-.footer-status .trails{padding:0 0 12px 10px}
+.footer-status .trails,.footer-status .trails a,.menu-status .trails,.menu-status .trails a{color:#333;font-size:16px}
+.footer-status .trails-current,.menu-status .trails-current{padding:0}
+.footer-status .trails,.menu-status .trails{padding:0 0 12px 10px}
+.menu-status .tcwstatus{text-align:left;margin:0 0 0 20px}
 section.cards{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:5px}
 section.cards .card{width:100%;padding:5px;overflow:hidden;position:relative}
 section.cards .card:hover .card-overlay{top:0}
+section.cards .card img{width:100%}
 section.cards .card .card-overlay{width:100%;height:100%;background-color:rgba(0,0,0,0.7);position:absolute;top:100%;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-transition:all ease .3s;transition:all ease .3s}
 section.cards .card .card-overlay a{color:rgba(255,255,255,0.8);display:block;line-height:0}
 section.cards .card .card-overlay h2,section.cards .card .card-overlay h3{color:rgba(255,255,255,0.8);line-height:1}

@@ -204,7 +204,7 @@ a.anchor {
 		}
 	}
 }
-.footer-status {
+.footer-status, .menu-status {
 	.trails, .trails a {
 		color: #333;
 		font-size: 16px;
@@ -221,6 +221,13 @@ a.anchor {
 
 		}
 	}
+}
+.menu-status {
+	.tcwstatus {
+		text-align: left;
+		margin: 0 0 0 20px;
+	}
+
 }
 section.cards {
 	width: 100%;
@@ -243,6 +250,9 @@ section.cards {
     		.card-overlay {
     			top: 0;
     		}
+    	}
+    	img {
+    		width: 100%;
     	}
     	.card-overlay {
     		width: 100%;
