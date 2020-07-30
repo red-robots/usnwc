@@ -133,22 +133,22 @@ if(is_category()){
     <div class="subinav">
       <ul>
         <li>
-          <a href="<?php bloginfo('url'); ?>/visit">VISIT</a>
+          <a href="<?php bloginfo('url'); ?>/visit/">VISIT</a>
         </li>
         <li>
-          <a href="<?php bloginfo('url'); ?>/calendar">CALENDAR</a>
+          <a href="<?php bloginfo('url'); ?>/calendar/">CALENDAR</a>
         </li>
         <li>
-          <a href="<?php bloginfo('url'); ?>/buy-online">BUY</a>
+          <a href="<?php bloginfo('url'); ?>/buy-online/">BUY</a>
         </li>
         <li>
-          <a href="<?php bloginfo('url'); ?>/visit">GROUPS</a>
+          <a href="<?php bloginfo('url'); ?>/groups/">GROUPS</a>
         </li>
         <li>
-          <a href="<?php bloginfo('url'); ?>/about">ABOUT</a>
+          <a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
         </li>
         <li>
-          <a href="<?php bloginfo('url'); ?>/contact">CONTACT</a>
+          <a href="<?php bloginfo('url'); ?>/contact/">CONTACT</a>
         </li>
       </ul>
     </div>
