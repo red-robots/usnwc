@@ -4,6 +4,7 @@
 @font-face{font-family:'Bourbon';font-style:normal;font-weight:normal;src:url("fonts/BourbonGrotesque-Regular+(1).otf")}
 embed,iframe,object{max-width:100%}
 body.logged-in .page{top:32px}
+nav.hide{display:none}
 .embed-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;height:auto}
 .embed-container iframe,.embed-container object,.embed-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
 #alert-ban{text-align:center;color:#fff;background-color:#d22246;padding:20px}
@@ -368,6 +369,7 @@ nav.page.breadcrumbs a{color:black}
 footer.page{border-top:3px solid #e6e6e6}
 footer.page nav{font-size:14pt}
 footer.page nav,footer.page div.row.social,footer.page div.row.explore,footer.page div.row.sponsors,footer.page div.row.description,footer.page div.row.sidebars{list-style-type:none;padding:0;margin:1em auto;display:table;position:static;width:auto;height:auto}
+footer.page nav.hide{display:none}
 footer.page div.row.description{text-align:center}
 footer.page nav ul,footer.page div.row.social ul,footer.page div.row.explore ul,footer.page div.row.sponsors ul,footer.page div.row.sidebars ul{margin:0;padding:0}
 footer.page div.row.social ul,footer.page div.row.explore ul,footer.page div.row.sponsors ul{display:inline-block}

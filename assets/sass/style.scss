@@ -50,6 +50,9 @@ body.logged-in {
 		top: 32px;
 	}
 }
+nav.hide {
+	display: none;
+}
 /* Responive Iframes */
 .embed-container { 
 	position: relative; 
@@ -1848,6 +1851,9 @@ footer.page nav, footer.page div.row.social, footer.page div.row.explore, footer
 	position: static;
 	width: auto;
 	height: auto;
+}
+footer.page nav.hide {
+	display: none;
 }
 footer.page div.row.description {
 	text-align: center;

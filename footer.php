@@ -1,8 +1,8 @@
 </main>
 <footer class="page">
-	<!-- <nav>
-		<?php //wp_nav_menu( array( 'theme_location' => 'footer', 'container' => '' ) ); ?>
-	</nav> -->
+	<nav class="hide">
+		<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => '' ) ); ?>
+	</nav>
 	<!-- <div class="row sidebars footer-status">
 		<ul>
 			<li><?php dynamic_sidebar( 'activity-schedule' ); ?></li>
