@@ -269,6 +269,7 @@ section.cards {
     		flex-direction: column;
     		justify-content: center;
     		text-align: center;
+    		padding: 20px;
     		@include transition(all ease .3s);
     		a {
     			color: rgba(#fff, .8);
