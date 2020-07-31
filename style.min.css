@@ -646,7 +646,7 @@ body.page-id-33826 #colorbox .the-pop{color:#4d6a59}
 @media screen and (min-width:600px){.newnav{width:100%;position:relative;padding:0;margin:0;background-color:#000;padding:5px 0;display:block}
 .widget_tcstatus .trails-current,.widget_tcstatus_two .trails-current{margin:3px 0 10px 0}
 .widget_tcstatus .trails,.widget_tcstatus_two .trails{float:left}
-section.cards .card{width:33.33%}
+section.cards .card{width:33.33%;-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}
 .burger{display:none}
 nav.mobilemenu{display:none}
 .the-filter.closed,.the-filter.open{width:100%;max-height:1000px}

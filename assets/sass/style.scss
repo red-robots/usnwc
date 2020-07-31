@@ -248,6 +248,7 @@ section.cards {
     	position: relative;
     	@media screen and (min-width: $tabwidth) {
     		width: 33.33%;
+    		flex-grow: 2;
     	}
     	&:hover {
     		.card-overlay {
