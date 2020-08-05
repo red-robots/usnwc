@@ -687,7 +687,7 @@ section.activity-schedule .activity-schedule-list .copy{padding:5px}
 section.post.container.passes-tours>.wrapper>header{border-top:2px solid #e9e9e9;padding:10px}
 section.post.container.passes-tours>.wrapper{text-align:center}
 .asterisk{margin-top:7px}
-header.page img.logo{width:45%;margin-left:17.5%;margin-top:1%}
+header.page img.logo{width:35%;margin-left:2.5%;margin-top:2%}
 header.page nav.desktop{display:none}
 header.page img.showsearch,header.page img.showmenu.hamburger{display:inline-block}
 .false.header img.false{width:45%;margin-top:1%}
@@ -738,7 +738,7 @@ article.post.groups .section-wrapper .section .icon-wrapper .icon header h3{colo
 a.corporate-button,.article.post.groups a.button{margin:0;font-weight:700;font-size:18px;color:white;padding:10px 20px;background-color:#c10435;text-transform:uppercase;display:inline-block}
 }@media screen and (max-width:670px){.element-item{width:90%}
 article.row-activity figure{display:block;width:200px;margin:2% auto}
-header.page img.logo{width:30%;margin-left:25%}
+header.page img.logo{width:30%;margin-left:35%}
 header.page img.showsearch{width:5%;margin:2.5% 5% 0 0}
 header.page img.showmenu.hamburger{width:5%;margin:2.5% 0 0 5%}
 .false.header img.false{width:30%}
