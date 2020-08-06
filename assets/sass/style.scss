@@ -1648,11 +1648,14 @@ header.page #searchform, header.page #___gcse_0 {
 	display: none;
 }
 header.page img.showsearch {
-	display: none;
+	display: inline-block;
 	vertical-align: top;
 	width: 5%;
 	margin: 4.5% 5% 0 0;
 	float: right;
+	@media screen and (min-width: $tabwidth) {
+		display: none;
+	}
 }
 header.page img.logo {
 	width: auto;
@@ -1678,7 +1681,8 @@ header.page nav.desktop {
 		display: block;
 		float: right;
 		// margin: 1.7em 4em 0 0;
-		margin: 1.5em 4em 0 0;
+		// margin: 1.5em 4em 0 0;
+		margin: 2em 4em 0 0;
 		width: auto;
 		font-size: 12pt;
 	}
@@ -3208,15 +3212,16 @@ div.trailer .fb-post, div.trailer .fb-post * {
         margin-top: 7px;
     }
 	header.page img.logo {
-		width: 35%;
+		width: 200px;
 		margin-left: 2.5%;
 		margin-top: 2%;
+		
 	}
 	// header.page nav.desktop {
 	// 	display: none;
 	// }
 	header.page img.showsearch, header.page img.showmenu.hamburger {
-		display: inline-block;
+		// display: inline-block;
 	}
 	.false.header img.false{
 		width: 45%;
