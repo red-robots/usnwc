@@ -1673,12 +1673,20 @@ header.page nav.desktop, footer.page nav {
 	text-transform: uppercase;
 }
 header.page nav.desktop {
-	display: block;
-	float: right;
-	// margin: 1.7em 4em 0 0;
-	margin: 1.2em 4em 0 0;
-	width: auto;
-	font-size: 16.5pt;
+	display: none;
+	@media screen and (min-width: $tabwidth) {
+		display: block;
+		float: right;
+		// margin: 1.7em 4em 0 0;
+		margin: 1.5em 4em 0 0;
+		width: auto;
+		font-size: 12pt;
+	}
+	@media screen and (min-width: $midwidth) {
+		font-size: 16.5pt;
+		margin: 1.2em 4em 0 0;
+	}	
+	
 }
 header.page nav.desktop ul{
 	list-style:none;
@@ -1690,10 +1698,13 @@ header.page nav.desktop ul{
 header.page nav.desktop ul a, footer.page nav ul a{
 	color:#4b5054; 
 	letter-spacing: 0.30em;
-	padding-right: 15px;
+	padding-right: 7px;
 	border-right-width: 2px;
 	border-right-style:solid;
 	border-right-color: #989898;
+	@media screen and (min-width: $midwidth) {
+		padding-right: 15px;
+	}
 }
 header.page nav.desktop ul li:last-child a, footer.page nav ul li:last-child a{
 	border-right:none;
@@ -1734,6 +1745,8 @@ header.page nav.desktop ul ul li a{
 	letter-spacing: 0px;
 	border-right:none;
 	line-height: 20px;
+
+
 }
 header.page nav.desktop li{
 	display: inline-block;
@@ -3199,9 +3212,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		margin-left: 2.5%;
 		margin-top: 2%;
 	}
-	header.page nav.desktop {
-		display: none;
-	}
+	// header.page nav.desktop {
+	// 	display: none;
+	// }
 	header.page img.showsearch, header.page img.showmenu.hamburger {
 		display: inline-block;
 	}
@@ -3424,6 +3437,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	header.page img.logo {
 	    width: 30%;
 	    margin-left: 35%;
+	    @media screen and (min-width: $tabwidth) {
+	    	margin-left: 5%;
+	    }
 	}
 	header.page img.showsearch {
  	    width: 5%;
