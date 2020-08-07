@@ -19,6 +19,7 @@ get_header(); ?>
  * The arguments for the query are supplied as arguments to the function
  * The loop cleans up and resets the query after it is called
  */
+
 get_template_part('loop','recursiveEnhancedPost');
 display_loop_tile_recursive_enhanced_post(array('post_parent'=>$post->ID,'post_type'=>'page','order'=>'ASC', 'posts_per_page'=>'-1','orderby'=>'menu_order'));
 ?>

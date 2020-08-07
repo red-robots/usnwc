@@ -43,6 +43,8 @@
  * potentially very large set of arrays/object which might be slower to access than a 
  * WP_Query, and the arrays/object might take up a lot of memory.
  */
+
+
 function display_loop_tile_recursive_enhanced_post(){
 	$args_list = func_get_args();
 	$args = $args_list[0];
@@ -55,6 +57,7 @@ function display_loop_tile_recursive_enhanced_post(){
 	//set up the loop
 	$query=new WP_Query($args);
 	if($query->have_posts()){
+
 		while($query->have_posts()){
 			$query->the_post();
 			/*
@@ -84,6 +87,8 @@ function display_loop_tile_recursive_enhanced_post(){
 	 * Display only title if no content and there are tiles
 	 */
 	if($args['post_parent']){
+
+    // echo get_the_title();
 		$query=new WP_Query(array('page_id'=>$args['post_parent']));
 	}
 	elseif($post_parent){
@@ -97,7 +102,17 @@ function display_loop_tile_recursive_enhanced_post(){
 		if($list_to_display||$query->post->post_content){ ?>
 			<a name="<?php echo $query->post->post_name;?>"></a>
 			<header class="post"><h1><?php echo the_title(); ?></h1></header>
-      <?php if( is_page('riverjam') ) { get_template_part('includes/riverjam-icons'); } ?>
+
+      <?php 
+      $sTitle = sanitize_title_with_dashes( get_the_title() );
+      //echo $sTitle;
+      if( is_page('riverjam') && $sTitle == 'river-jam' )  {
+      //echo $iicon; 
+        get_template_part('includes/riverjam-icons'); 
+      } 
+      // count up once
+      // $iicon++;
+      ?>
 			<?php if($query->post->post_content){ ?>
 					<section class="post <?php echo $query->post->post_name; ?>">
 						<?php echo $query->post->post_content; ?>
