@@ -24,8 +24,7 @@ $title_ann = get_field('title_ann');
 $price_ann = get_field('price_ann');
 $buy_link_ann = get_field('buy_link_ann');
 $desc_ann = get_field('desc_expand_ann');
-
-        ?>
+?>
 <?php get_sidebar("banner"); ?>
 
     <header class="post">
@@ -304,6 +303,8 @@ $desc_ann = get_field('desc_expand_ann');
                     // }
                     while ($wp_query->have_posts()) : $wp_query->the_post(); 
                     $what = sanitize_title_with_dashes( get_the_title() );
+                    // Set what which buy buttons we don't want to see.
+                    $doNotShowBuyButton = array('ice-skating', 'zip-tour', 'canopy-tour');
                     $buyLink = get_field('buy_link');
                     $price = get_field('price');
                     $desc = get_field('description');
@@ -330,7 +331,7 @@ $desc_ann = get_field('desc_expand_ann');
                                 <span class="indicator-plus wow rollIn"data-wow-delay=".5s">+</span><span class="indicator-min">-</span> <?php the_title(); ?> - <?php echo $price; ?>
                             </div>
                             
-                            <?php if( $what !== 'ice-skating' ) { ?>
+                            <?php if( !in_array( $what, $doNotShowBuyButton ) ) { ?>
                             <div class="pass-button <?php echo $click; ?>">
                                 <a href="<?php echo $buyLink; ?>">BUY</a>
                             </div>
