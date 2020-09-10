@@ -270,6 +270,12 @@ function shaken_jquery(){
 			array(), '20120206', 
 			false 
 		);
+		wp_enqueue_script( 
+			'flexslider', 
+			get_template_directory_uri() . '/js/flexslider.js', 
+			array(), '20120206', 
+			false 
+		);
     }
 }
 add_action( 'wp_enqueue_scripts', 'shaken_jquery' );
