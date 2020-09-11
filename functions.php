@@ -276,6 +276,30 @@ function shaken_jquery(){
 			array(), '20120206', 
 			false 
 		);
+		wp_enqueue_script( 
+			'imagesloaded', 
+			get_template_directory_uri() . '/js/imagesloaded.js', 
+			array(), '20120206', 
+			false 
+		);
+		wp_enqueue_script( 
+			'fitvids', 
+			get_template_directory_uri() . '/js/fitvids.js', 
+			array(), '20120206', 
+			false 
+		);
+		wp_enqueue_script( 
+			'hoverintent', 
+			get_template_directory_uri() . '/js/hoverintent.js', 
+			array(), '20120206', 
+			false 
+		);
+		wp_enqueue_script( 
+			'hoverintent', 
+			get_template_directory_uri() . '/js/fancybox.js', 
+			array(), '20120206', 
+			false 
+		);
     }
 }
 add_action( 'wp_enqueue_scripts', 'shaken_jquery' );
