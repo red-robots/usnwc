@@ -39,6 +39,12 @@ $deskwidth: 1200px;
 	font-weight: normal;
 	src: url('fonts/BourbonGrotesque-Regular+(1).otf');
 }
+.btn-wrap {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 30px 0;
+}
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
