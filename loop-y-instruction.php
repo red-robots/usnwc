@@ -91,17 +91,30 @@ function display_loop_tile_recursive_enhanced($args){
 
 <?php if(have_rows('flexslider_banner')){ ?>
   <div class="btn-wrap">
-    <div class="pass-button">
+    <div class="icon">
+      <a href="#summer-camps"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/outfitters_store.jpg">
+        <header><h2>Summer Camps</h2></header>
+      </a>
+      
+    </div>
+    <div class="divider"></div>
+    <div class="icon">
+      <a href="#classes">
+        <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2014/10/what_to_bring.jpg">
+        <header><h2>Classes</h2></header>
+      </a>
+    </div>
+    <!-- <div class="pass-button">
       <a href="#summer-camps">Summer Camps</a>
     </div>
     <div class="pass-button">
       <a href="#classes">Classes</a>
-    </div>
+    </div> -->
   </div>
 <?php } ?>
 
       <?php if($query->post->post_content){ ?>
-          <section class="post <?php echo $query->post->post_name; ?>">
+          <section class="post no-shadow <?php echo $query->post->post_name; ?>">
             <?php echo $query->post->post_content; ?>
           </section>
       <?php }
@@ -126,7 +139,7 @@ function display_loop_tile_recursive_enhanced($args){
       //create a tile container for all tiles?>
 
 
-<section class="post container <?php 
+<section class="post container  <?php 
       if($args['post_type']&&$args['post_type']==='page'){
         echo strtolower(preg_replace("/\s+/","-",preg_replace("/&#[0-9]+;/"
         ,"",get_the_title($args['post_parent']))));
