@@ -43,15 +43,19 @@
  * potentially very large set of arrays/object which might be slower to access than a 
  * WP_Query, and the arrays/object might take up a lot of memory.
  */
+// $i=0;
 function display_loop_tile_recursive_enhanced($args){
+  //$i++;
   global $post; //have to include the post in order to be able to query the values set from WP_Query
   //declare variables as null in case register_globals ever gets turned on
   $list_to_query = null; $list_to_display = null;
   //set up the loop
+  
   $query=new WP_Query($args);
   if($query->have_posts()){
     while($query->have_posts()){
-      $query->the_post();
+      $query->the_post(); 
+      $i++;
       /*
        * Get the page options using get_post_meta and get_field
          */
@@ -71,16 +75,21 @@ function display_loop_tile_recursive_enhanced($args){
     } //end of while
   } // end of if have posts
   wp_reset_postdata();
+
+  // $t=sanitize_title_with_dashes(get_the_title());
   /*
    * Display the title if there are tiles to show or there is content
    * Display only title if no content and there are tiles
    */
+  // $i=0;
   $query=new WP_Query(array('page_id'=>$args['post_parent']));
   if($query->have_posts()){
     $query->the_post();
     if($list_to_display||$query->post->post_content){ ?>
       <a name="<?php echo $query->post->post_name;?>"></a>
       <header class="post"><h1><?php echo the_title(); ?></h1></header>
+
+
       <?php if($query->post->post_content){ ?>
           <section class="post <?php echo $query->post->post_name; ?>">
             <?php echo $query->post->post_content; ?>
@@ -90,14 +99,7 @@ function display_loop_tile_recursive_enhanced($args){
   }
   wp_reset_postdata(); ?>
 
-  <div class="btn-wrap">
-  <div class="pass-button">
-    <a href="#summer-camps">Summer Camps</a>
-  </div>
-  <div class="pass-button">
-    <a href="#classes">Classes</a>
-  </div>
-</div>
+  
 
 <?php 
   /*
