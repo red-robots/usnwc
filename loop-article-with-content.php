@@ -129,7 +129,7 @@ function display_loop_article($args){
 	   					<header>
    							<h2><?php the_title(); ?></h2>
    						</header>
-   						<?php //the_content();
+   						<?php the_content();
    						/*
    						 * Get all of the fields for pass type and qualifiers and difficulty
 	   					 * to variables
