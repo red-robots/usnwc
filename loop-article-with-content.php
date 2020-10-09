@@ -21,7 +21,7 @@ function display_loop_article($args){
 		 * fucntion or "upgrades" if upgrades were queried 
 		 */
 		?>
-		<section class="post container <?php 
+		<section class="post container tezt <?php 
 			if($args['post_type']&&$args['post_type']==='page'){
 				echo strtolower(preg_replace("/\s+/","-",preg_replace("/&#[0-9]+;/"
 				,"",get_the_title($args['post_parent']))));
@@ -129,7 +129,7 @@ function display_loop_article($args){
 	   					<header>
    							<h2><?php the_title(); ?></h2>
    						</header>
-   						<?php the_content();
+   						<?php //the_content();
    						/*
    						 * Get all of the fields for pass type and qualifiers and difficulty
 	   					 * to variables

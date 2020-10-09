@@ -37,12 +37,12 @@ get_header('page'); ?>
                     <header><h2>Waiver</h2></header>
                 </div>
             </a>
-            <a href="http://usnwc.org/visit/virtual-tour/" target="_blank">
+            <!-- <a href="http://usnwc.org/visit/virtual-tour/" target="_blank">
                 <div class="icon">
                     <img src="http://usnwc.org/wp-content/uploads/2014/10/virtual_tour.jpg" alt="Virtual Tour Icon">
                     <header><h2>Virtual Tour</h2></header>
                 </div>
-            </a>
+            </a> -->
         </div>
     	<?php comments_template(); ?>
 	</article>    
